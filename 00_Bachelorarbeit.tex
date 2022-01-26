@@ -88,6 +88,9 @@
 \DeclareSIUnit\mws{mWS}	
 \DeclareSIUnit\degrees{^\circ}
 \DeclareSIUnit\kmeter{\raiseto{3}\meter}
+\DeclareSIUnit\seuro{\text{\euro}}
+\DeclareSIUnit\hunki{\text{100} \kg}
+
 
 \usepackage[
 pdftitle={halbautomatische Dosierung eines Assoziativverdickers},
@@ -147,6 +150,12 @@ hidelinks %Entfernt Rahmen von Links
 	\renewcommand{\figurename}{Abb.}%
 	\renewcommand{\tablename}{Tab.}%
 }
+	
+\newenvironment{parameter}
+	{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}\ldots{}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}
+}
+
 
 \urlstyle{same}
 
