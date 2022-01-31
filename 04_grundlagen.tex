@@ -51,14 +51,12 @@ Betrachtet man speziell die sogenannten assoziativen Verdickungsmittel lassen si
 	\label{fig:assoziativ_einteilung}
 \end{figure}
 \FloatBarrier
-Diese strukturelle Eigenschaft der Assoziativ-Verdicker macht die Bildung von Micellen möglich und es treten neben der Quellung in der Wasserphase sogenannte "`Micellbrücken"' zwischen Latex-Teilchen der Bindemitteldisperion auf, welche zusätzlich Viskositätserhöhung bewirken. \cite{Brock.2009} \pagebreak
-
-In der geplanten Dosierung soll auf das Verdickungsmittel TAFIGEL PUR 85 der \mbox{\textsc{Münzing Chemie Gmbh}} zurückgegriffen werden. Laut Hersteller handelt es sich hierbei um einen assoziativen Polyurethan-Verdicker, welcher durch Gerüstbildung zwischen Verdickermolekülen, Bindemittel und Pigmentpartikeln die gewünschte Viskosität hervorruft und stabilisiert. Diese Beschreibung deckt sich mit den vorangegangenen Beschreibung der Assoziativverdicker.\cite{MunzingChemieGmbH.2014}\\
+Diese strukturelle Eigenschaft der Assoziativ-Verdicker macht die Bildung von Micellen möglich und es treten neben der Quellung in der Wasserphase sogenannte "`Micellbrücken"' zwischen Latex-Teilchen der Bindemitteldisperion auf, welche eine zusätzlich Viskositätserhöhung bewirken. \cite{Brock.2009} \newpage
 In Abbildung \ref{fig:struktur_puverdicker} ist eine schematische Struktur eines solchen assoziativen Polyurethan-Verdickers aufgeführt. Diese beispielhafte Struktur zeigt hydrophile, höher molekulare Polyethersegmente, welche über Urethan-Gruppen verbunden sind und durch hydrophobe Molekülgruppen verknüpft werden. \cite{Brock.2009}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1.0\textwidth]{img/verdicker_struktur}
+	\includegraphics[width=0.9\textwidth]{img/verdicker_struktur}
 	\caption{schematische Struktur eines assoziativen Polyurethan-Verdickers, \linebreak erstellt nach \cite{Brock.2009}}
 	\label{fig:struktur_puverdicker}
 \end{figure}
@@ -69,24 +67,54 @@ Durch diesen Mix der hydrophoben und hydrophilen Strukturen wird der Tensidchara
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1.0\textwidth]{img/verdicker_anwendung}
+	\includegraphics[width=0.75\textwidth]{img/verdicker_anwendung}
 	\caption{Netzstruktur durch Verdickermittel in Latex-Dispersion (mit und ohne Tensid), \linebreak erstellt nach \cite{Mezger.2016}}
 	\label{fig: verdicker_anwendung}
 \end{figure}
 \FloatBarrier
 %Ende
 
-Aufgrund dieser ausgeprägten Netzstrukturen innerhalb des Verdickungsmittels ist es jedoch auch möglich, dass das Verdickungsmittel selbst eine hohe Viskosität aufweist. Dieser Punkt kann erheblichen Einfluss auf die großtechnische Verarbeitbarkeit des Additives haben und wird im weiteren Verlauf dieser Arbeit näher betrachtet.
+Aufgrund dieser ausgeprägten Netzstrukturen innerhalb des Verdickungsmittels ist es jedoch auch möglich, dass das Verdickungsmittel selbst eine hohe Viskosität aufweist. Dieser Punkt kann erheblichen Einfluss auf die großtechnische Verarbeitbarkeit des Additives haben und wird im weiteren Verlauf dieser Arbeit näher betrachtet. 
 
 
 \subsection{Charakterisierung des Dosierstroms}
 
-\subsection*{Bestimmung der Dichte nach }
+\subsubsection*{Art des Fluides}
+Die Wissenschaft der Rheologie beschäftigt sich unter anderem mit dem Fließ- und Deformationsverhalten von Flüssigkeiten und teilt diese zunächst in \textsc{Newtonsche} und \textsc{Nichtnewtonsche} Fluide ein. Grundlage dieser Einteilung sind Untersuchungen von \textsc{Isaac Newton}, welcher sich bei konstanter Temperatur mit der Schergeschwindigkeit $D$ in Abhängigkeit von der Schubspannung $\tau$ beschäftigte. \newpage
+Das Ergebnis dieser Arbeit ist das \textsc{Newtonsche Fließgesetz} unter \linebreak Gleichung \eqref{eq: newton}, welche den Fließwiderstand $\eta$ einer Flüssigkeit bei gegebener Temperatur als Stoffkonstante benennt. Dieser Fließwiderstand $\eta$ ist heute unter der Bezeichnung der dynamischen Viskosität bekannt.
 
-\subsection*{Bestimmung der dynamischen Viskosität nach }
-D
+\begin{equation}
+	\label{eq: newton}
+	\tau = \eta * D
+\end{equation}
+\begin{parameter}
+	D 			& Schergeschwindigkeit\\
+	\tau 		& Schubspannung\\
+	\eta 		& Dynamische Viskosität\\
+\end{parameter}
+
+Demnach gelten alle Fluide, welche diese Linearität zwischen Schergeschwindigkeit und Schubspannung ohne Fließgrenze aufweisen als \textsc{Newtonsche} Fluide und diejenigen, die ein nicht-lineares Verhalten und/oder ein Verhalten mit Fließgrenze aufweisen als \textsc{Nichtnewtonsche} Fluide. Veranschaulicht wird dies in Abbildung \ref{fig: arten_fluide} mit einer Auswahl an verschiedenen Rheologieprofilen.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{img/fluidarten}
+	\caption{Rheologieprofile für verschiedene Fluide, erstellt nach \cite{Holze.2010, MunzingChemieGmbH.2018}}
+	\label{fig: arten_fluide}
+\end{figure}
+\FloatBarrier
+
+
+\subsubsection*{Bestimmung der dynamischen Viskosität nach }
+
+\todo[inline]{Inhalt fehlt}
+Die dynamische Viskosität $\eta$ ist definiert als das Verhältnis von Schubspannung $\tau$ zur Scherrate $D$.
 
 Rotationsviskosimeter
+
+\subsubsection*{Bestimmung der Dichte nach }
+
+\todo[inline]{Inhalt fehlt}
+
 
 \subsubsection*{Bestimmung der Strömungsform}
 Um den Dosierstrom des Verdickermittels entsprechend seiner Strömungseigenschaften charakterisieren zu können, wird zunächst mit der sogenannten \textsc{Reynoldszahl} die Strömungsform bestimmt. Sie ist eine dimensionslose Kennzahl und beschreibt das Verhältnis zwischen Tragheitskräften zu Reibungskräften in strömenden Flüssigkeiten und ist für durchströmte Rohrleitungen unter Gleichung \eqref{eq: reynolds} definiert. \cite{Foth.2014}
@@ -115,7 +143,7 @@ Anhand der Reynoldszahl lässt sich nun mithilfe der Tabelle \ref{tab:stromung_r
 	%\resizebox{10.5cm}{!}{
 		\begin{tabulary}{1.0\textwidth}{C|CCC}
 			\hline
-			\textbf{Strömungsform} & \textbf{Laminar} & \textbf{Übergangsbereich} & \textbf{Turbulent}\\
+			\textbf{Strömungsform} & \textbf{Laminar} & \textbf{instabiler Bereich} & \textbf{Turbulent}\\
 			\hline
 			\textbf{Reynoldszahl} &	$< 2300$ & $2300$ bis $4000$& $>4000$\\
 			\hline			
@@ -176,6 +204,15 @@ Da das Gesetz von \textsc{Hagen}-\textsc{Poiseuille} bereits im \textsc{Moody}-D
 \subsubsection{oszillierende Verdrängerpumpen}
 
 \subsubsection{rotierende Verdrängerpumpen}
+
+\subsection{Bestimmung des Dosierstroms}
+\subsubsection*{Radarfüllstandsmessung}
+\subsubsection*{Coriolis-Massendurchflussmesser}
+\subsubsection*{Volumetrischer Verdränger}
+\subsubsection*{Waage mit Wägezellen}
+\subsubsection*{Durchflusskurve der Pumpe}
+
+
 
 
 %\subsection{Normen und Standards}
