@@ -76,10 +76,9 @@ Aufgrund dieser ausgeprägten Netzstrukturen innerhalb des Verdickungsmittels is
 \subsection{Dosierung von Flüssigkeiten}
 
 \subsubsection{Charakterisierung des Dosierstroms}
-
-\paragraph*{Rheologie von Fluiden}
-Die Wissenschaft der Rheologie beschäftigt sich unter anderem mit dem Fließ- und Deformationsverhalten von Flüssigkeiten und teilt diese zunächst in \textsc{Newtonsche} und \textsc{Nichtnewtonsche} Fluide ein. Grundlage dieser Einteilung sind Untersuchungen von \textsc{Isaac Newton}, welcher sich bei konstanter Temperatur mit der Schergeschwindigkeit $D$ in Abhängigkeit von der Schubspannung $\tau$ beschäftigte. 
-Das Ergebnis dieser Arbeit ist das \textsc{Newtonsche Fließgesetz} unter \linebreak Gleichung \eqref{eq: newton}, welche den Fließwiderstand $\eta$ einer Flüssigkeit bei gegebener Temperatur als Stoffkonstante benennt. Dieser Fließwiderstand $\eta$ ist heute unter der Bezeichnung der dynamischen Viskosität bekannt.
+%\paragraph*{Rheologie von Fluiden}\\
+Um den Dosierstrom einer Flüssigkeit charakterisieren,  ist es zunächst nötigt die Fließeigenschaften beschreiben zu können. Die Wissenschaft der Rheologie beschäftigt sich unter anderem mit dem Fließ- und Deformationsverhalten von Flüssigkeiten und teilt diese zunächst in \textsc{Newtonsche} und \textsc{Nichtnewtonsche} Fluide ein. Grundlage dieser Einteilung sind Untersuchungen von \textsc{Isaac Newton}, welcher sich bei konstanter Temperatur mit der Schergeschwindigkeit $D$ in Abhängigkeit von der Schubspannung $\tau$ beschäftigte. 
+Das Ergebnis dieser Arbeit ist das \textsc{Newtonsche Fließgesetz} unter Gleichung \eqref{eq: newton}, welche den Fließwiderstand $\eta$ einer Flüssigkeit bei gegebener Temperatur als Stoffkonstante benennt. Dieser Fließwiderstand $\eta$ ist heute unter der Bezeichnung der dynamischen Viskosität bekannt.
 
 \begin{equation}
 	\label{eq: newton}
@@ -108,12 +107,11 @@ Demnach gelten alle Fluide, welche diese Linearität zwischen Schergeschwindigke
 \end{figure}
 \FloatBarrier
 
-\paragraph*{Messmethoden zur Viskositätsbestimmung}
-Allgemein beschreiben Rotationsviskosimeter einen Viskosimetertypen, bei dem die zu messende Flüssigkeit zwischen spezifisch geformten Körpern gebracht wird, von denen einer rotiert. Dabei tritt eine Scherung der Flüssigkeit auf und das aufgewendete Drehmoment am Viskosimeter wird gemessen. Neben Rotationsviskosimetern sind auch weitere Viskosimetertypen wie Kappilarviskoskosimeter und Fallkörperviskosimeter bekannt. Diese unterscheiden sich gegenüber dem Rotationsviskosimeter beispielsweise darin, dass sie im Regelfall die Viskosität von \textsc{Nichtnewtonschen} Fluiden nicht ausreichend untersucht werden kann. \cite{ROMPPRedaktion.2008}
+%\paragraph*{Messmethoden zur Viskositätsbestimmung}
+Zur Bestimmung der Viskosität müssen für ein \textsc{Newtonsches} Fluid laut Gleichung\,\eqref{eq: newton} die Schergeschwindigkeit $D$ und die Schubspannung $\tau$ bestimmt werden. Eine Möglichkeit hierfür ist die Nutzung eines sogenannten Rotationsviskosimeters. Allgemein beschreiben Rotationsviskosimeter einen Viskosimetertypen, bei dem die zu messende Flüssigkeit zwischen spezifisch geformten Körpern gebracht wird, von denen einer rotiert. Dabei tritt eine Scherung der Flüssigkeit auf und das aufgewendete Drehmoment am Viskosimeter wird gemessen. Neben Rotationsviskosimetern sind auch weitere Viskosimetertypen wie Kappilarviskoskosimeter und Fallkörperviskosimeter bekannt. Diese unterscheiden sich neben dem Aufbau gegenüber dem Rotationsviskosimeter beispielsweise auch darin, dass sie im Regelfall die Viskosität von \textsc{Nichtnewtonschen} Fluiden nicht ausreichend untersucht werden kann. \cite{ROMPPRedaktion.2008}
 
-
-\paragraph*{Bestimmung der Strömungsform}
-Um den Dosierstrom des Verdickermittels entsprechend seiner Strömungseigenschaften charakterisieren zu können, wird zunächst mit der sogenannten \textsc{Reynoldszahl} die Strömungsform bestimmt. Sie ist eine dimensionslose Kennzahl und beschreibt das Verhältnis zwischen Tragheitskräften zu Reibungskräften in strömenden Flüssigkeiten und ist für durchströmte Rohrleitungen unter Gleichung \eqref{eq: reynolds} definiert. \cite{Foth.2014}
+%\paragraph*{Bestimmung der Strömungsform}
+Nachdem die Viskosität bestimmt ist, lässt sich nun der Dosierstrom des Verdickermittels entsprechend seiner Strömungseigenschaften beschreiben. Hier für wird die sogenannte \textsc{Reynoldszahl} bestimmt. Sie ist eine dimensionslose Kennzahl und beschreibt das Verhältnis zwischen Trägheitskräften zu Reibungskräften in strömenden Flüssigkeiten und ist für durchströmte Rohrleitungen unter Gleichung\,\eqref{eq: reynolds} definiert. \cite{Foth.2014}
 
 \begin{equation}
 	\label{eq: reynolds}
@@ -127,13 +125,12 @@ Um den Dosierstrom des Verdickermittels entsprechend seiner Strömungseigenschaf
 	\overline{u} & mittlere Strömungsgeschwindigkeit\\
 \end{parameter}
 
-Anhand der Reynoldszahl lässt sich nun mithilfe der Tabelle \ref{tab:stromung_reynolds}, die jeweilige Strömungsform zuordnen. Diese Zuordnung ist wichtig, da sich je nach Strömungsform unterschiedliche Einflussgrößen auf den Druckverlust ergeben. Beispielsweise hat für eine laminare Strömung die Wandrauigkeit der Leitung keinen Einfluss mehr, wohin gegen sie in turbulenten Strömungen maßgebliche Druckverluste hervorrufen kann. In laminaren Strömungen überwiegt hierbei der glättende Einfluss der Viskosität gegenüber den Rohrunebenheiten, während in turbulenten Strömungen weitere Wirbel erzeugt werden. \cite{Bschorer.2018}
+Anhand der Reynoldszahl lässt sich nun mithilfe der Tabelle \ref{tab:stromung_reynolds}, die jeweilige Strömungsform zuordnen. Diese Zuordnung ist wichtig, da sich je nach Strömungsform unterschiedliche Einflussgrößen auf den Druckverlust somit auf die Auslegung der Dosierung ergeben. Beispielsweise hat für eine laminare Strömung die Wandrauigkeit der Leitung keinen Einfluss mehr, wohin gegen sie in turbulenten Strömungen maßgebliche Druckverluste hervorrufen kann. In laminaren Strömungen überwiegt hierbei der glättende Einfluss der Viskosität gegenüber den Rohrunebenheiten, während in turbulenten Strömungen weitere Wirbel erzeugt werden. \cite{Bschorer.2018}
 
 % Table generated by Excel2LaTeX from sheet 'Daten'
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
-	\rowcolors{2}{white}{gray!25}
 	\caption{Strömungsformen und ihre Reynoldszahlen \cite{Foth.2014}}
 	\label{tab:stromung_reynolds}
 	%\resizebox{10.5cm}{!}{
@@ -148,8 +145,7 @@ Anhand der Reynoldszahl lässt sich nun mithilfe der Tabelle \ref{tab:stromung_r
 \end{table}%
 \FloatBarrier
 
-\paragraph*{Bestimmung des Druckverlustes}
-Nach der Bestimmung der Reynoldszahl lässt sich nun mit Hilfe des \linebreak \textsc{Nikuradse-Colebrook-Moody}-Diagramms, nachfolgend \textsc{Moody}-Diagramm genannt, der Rohrreibungsbeiwert $\lambda$ bestimmen (siehe Abb. \ref{fig:moody}). Dieser Wert wiederum kann in Gleichung \eqref{eq:druckverlustbeiwert} eingesetzt werden um den Druckverlustbeiwert $\zeta_R$ für gerade Rohrleitungen zu bestimmen und lässt auf Basis der erweiterten \textsc{Bernoulli}-Gleichung \eqref{eq:druckverlust_zeta} den durch Reibung verursachten Druckverlust $\Delta p$ berechnen. \cite{Bschorer.2018}
+Nach der Bestimmung der Reynoldszahl lässt sich nun mit Hilfe des \linebreak \textsc{Nikuradse-Colebrook-Moody}-Diagramms, nachfolgend \textsc{Moody}-Diagramm genannt, die Rohrreibungszahl $\lambda$ bestimmen (siehe Abb. \ref{fig:moody}). Diese Rohrreibungszahl ist eine dimensionslose Kennzahl und kann zweckmäßig in Gleichung \eqref{eq:druckverlustbeiwert} eingesetzt werden. Somit ist es möglich den dimensionslosen Druckverlustbeiwert $\zeta_R$ für gerade Rohrleitungen zu bestimmen und ermöglicht daraufhin die Berechnung des durch Reibung verursachten Druckverlustes $\Delta p$ auf Basis der erweiterten \textsc{Bernoulli}-Gleichung \eqref{eq:druckverlust_zeta}. \cite{Bschorer.2018}
 
 \begin{equation}
 	\label{eq:druckverlustbeiwert}
@@ -178,8 +174,7 @@ Nach der Bestimmung der Reynoldszahl lässt sich nun mit Hilfe des \linebreak \t
 \FloatBarrier
 %Ende
 
-
-\paragraph*{Gesetz von  \textsc{Hagen}-\textsc{Poiseuille}}
+%\paragraph*{Gesetz von  \textsc{Hagen}-\textsc{Poiseuille}}
 Liegt für eine nicht-kompressible Flüssigkeit eine laminare Strömung vor, so ist es möglich die zuvor beschriebene Vorgehensweise zu vereinfachen und den auftretenden Druckverlust in einer geraden Rohrleitung direkt mit dem Gesetz von \textsc{Hagen}-\textsc{Poiseuille} zu bestimmen.  Der Druckverlust wird hierbei in Abhängigkeit vom Volumenstrom, der Rohrleitungslänge, des Rohrdurchmessers und der Viskosität berechnet. Die Definition des Gesetzes, aufgelöst nach dem Druckverlust, findet sich unter Gleichung \eqref{eq:hagen}. \cite{Foth.2005}
 
 \begin{equation}
@@ -197,6 +192,7 @@ Liegt für eine nicht-kompressible Flüssigkeit eine laminare Strömung vor, so 
 Da das Gesetz von \textsc{Hagen}-\textsc{Poiseuille} bereits im \textsc{Moody}-Diagramm enthalten ist, können beide Vorgehensweisen genutzt werden um die jeweils andere Rechnung zu überprüfen. Sollen Rohrleitungseinbauten wie Armaturen, Ventile oder Bogenstücke einberechnet werden, vereinfacht jedoch aufgrund von tabellierten Druckverlustbeiwerten möglicher Einbauten die erweiterte \textsc{Bernoulli}-Gleichung die Berechnung des gesamten reibungsbedingten Druckverlustes.
 
 \subsubsection{Dosierpumpen}
+Da Flüssigkeiten keine hohen Abweichungen der Dichte in Abhängigkeit von geringen Druck- und Temperaturschwankungen aufzeigen, kann selbst über eine volumenbegrenzte Dosierung sehr genau sein. Durch die fest definierten Abgrenzungsräume wird eine solche volumenbegrenzte FLüssigkeitsdosierung in aller Regel mit rotierenden oder osizillierenden Verdränger-Dosierpumpen umgesetzt.  Das je nach Dreh- oder Hubzahl ein festes Volumen gefördert wird eignen sich daher gut, wenn ein Dosierverfahren ohne weitere Messeinrichtung vorausgesetzt wird. 
 
 \paragraph*{oszillierende Verdrängerpumpen}
 
@@ -258,9 +254,12 @@ So lassen sich Fässer in dieser Größenordnung beispielsweise vorwiegend als 4
 \subsubsection{Sicherheit von Chemieanlagen}
 
 \subsection{Allgemein heuristische Entscheidungsverfahren}
-\subsection{Technische Zeichnungen}
+
+\subsection{Technische Planung}
 \subsubsection{R\&I- Fließbild}
-\subsubsection{Leitungsplanung}
+\subsubsection{Rohrleitungsplanung}
+
+\subsubsection{Signalverarbeitungsplanung}
 
 \subsection{Stand der Technik zur Dosierung hochviskoser Verdickungsmittel}
 
