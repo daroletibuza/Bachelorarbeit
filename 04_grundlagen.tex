@@ -106,12 +106,14 @@ Schlussendlich gilt für die Einteilung der Fluide nach Gleichung \eqref{eq: new
 
 \begin{figure}[h!]
 	\begin{minipage}[b]{0.475\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/fluidarten}
 		\caption{Fließkurven für verschiedene \linebreak Fluide, erstellt nach \cite{Holze.2010}}
 		\label{fig: arten_fluide}
 	\end{minipage}
 	\hspace*{0.05\textwidth}
 	\begin{minipage}[b]{0.475\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/fluidarten2}
 		\caption{Viskositätskurven für verschiedene Fluide, erstellt nach \cite{MunzingChemieGmbH.2018}}
 		\label{fig: arten_fluide2}
@@ -237,9 +239,24 @@ Da in der Realität die rein geometrische Volumenabgrenzung durch die "`Kammern"
 Verursacht werden diese Abweichungen vom theoretischen Förderstrom durch Leckage- und Elastizitätseinflüsse, welche hauptsächlich durch den von der Pumpe geforderten Differenzdruck entstehen. Der Arbeitsraum der Dosierpumpe ist daher so starr und dicht wie möglich auszuführen.
 Da neben den Fluid- und den Betriebsbedingungen auch die Bauart bzw. die Pumpengeometrie Einfluss auf den volumetrischen Wirkungsgrad nimmt, ist es wichtig sich genauer mit den verschiedenen Arten der Verdrängungspumpen auseinanderzusetzen. Auch Einflüsse, die die Einbindung und Handhabung in der Produktion betreffen, können entscheidend für die Wahl des Pumpentyps sein.\\
 
-Zum einen gibt es die Kategorie der oszillierenden Dosierpumpen. Diese Pumpen kennzeichnen sich dadurch, dass sie ein Fluid durch Hubbewegungen eines Verdängerkörpers fördern. Dieser verdrängende Körper kann bei einer klassischen Pumpe ein zylindrischer Kolben sein, jedoch sind heutzutage vorrangig Membranpumpen im Einsatz bei der das Fördermedium durch eine spezielle Membran getrennt ist (vgl. Abbildung \ref{fig:kolben_membran_pumpe}). 
+Zum einen gibt es die Kategorie der oszillierenden Dosierpumpen. Diese Pumpen kennzeichnen sich dadurch, dass sie ein Fluid durch Hubbewegungen eines Verdängerkörpers fördern. Dieser verdrängende Körper kann bei einer klassischen Pumpe ein zylindrischer Kolben sein, jedoch sind heutzutage vorrangig Membranpumpen im Einsatz bei der das Fördermedium durch eine spezielle Membran getrennt ist (vgl. Abbildungen \ref{fig:kolbenpumpe} und \ref{fig:membranpumpe}). 
 
-\missingfigure{Kolben- und Membranpumpe}
+\begin{figure}[h!]
+	\begin{minipage}[b]{0.475\textwidth}
+		\centering
+		\includegraphics[height=4.25cm]{img/kolbenpumpe}
+		\caption{Skizze einer Kolbenpumpe}
+		\label{fig:kolbenpumpe}
+	\end{minipage}
+	%\hspace*{0.05\textwidth}
+	\begin{minipage}[b]{0.475\textwidth}
+		\centering
+		\includegraphics[height=4.25cm]{img/membranpumpe}
+		\caption{Skizze einer Membranpumpe}
+		\label{fig:membranpumpe}
+	\end{minipage}
+\end{figure}
+\FloatBarrier
 
 Die im Betrieb nutzbaren Stellgrößen bei diesen Pumpen konzentrieren sich aufgrund ihrer Funktionsweise auf die Hublänge und die Hubfrequenz. Durch den geometrisch genau definierten Hubraum und weitestgehend Leckfreien Pumpenventilen und Kolbenabdichtungen, eigenen sich oszillierende Dosierpumpen am günstigsten für die Flüssigkeitsdosierung. Durch das Hubweise fördern der Flüssigkeit ergibt sich jedoch ein digitaler Charakter im Förderstrom. Somit eignen sich diese Pumpen lediglich für diskontinuierliche Dosierung mittels Hubzählung. Der Massenstrom der sich daraus für eine einzylindrige Kolbenpumpe ergibt, ist unter Gleichung \eqref{eq:oz_masse} zu finden. \cite{Vetter.2002}
 
@@ -259,9 +276,29 @@ Die im Betrieb nutzbaren Stellgrößen bei diesen Pumpen konzentrieren sich aufg
 %\paragraph*{rotierende Verdrängerpumpen}
 Die Kategorie der rotierenden Dosierpumpen ist im Vergleich zu oszillierenden Dosierpumpen deutlich fassettenreicher. Das hierbei genutzte Verdrängervolumen basiert auf Maßtoleranzen, Spaltmaßen und Elastizitäten des Pumpraumes, welches durch Rotation der Verdrängersystems gefördert wird. Aufgrund dieser Toleranzen treten in rotierenden Verdrängerpumpen für niedrigviskose Flüssigkeiten merkliche, innere Leckagen auf und sind damit weniger genau als oszillierende Verdrängerpumpen. Sie eignen sich daher hauptsächlich für viskose Fluide. Eine Auswahl an typischen, rotierenden Dosierpumpen ist unter Abbildung \ref{fig:rotat_pumpe} dargestellt.
 
-\missingfigure{Bilder Rotationspumpen ergänzen}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{img/rotationspumpen}
+	\caption{Beispiele für Rotationspumpen}
+	\label{fig:rotat_pumpe}
+\end{figure}
+\FloatBarrier
 
-Hauptstellgröße dieser Pumpenart ist die Drehzahl. Ebenso wie die Hublänge/Hubfrequenz oszillierender Verdrängerpumpen besteht bei rotierenden Verdrängerpumpen eine direkte Proportionalität zwischen Drehzahl und Förderstrom. Eine einheitliche Charakteristik des Förderstroms lässt sich für diese Pumpen nicht definieren, da sich trotz Rotationsprinzip die Förderweisen stark unterscheiden. So weisen weißen beispielsweise Schlauchpumpen im Vergleich zu Zahnradpumpen eine viel deutlichere Pulsation des Förderstroms auf obwohl beide Pumpe den Rotationspumpen zugeordnet werden. Demnach lässt sich auch der Dosierstrom lediglich allgemein wie in Gleichung \eqref{eq:roations_strom} dargestellt beschreiben. Je nach Pumpentyp lässt dann sich die Ausführung der geometrischen Volumenabgrenzung detaillierter ausführen. \cite{Vetter.2002}
+Hauptstellgröße dieser Pumpenart ist die Drehzahl. Ebenso wie bei der Hublänge bzw. der Hubfrequenz oszillierender Verdrängerpumpen besteht bei rotierenden Verdrängerpumpen eine direkte Proportionalität zwischen Drehzahl und Förderstrom. Eine einheitliche Charakteristik des Förderstroms lässt sich für diese Pumpen nicht definieren, da sich trotz Rotationsprinzip die Förderweisen stark unterscheiden. So weisen weißen beispielsweise Schlauchpumpen im Vergleich zu Zahnradpumpen eine viel deutlichere Pulsation des Förderstroms auf, obwohl beide Pumpe den Rotationspumpen zugeordnet werden. Demnach lässt sich auch der Dosierstrom lediglich allgemein wie in Gleichung \eqref{eq:rotations_strom} dargestellt beschreiben. Je nach Pumpentyp lässt dann sich die Ausführung der geometrischen Volumenabgrenzung detaillierter ausführen. \cite{Vetter.2002}
+
+
+\begin{equation}
+	\label{eq:rotations_strom}
+	\dot{m} = \rho*V_u*n*\eta_V
+\end{equation}
+\begin{parameter}
+	\dot{m}		& Fördermassenstrom \\
+	V_u			& Verdrängungsvolumen pro Umdrehung\\
+	h_K			& Kolbenquerschnitt\\
+	n			& Drehzahl\\
+	\rho		& Dichte der Flüssigkeit\\
+	\eta_V 		& volumetrischer Wirkungsgrad\
+\end{parameter}
 
 \todo[inline]{fehlender TVergleich zwischen verschiedenen Pumpentypen}
 
