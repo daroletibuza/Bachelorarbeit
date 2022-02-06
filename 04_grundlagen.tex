@@ -279,12 +279,12 @@ Die Kategorie der rotierenden Dosierpumpen ist im Vergleich zu oszillierenden Do
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{img/rotationspumpen}
-	\caption{Beispiele für Rotationspumpen}
+	\caption{Skizzen für Rotationspumpen}
 	\label{fig:rotat_pumpe}
 \end{figure}
 \FloatBarrier
 
-Hauptstellgröße dieser Pumpenart ist die Drehzahl. Ebenso wie bei der Hublänge bzw. der Hubfrequenz oszillierender Verdrängerpumpen besteht bei rotierenden Verdrängerpumpen eine direkte Proportionalität zwischen Drehzahl und Förderstrom. Eine einheitliche Charakteristik des Förderstroms lässt sich für diese Pumpen nicht definieren, da sich trotz Rotationsprinzip die Förderweisen stark unterscheiden. So weisen weißen beispielsweise Schlauchpumpen im Vergleich zu Zahnradpumpen eine viel deutlichere Pulsation des Förderstroms auf, obwohl beide Pumpe den Rotationspumpen zugeordnet werden. Demnach lässt sich auch der Dosierstrom lediglich allgemein wie in Gleichung \eqref{eq:rotations_strom} dargestellt beschreiben. Je nach Pumpentyp lässt dann sich die Ausführung der geometrischen Volumenabgrenzung detaillierter ausführen. \cite{Vetter.2002}
+Hauptstellgröße dieser Pumpenart ist die Drehzahl. Ebenso wie bei der Hublänge bzw. der Hubfrequenz oszillierender Verdrängerpumpen besteht bei rotierenden Verdrängerpumpen eine direkte Proportionalität zwischen Drehzahl und Förderstrom. Eine einheitliche Charakteristik des Förderstroms lässt sich für diese Pumpen nicht definieren, da sich trotz Rotationsprinzip die Förderweisen stark unterscheiden. So weisen weißen beispielsweise Schlauchpumpen im Vergleich zu Zahnradpumpen eine viel deutlichere Pulsation des Förderstroms auf, obwohl beide Pumpe den Rotationspumpen zugeordnet werden. Demnach lässt sich auch der Dosierstrom lediglich allgemein wie in Gleichung \eqref{eq:rotations_strom} dargestellt beschreiben. Je nach Pumpentyp lässt sich dann die geometrische Volumenabgrenzung detaillierter ausführen. \cite{Vetter.2002}
 
 
 \begin{equation}
@@ -300,17 +300,27 @@ Hauptstellgröße dieser Pumpenart ist die Drehzahl. Ebenso wie bei der Hubläng
 	\eta_V 		& volumetrischer Wirkungsgrad\
 \end{parameter}
 
-\todo[inline]{fehlender TVergleich zwischen verschiedenen Pumpentypen}
-
-\missingfigure{Tabelle mit vergleich der Pumpen aus Gerhard Vetter}
+Um nach der Vorstellung der verschiedenen Pumpentypen eine Auswahl für die eigene Dosieraufgabe auswählen zu können, sind die verschiedene Kriterien wie Wirkungsgrad, förderbare Viskosität, Druckstabilität und weitere heranzuziehen. Ausführlich beschriebene Auswahlhilfen in Form von Tabellen und Diagrammen bieten hierbei \cite[S. 125, 219, 659 ff.]{Vetter.2002}, sowie \cite[S. 224 ff.]{Bierwerth.2019}.
 
 
 \subsubsection{Ermittlung des Dosierstroms}
+Je nach Anforderung an die Genauigkeit der Dosierung kommen verschiedene Messsysteme in Frage, um den Dosierstrom zu bestimmen. Hierbei wird zwischen redundanzfreien Dosiersystemen und Dosiersystemen mit Messredundanz unterschieden. \\
+Für redundanzfreie Dosiersysteme wird hierbei auf lediglich eine Systemkomponente, beispielsweise der Kennlinie einer Dosierpumpe, vertraut um den geforderten Dosierstrom umzusetzen. Dosiert diese Systemkomponente fehlerhaft bleibt der Fehler unentdeckt. Diese Art der Dosierregelung ist für Prozesse mit geringen Anspruch an Dosiergenauigkeit möglich und deren Konsequenzen im Produktionsprozess tolerierbar sind. In Abbildung \ref{fig:redundanzfrei} ist ein Beispiel einer solch redundanzfreien Dosiersystems mit Hilfe einer Pumpenkennlinie dargestellt.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{img/redundanzfrei}
+	\caption{Skizze für redundanzfreies Dosiersystem, erstellt nach \cite{Vetter.2002}}
+	\label{fig:redundanzfrei}
+\end{figure}
+\FloatBarrier
+
+In Dosiersystemen mit Messredundanz werden solche Abweichungen durch eine weitere Systemkomponente, wie beispielsweise einem zusätzlichen Durchflussmesser, registriert. Die dadurch geschaffene Fehlervermeidung erhöht die Produktionssicherheit im Prozess, erfordert jedoch auch bereits bei Ausfall einer der Komponenten eine Fehlersuche.
+
 \paragraph*{Radarfüllstandsmessung}
 \paragraph*{Coriolis-Massendurchflussmesser}
-\paragraph*{Volumetrischer Verdränger}
-\paragraph*{Waage mit Wägezellen}
-\paragraph*{Durchflusskurve der Pumpe}
+\paragraph*{Durchflussmesser mit Verdrängerkörper}
+\paragraph*{Gravimetrische Erfassung über Wägezellen}
 
 \subsection{Chemische Produktion und Prozesssicherheit}
 \subsubsection{Produktionsweisen in der Chemie}
