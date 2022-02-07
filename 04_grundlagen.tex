@@ -326,21 +326,20 @@ In Dosiersystemen mit Messredundanz werden solche Abweichungen durch eine weiter
 \FloatBarrier
 
 
-Eine Möglichkeit einer Systemkomponente für die redundante Bestimmung des Dosierstroms ist ein Coriolis-Massendurchflussmesser. Hierbei wird unter Nutzung der einer schwingenden Bewegung die auftretende Corioliskraft zur Messung des Massenstrom eines strömenden Fluides genutzt. Diese wird über induktive Messung der Phasendifferenz zwischen Rohreinlauf und Rohrauslauf bestimmt. Vorteil dieser Art der Durchflussmessung ist, dass neben dem Massenstrom auch Eigenschaften wie die Viskosität, der Massenanteil und die Dichte des Fluides bestimmt werden können. Diese Messungen basieren dabei dann jedoch auf leicht anderen Messmethoden, als die der Bestimmung des Massenstroms. Nachteil ist jedoch, dass für die Messung nach dem Prinzip der Corioliskraft hohe Strömungsgeschwindigkeiten \\\cite{Ignatowitz.2015,D.Stepanek.Unbekannt}
+Eine Möglichkeit einer Systemkomponente für die redundante Bestimmung des Dosierstroms ist ein Coriolis-Massendurchflussmesser. Hierbei wird unter Nutzung der einer schwingenden Bewegung die auftretende Corioliskraft zur Messung des Massenstrom eines strömenden Fluides genutzt. Diese wird über induktive Messung der Phasendifferenz zwischen Rohreinlauf und Rohrauslauf bestimmt. Ein Vorteil dieser Art der Durchflussmessung ist, dass neben dem Massenstrom auch Eigenschaften wie die Viskosität, der Massenanteil und die Dichte des Fluides bestimmt werden können. Diese Messungen basieren dabei dann jedoch auf leicht anderen Messmethoden, als die der Bestimmung des Massenstroms. \cite{Ignatowitz.2015}\\
+Nachteil ist jedoch, dass für die Messung nach dem Prinzip der Corioliskraft hohe Strömungsgeschwindigkeiten notwendig sind. Ähnliches gilt übrigens auch für die Messung mittels magnetisch-induktiven Durchflussmesser bei der mindestens ca. \SI{0,5}{\meter \per \second} Strömungsgeschwindigkeit notwendig sind. Das kann zum Problem werden, wenn die Strömungsgeschwindigkeit aufgrund von Druckverlusten nicht weiter erhöht werden kann. Das Messverfahren der Ultraschall-Durchflussmessung wäre zu den bereits genannten Verfahren eine Alternative, jedoch können durch zu hohe Viskosität des Fluides die erzeugten mechanischen Wellen zu sehr gedämpft werden und es erfolgt keine sinnvolle Messung. \cite{D.Stepanek.Unbekannt, Wikipedia.2021,Wikipedia.2020}
 
-\todo{NAchteil COriolis und Ovalrad ergänzen}
-\todo{MID und Ultraschall ergänzen ? --> nachfragen}
-\todo{Ovalrad und Turbinen messer auf allgemeine Namen vereinfachen}
+Neben auf verschienden physikalischen Effekten beruhenden Durchflussmessern gibt es auch so genannte Mengenmesser. Diese beruhen meist auf einem Verdrängerprinzip und fungieren als Volumen- oder Geschwindigkeitszähler. Typische Beispiele hierfür sind Ovalradzähler und Turbinenzähler. Volumenzähler bestimmen die durchgeflossene Menge an Fluid durch meist rotierende Verdrängerkörper wie Zahnräder oder Drehkolben. Durch den Fluss des Fluides drehen sich die Verdrängerkörper und es lassen sich pro Umdrehung die transportierten Volumina des Fluides bestimmen. Vorteil dieser Zähler ist, dass sie meist sehr genau arbeiten und deshalb im Alltag oft als Zähler für Wasser, Benzin  oder Diesel eingesetzt werden. \cite{Ignatowitz.2015}
+Ihr Nachteil besteht hauptsächlich im mechanischen Wirkprinzip. Dieses hat zur Folge, dass durch zu drehenden Verdrängerkörper für höhere Viskositäten von Fluiden zusätzliche Druckverluste entstehen. Zudem obliegen die Verdrängerkörper je nach Medium auch einem gewissen Verschleiß durch die mechanische Bewegung oder dem Fluid selbst. Zur Bestimmung des Durchflusses ist das gezählte Fördervolumen durch die Förderzeit zu berechnen.\\
 
-Neben auf physikalischen Wirkprinzipien basierende Durchflussmesser gibt es auch so genannte Mengenmesser. Diese beruhen meist auf einem Verdrängerprinzip und fungieren meist als Volumen- oder Geschwindigkeitszähler. Typische Beispiele hierfür sind Ovalradzähler und Turbinenzähler. Ovalradzähler sind volumetrische Zähler und bestimmen die durchgeflossene Menge an Fluid durch zwei miteinander verzahnte Ovalradkörper. Durch den Fluss des Fluides drehen sich die Ovalräder es lassen sich pro Umdrehung die transportierten Volumina des Fluides bestimmen. Vorteil dieser Zähler ist, dass sie meist sehr genau arbeiten und deshalb im Alltag oft als Zähler für Wasser, Benzin  oder Diesel eingesetzt werden.\cite{Ignatowitz.2015}
-
-
-
-\paragraph*{Radarfüllstandsmessung}
-\paragraph*{Gravimetrische Erfassung über Wägezellen}
+Neben der Messung mittels Durchflussmesser besteht zusätzlich auch die Möglichkeit den Dosierstrom über ein Loss-in-Weight Verfahren zu bestimmen. Mit diesem hauptsächlich für schlecht fließende, inhomogene Schüttgüter genutztem Verfahren wird der Massenstrom mittels Differentialdosierer bestimmt. Dieser Differentialdosierer misst den Dosierstrom im klassischen Sinne mit Hilfe einer Waage die Gewichtsabnahme über die Zeit. Alternativ ist bei fester, bekannter Geometrie des Dosierbehälters und ausreichender Genauigkeit das selbe Prinzip für eine Füllstands- bzw. Volumenabnahme mit Hilfe eines Radarfüllstandsensors möglich. Vorteil der Förderstrombestimmung über ein solches Loss-in-Weight oder Loss-in-Volume Verfahren liegt darin, dass diese nicht vom Fließverhalten des Mediums beeinflusst werden. Jedoch ist zu bedenken, dass eine ausreichende Auflösung der Messbereiche für die jeweilige Dosierung, sowie der richtige Aufbau für das Messprinzip garantiert werden muss. So ist beispielsweise für die Massenmessung die Entkopplung des Wägesystems und für die Radafüllstandsmessung die einwandfreie Reflexion der Mikrowellensignale an der Dosiergutoberfläche zu gewährleisten. Zudem ist die Dosiergenauigkeit der Radarfüllstandmessung  stark von der Höhe des Dosierbehälters abhängig. Selbst bei $\pm$ \SI{2}{\milli \meter} Messabweichung können diese je nach Behälter bereits mehrere Gramm bis Kilogramm Abweichung bedeuten.\cite{Vetter.2002, VEGA.07.02.2022}
 
 
-\todo[inline]{Beschreibung der Messprinzipien}
+%%\paragraph*{Radarfüllstandsmessung}
+%%\paragraph*{Gravimetrische Erfassung über Wägezellen}
+%
+%
+%\todo[inline]{Beschreibung der Messprinzipien}
 
 
 \subsection{Stand der Technik zur Dosierung hochviskoser Verdickungsmittel}
