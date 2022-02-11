@@ -1,89 +1,117 @@
 <titleblocktemplate name="Instrumentation Loop Diagram">
     <information></information>
     <logos/>
-    <grid cols="t7%;t7%;t35%;t20%;t10%;t7%;t7%;t7%;" rows="25;25;">
-        <field row="0" name="Datum" hadjust="true" align="left" col="0" displaylabel="false" valign="center">
+    <grid rows="25;25;" cols="t10%;t10%;t15%;t35%;t9%;t7%;t7%;t7%;">
+        <field valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="0" name="Datum">
             <value>
-                <translation lang="de">Datum</translation>
+                <translation lang="de">Datum:</translation>
             </value>
             <label>
-                <translation lang="hr">Autor</translation>
                 <translation lang="da">Forfatter</translation>
-                <translation lang="pl">Autor</translation>
                 <translation lang="it">Autore</translation>
-                <translation lang="ro">Autor</translation>
-                <translation lang="ar">المؤلف</translation>
-                <translation lang="pt">Autor</translation>
-                <translation lang="cs">Autor</translation>
-                <translation lang="es">Autor</translation>
-                <translation lang="de">Datum</translation>
-                <translation lang="en">Author</translation>
                 <translation lang="ca">Autor</translation>
-                <translation lang="fr">Auteur</translation>
                 <translation lang="el">Σχεδίαση</translation>
+                <translation lang="hr">Autor</translation>
+                <translation lang="de">Datum</translation>
+                <translation lang="pt">Autor</translation>
+                <translation lang="fr">Auteur</translation>
+                <translation lang="en">Author</translation>
+                <translation lang="es">Autor</translation>
                 <translation lang="ru">Автор</translation>
+                <translation lang="cs">Autor</translation>
+                <translation lang="ar">المؤلف</translation>
+                <translation lang="ro">Autor</translation>
+                <translation lang="pl">Autor</translation>
             </label>
         </field>
-        <field row="0" name="Datum" hadjust="true" align="center" col="1" displaylabel="false" valign="center">
+        <field valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="1" name="Datum">
             <value>
                 <translation lang="de">%date</translation>
             </value>
             <label>
-                <translation lang="hr">Naslov</translation>
                 <translation lang="da">Titel</translation>
-                <translation lang="pl">Tytuł</translation>
                 <translation lang="it">Titolo</translation>
-                <translation lang="ro">Titlu</translation>
-                <translation lang="ar">عنوان</translation>
-                <translation lang="pt">Título</translation>
-                <translation lang="cs">Název</translation>
-                <translation lang="es">Título</translation>
-                <translation lang="de">Datum</translation>
-                <translation lang="en">Title</translation>
                 <translation lang="ca">Títol</translation>
+                <translation lang="hr">Naslov</translation>
+                <translation lang="de">Datum</translation>
+                <translation lang="pt">Título</translation>
                 <translation lang="fr">Titre</translation>
+                <translation lang="en">Title</translation>
+                <translation lang="es">Título</translation>
                 <translation lang="ru">Название</translation>
+                <translation lang="cs">Název</translation>
+                <translation lang="ar">عنوان</translation>
+                <translation lang="ro">Titlu</translation>
+                <translation lang="pl">Tytuł</translation>
             </label>
         </field>
-        <field row="0" fontsize="9" name="Benennung" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+        <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="true" align="left" col="2" name="Ort">
             <value>
-                <translation lang="de">Instrument Loop</translation>
+                <translation lang="de">%locmach</translation>
+            </value>
+            <label>
+                <translation lang="de">Ort</translation>
+            </label>
+        </field>
+        <field fontsize="11" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="3" name="Benennung">
+            <value>
+                <translation lang="de">Instrumental Loop</translation>
             </value>
             <label>
                 <translation lang="de">Benennung</translation>
             </label>
         </field>
-        <field row="0" fontsize="9" name="Leuna" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+        <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="4" name="Zeichnungsnummer">
             <value>
-                <translation lang="de">Leuna</translation>
+                <translation lang="de">Zeich. Nr.</translation>
             </value>
-            <label/>
-        </field>
-        <field row="0" fontsize="9" name="Zeichnungsnummer" hadjust="true" align="center" col="4" displaylabel="true" valign="center">
-            <value/>
             <label>
-                <translation lang="de">Zg.-Nr.</translation>
+                <translation lang="de">Zeichnungsnummer</translation>
             </label>
         </field>
-        <field row="0" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="true" valign="center">
+        <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="true" align="center" col="5" name="Blatt">
             <value/>
             <label>
                 <translation lang="de">Blatt</translation>
             </label>
         </field>
-        <field row="0" fontsize="9" name="Format" hadjust="true" align="center" col="6" displaylabel="true" valign="center">
-            <value/>
-            <label/>
-        </field>
-        <field row="1" fontsize="9" name="Autor" align="center" col="0" displaylabel="true" valign="center">
+        <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="6" name="Format">
             <value>
-                <translation lang="de">%author</translation>
+                <translation lang="de">Format</translation>
             </value>
+            <label>
+                <translation lang="de">Format</translation>
+            </label>
+        </field>
+        <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="7" name="Revisionsnummer">
+            <value>
+                <translation lang="de">Rev.</translation>
+            </value>
+            <label>
+                <translation lang="de">Revisionsnummer</translation>
+            </label>
+        </field>
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="0" name="Autor">
+            <value/>
             <label>
                 <translation lang="de">Autor</translation>
             </label>
         </field>
-        <field row="1" fontsize="9" name="Titel" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="1" name="Autor">
+            <value>
+                <translation lang="de">%author</translation>
+            </value>
+            <label/>
+        </field>
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="left" col="2" name="Anlage">
+            <value>
+                <translation lang="de">%plant</translation>
+            </value>
+            <label>
+                <translation lang="de">Anlage</translation>
+            </label>
+        </field>
+        <field fontsize="11" valign="center" row="1" hadjust="true" displaylabel="false" align="center" col="3" name="Titel">
             <value>
                 <translation lang="de">%title</translation>
             </value>
@@ -91,15 +119,27 @@
                 <translation lang="de">Titel</translation>
             </label>
         </field>
-        <field row="1" fontsize="9" name="Latex Plant Germany" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="4" name="">
             <value>
-                <translation lang="de">Latex Plant Germany</translation>
+                <translation lang="de">%{znr}</translation>
             </value>
             <label/>
         </field>
-        <field row="1" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="false" valign="center">
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="false" align="center" col="5" name="Blatt">
             <value>
-                <translation lang="de">%page</translation>
+                <translation lang="de">%{folio-id} / %{folio-total}</translation>
+            </value>
+            <label/>
+        </field>
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="6" name="">
+            <value>
+                <translation lang="de">%{format}</translation>
+            </value>
+            <label/>
+        </field>
+        <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="false" align="center" col="7" name="Revisionsnummer">
+            <value>
+                <translation lang="de">%indexrev</translation>
             </value>
             <label/>
         </field>
