@@ -1,0 +1,107 @@
+<titleblocktemplate name="Instrumentation Loop Diagram">
+    <information></information>
+    <logos/>
+    <grid cols="t7%;t7%;t35%;t20%;t10%;t7%;t7%;t7%;" rows="25;25;">
+        <field row="0" name="Datum" hadjust="true" align="left" col="0" displaylabel="false" valign="center">
+            <value>
+                <translation lang="de">Datum</translation>
+            </value>
+            <label>
+                <translation lang="hr">Autor</translation>
+                <translation lang="da">Forfatter</translation>
+                <translation lang="pl">Autor</translation>
+                <translation lang="it">Autore</translation>
+                <translation lang="ro">Autor</translation>
+                <translation lang="ar">المؤلف</translation>
+                <translation lang="pt">Autor</translation>
+                <translation lang="cs">Autor</translation>
+                <translation lang="es">Autor</translation>
+                <translation lang="de">Datum</translation>
+                <translation lang="en">Author</translation>
+                <translation lang="ca">Autor</translation>
+                <translation lang="fr">Auteur</translation>
+                <translation lang="el">Σχεδίαση</translation>
+                <translation lang="ru">Автор</translation>
+            </label>
+        </field>
+        <field row="0" name="Datum" hadjust="true" align="center" col="1" displaylabel="false" valign="center">
+            <value>
+                <translation lang="de">%date</translation>
+            </value>
+            <label>
+                <translation lang="hr">Naslov</translation>
+                <translation lang="da">Titel</translation>
+                <translation lang="pl">Tytuł</translation>
+                <translation lang="it">Titolo</translation>
+                <translation lang="ro">Titlu</translation>
+                <translation lang="ar">عنوان</translation>
+                <translation lang="pt">Título</translation>
+                <translation lang="cs">Název</translation>
+                <translation lang="es">Título</translation>
+                <translation lang="de">Datum</translation>
+                <translation lang="en">Title</translation>
+                <translation lang="ca">Títol</translation>
+                <translation lang="fr">Titre</translation>
+                <translation lang="ru">Название</translation>
+            </label>
+        </field>
+        <field row="0" fontsize="9" name="Benennung" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+            <value>
+                <translation lang="de">Instrument Loop</translation>
+            </value>
+            <label>
+                <translation lang="de">Benennung</translation>
+            </label>
+        </field>
+        <field row="0" fontsize="9" name="Leuna" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+            <value>
+                <translation lang="de">Leuna</translation>
+            </value>
+            <label/>
+        </field>
+        <field row="0" fontsize="9" name="Zeichnungsnummer" hadjust="true" align="center" col="4" displaylabel="true" valign="center">
+            <value/>
+            <label>
+                <translation lang="de">Zg.-Nr.</translation>
+            </label>
+        </field>
+        <field row="0" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="true" valign="center">
+            <value/>
+            <label>
+                <translation lang="de">Blatt</translation>
+            </label>
+        </field>
+        <field row="0" fontsize="9" name="Format" hadjust="true" align="center" col="6" displaylabel="true" valign="center">
+            <value/>
+            <label/>
+        </field>
+        <field row="1" fontsize="9" name="Autor" align="center" col="0" displaylabel="true" valign="center">
+            <value>
+                <translation lang="de">%author</translation>
+            </value>
+            <label>
+                <translation lang="de">Autor</translation>
+            </label>
+        </field>
+        <field row="1" fontsize="9" name="Titel" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+            <value>
+                <translation lang="de">%title</translation>
+            </value>
+            <label>
+                <translation lang="de">Titel</translation>
+            </label>
+        </field>
+        <field row="1" fontsize="9" name="Latex Plant Germany" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+            <value>
+                <translation lang="de">Latex Plant Germany</translation>
+            </value>
+            <label/>
+        </field>
+        <field row="1" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="false" valign="center">
+            <value>
+                <translation lang="de">%page</translation>
+            </value>
+            <label/>
+        </field>
+    </grid>
+</titleblocktemplate>

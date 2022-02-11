@@ -1,91 +1,119 @@
-<project version="0.80" title="Vorlage IDL">
+<project title="Vorlage IDL" version="0.80">
     <titleblocktemplates>
         <titleblocktemplate name="Instrumentation Loop Diagram">
             <information/>
             <logos/>
-            <grid cols="t7%;t7%;t35%;t20%;t10%;t7%;t7%;t7%;" rows="25;25;">
-                <field row="0" name="Datum" hadjust="true" align="left" col="0" displaylabel="false" valign="center">
+            <grid rows="25;25;" cols="t10%;t10%;t15%;t35%;t9%;t7%;t7%;t7%;">
+                <field valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="0" name="Datum">
                     <value>
-                        <translation lang="de">Datum</translation>
+                        <translation lang="de">Datum:</translation>
                     </value>
                     <label>
-                        <translation lang="hr">Autor</translation>
                         <translation lang="da">Forfatter</translation>
-                        <translation lang="pl">Autor</translation>
                         <translation lang="it">Autore</translation>
-                        <translation lang="ro">Autor</translation>
-                        <translation lang="ar">المؤلف</translation>
-                        <translation lang="pt">Autor</translation>
-                        <translation lang="cs">Autor</translation>
-                        <translation lang="es">Autor</translation>
-                        <translation lang="de">Datum</translation>
-                        <translation lang="en">Author</translation>
                         <translation lang="ca">Autor</translation>
-                        <translation lang="fr">Auteur</translation>
                         <translation lang="el">Σχεδίαση</translation>
+                        <translation lang="hr">Autor</translation>
+                        <translation lang="de">Datum</translation>
+                        <translation lang="pt">Autor</translation>
+                        <translation lang="fr">Auteur</translation>
+                        <translation lang="en">Author</translation>
+                        <translation lang="es">Autor</translation>
                         <translation lang="ru">Автор</translation>
+                        <translation lang="cs">Autor</translation>
+                        <translation lang="ar">المؤلف</translation>
+                        <translation lang="ro">Autor</translation>
+                        <translation lang="pl">Autor</translation>
                     </label>
                 </field>
-                <field row="0" name="Datum" hadjust="true" align="center" col="1" displaylabel="false" valign="center">
+                <field valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="1" name="Datum">
                     <value>
                         <translation lang="de">%date</translation>
                     </value>
                     <label>
-                        <translation lang="hr">Naslov</translation>
                         <translation lang="da">Titel</translation>
-                        <translation lang="pl">Tytuł</translation>
                         <translation lang="it">Titolo</translation>
-                        <translation lang="ro">Titlu</translation>
-                        <translation lang="ar">عنوان</translation>
-                        <translation lang="pt">Título</translation>
-                        <translation lang="cs">Název</translation>
-                        <translation lang="es">Título</translation>
-                        <translation lang="de">Datum</translation>
-                        <translation lang="en">Title</translation>
                         <translation lang="ca">Títol</translation>
+                        <translation lang="hr">Naslov</translation>
+                        <translation lang="de">Datum</translation>
+                        <translation lang="pt">Título</translation>
                         <translation lang="fr">Titre</translation>
+                        <translation lang="en">Title</translation>
+                        <translation lang="es">Título</translation>
                         <translation lang="ru">Название</translation>
+                        <translation lang="cs">Název</translation>
+                        <translation lang="ar">عنوان</translation>
+                        <translation lang="ro">Titlu</translation>
+                        <translation lang="pl">Tytuł</translation>
                     </label>
                 </field>
-                <field row="0" fontsize="9" name="Benennung" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+                <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="true" align="left" col="2" name="Ort">
                     <value>
-                        <translation lang="de">Instrument Loop</translation>
+                        <translation lang="de">%locmach</translation>
+                    </value>
+                    <label>
+                        <translation lang="de">Ort</translation>
+                    </label>
+                </field>
+                <field fontsize="11" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="3" name="Benennung">
+                    <value>
+                        <translation lang="de">Instrumental Loop</translation>
                     </value>
                     <label>
                         <translation lang="de">Benennung</translation>
                     </label>
                 </field>
-                <field row="0" fontsize="9" name="Leuna" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+                <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="4" name="Zeichnungsnummer">
                     <value>
-                        <translation lang="de">Leuna</translation>
+                        <translation lang="de">Zeich. Nr.</translation>
                     </value>
-                    <label/>
-                </field>
-                <field row="0" fontsize="9" name="Zeichnungsnummer" hadjust="true" align="center" col="4" displaylabel="true" valign="center">
-                    <value/>
                     <label>
-                        <translation lang="de">Zg.-Nr.</translation>
+                        <translation lang="de">Zeichnungsnummer</translation>
                     </label>
                 </field>
-                <field row="0" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="true" valign="center">
+                <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="true" align="center" col="5" name="Blatt">
                     <value/>
                     <label>
                         <translation lang="de">Blatt</translation>
                     </label>
                 </field>
-                <field row="0" fontsize="9" name="Format" hadjust="true" align="center" col="6" displaylabel="true" valign="center">
-                    <value/>
-                    <label/>
-                </field>
-                <field row="1" fontsize="9" name="Autor" align="center" col="0" displaylabel="true" valign="center">
+                <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="6" name="Format">
                     <value>
-                        <translation lang="de">%author</translation>
+                        <translation lang="de">Format</translation>
                     </value>
+                    <label>
+                        <translation lang="de">Format</translation>
+                    </label>
+                </field>
+                <field fontsize="9" valign="center" row="0" hadjust="true" displaylabel="false" align="center" col="7" name="Revisionsnummer">
+                    <value>
+                        <translation lang="de">Rev.</translation>
+                    </value>
+                    <label>
+                        <translation lang="de">Revisionsnummer</translation>
+                    </label>
+                </field>
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="0" name="Autor">
+                    <value/>
                     <label>
                         <translation lang="de">Autor</translation>
                     </label>
                 </field>
-                <field row="1" fontsize="9" name="Titel" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="1" name="Autor">
+                    <value>
+                        <translation lang="de">%author</translation>
+                    </value>
+                    <label/>
+                </field>
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="left" col="2" name="Anlage">
+                    <value>
+                        <translation lang="de">%plant</translation>
+                    </value>
+                    <label>
+                        <translation lang="de">Anlage</translation>
+                    </label>
+                </field>
+                <field fontsize="11" valign="center" row="1" hadjust="true" displaylabel="false" align="center" col="3" name="Titel">
                     <value>
                         <translation lang="de">%title</translation>
                     </value>
@@ -93,15 +121,27 @@
                         <translation lang="de">Titel</translation>
                     </label>
                 </field>
-                <field row="1" fontsize="9" name="Latex Plant Germany" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="4" name="">
                     <value>
-                        <translation lang="de">Latex Plant Germany</translation>
+                        <translation lang="de">%{znr}</translation>
                     </value>
                     <label/>
                 </field>
-                <field row="1" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="false" valign="center">
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="false" align="center" col="5" name="Blatt">
                     <value>
-                        <translation lang="de">%page</translation>
+                        <translation lang="de">%{folio-id} / %{folio-total}</translation>
+                    </value>
+                    <label/>
+                </field>
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="true" align="center" col="6" name="">
+                    <value>
+                        <translation lang="de">%{format}</translation>
+                    </value>
+                    <label/>
+                </field>
+                <field fontsize="9" valign="center" row="1" hadjust="true" displaylabel="false" align="center" col="7" name="Revisionsnummer">
+                    <value>
+                        <translation lang="de">%indexrev</translation>
                     </value>
                     <label/>
                 </field>
@@ -109,29 +149,132 @@
         </titleblocktemplate>
     </titleblocktemplates>
     <properties>
-        <property name="saveddate-eu" show="1">11-02-2022</property>
-        <property name="savedfilepath" show="1">C:/Users/Studium/Desktop/Studium/Bachelorarbeit/cad/Vorlage IDL.qet</property>
-        <property name="saveddate-us" show="1">2022-02-11</property>
-        <property name="saveddate" show="1">11.02.2022</property>
-        <property name="savedtime" show="1">14:43</property>
-        <property name="savedfilename" show="1">Vorlage IDL</property>
+        <property show="1" name="saveddate-us">2022-02-11</property>
+        <property show="1" name="savedtime">18:32</property>
+        <property show="1" name="savedfilepath">C:/Users/Studium/Desktop/Studium/Bachelorarbeit/cad/Vorlage IDL.qet</property>
+        <property show="1" name="savedfilename">Vorlage IDL</property>
+        <property show="1" name="saveddate">11.02.2022</property>
+        <property show="1" name="saveddate-eu">11-02-2022</property>
     </properties>
     <newdiagrams>
-        <border cols="17" rowsize="80" rows="8" displayrows="true" colsize="60" displaycols="true"/>
-        <inset plant="" version="" title="" author="" indexrev="" auto_page_num="" locmach="" folio="%id/%total" filename="" date="null" displayAt="bottom"/>
-        <conductors cable="" tension_protocol="" conductor_section="" horizontal-alignment="AlignBottom" vertical-alignment="AlignRight" displaytext="1" conductor_color="" color2="#000000" vertirotatetext="270" onetextperfolio="0" bus="" condsize="1" dash-size="1" bicolor="false" type="multi" numsize="7" formula="" text_color="#000000" function="" num="_" horizrotatetext="0"/>
+        <border rows="8" rowsize="80" cols="17" colsize="60" displaycols="true" displayrows="true"/>
+        <inset title="" date="null" indexrev="" titleblocktemplate="Instrumentation Loop Diagram" displayAt="bottom" auto_page_num="" titleblocktemplateCollection="custom" locmach="" author="" plant="" version="" folio="%id/%total" filename=""/>
+        <conductors numsize="7" vertical-alignment="AlignRight" onetextperfolio="0" displaytext="1" function="" num="_" color2="#000000" bus="" conductor_color="" tension_protocol="" conductor_section="" dash-size="1" cable="" vertirotatetext="270" formula="" horizrotatetext="0" text_color="#000000" type="multi" condsize="1" bicolor="false" horizontal-alignment="AlignBottom"/>
         <report label="%f-%l%c"/>
         <xrefs>
-            <xref showpowerctc="true" offset="0" slave_label="(%f-%l%c)" type="protection" master_label="%f-%l%c" delayprefix="" displayhas="cross" powerprefix="" snapto="label" switchprefix="" xrefpos=""/>
-            <xref showpowerctc="true" offset="0" slave_label="(%f-%l%c)" type="commutator" master_label="%f-%l%c" delayprefix="" displayhas="cross" powerprefix="" snapto="label" switchprefix="" xrefpos=""/>
-            <xref showpowerctc="true" offset="0" slave_label="(%f-%l%c)" type="coil" master_label="%f-%l%c" delayprefix="" displayhas="cross" powerprefix="" snapto="label" switchprefix="" xrefpos=""/>
+            <xref powerprefix="" type="protection" snapto="label" delayprefix="" xrefpos="" slave_label="(%f-%l%c)" displayhas="cross" offset="0" master_label="%f-%l%c" switchprefix="" showpowerctc="true"/>
+            <xref powerprefix="" type="coil" snapto="label" delayprefix="" xrefpos="" slave_label="(%f-%l%c)" displayhas="cross" offset="0" master_label="%f-%l%c" switchprefix="" showpowerctc="true"/>
+            <xref powerprefix="" type="commutator" snapto="label" delayprefix="" xrefpos="" slave_label="(%f-%l%c)" displayhas="cross" offset="0" master_label="%f-%l%c" switchprefix="" showpowerctc="true"/>
         </xrefs>
-        <conductors_autonums current_autonum="" freeze_new_conductors="false"/>
-        <folio_autonums/>
-        <element_autonums freeze_new_elements="false" current_autonum=""/>
+        <conductors_autonums freeze_new_conductors="false" current_autonum=""/>
+        <folio_autonums>
+            <folio_autonum title="Neue auto-nummerierte Folie anlegen"/>
+        </folio_autonums>
+        <element_autonums current_autonum="" freeze_new_elements="false"/>
     </newdiagrams>
-    <diagram displayrows="true" indexrev="" folio="%id/%total" displayAt="bottom" rows="8" titleblocktemplate="Instrumentation Loop Diagram" rowsize="80" locmach="" date="null" colsize="60" plant="" author="" version="0.80c+87c957a06d79751d3" auto_page_num="" displaycols="true" titleblocktemplateCollection="embedded" freezeNewElement="false" freezeNewConductor="false" order="1" cols="17" height="660" title="" filename="">
-        <defaultconductor vertical-alignment="AlignRight" cable="" tension_protocol="" horizontal-alignment="AlignBottom" conductor_section="" displaytext="1" conductor_color="" color2="#000000" vertirotatetext="270" onetextperfolio="0" bus="" condsize="1" dash-size="1" bicolor="false" type="multi" numsize="7" formula="" text_color="#000000" function="" num="_" horizrotatetext="0"/>
+    <diagram rows="8" freezeNewElement="false" date="20220211" folio="" displayAt="bottom" auto_page_num="Neue auto-nummerierte Folie anlegen" order="1" displayrows="true" titleblocktemplateCollection="embedded" titleblocktemplate="Instrumentation Loop Diagram" filename="" rowsize="80" version="0.80c+87c957a06d79751d3" freezeNewConductor="false" height="660" colsize="60" locmach="Leuna" displaycols="true" plant="Leuna Latex Plant" title="Vorlage IDL" indexrev="00" cols="17" author="Roman Zank">
+        <properties>
+            <property show="1" name="format">A4</property>
+            <property show="1" name="znr">1</property>
+        </properties>
+        <defaultconductor vertical-alignment="AlignRight" numsize="7" onetextperfolio="0" displaytext="1" function="" num="_" color2="#000000" bus="" conductor_color="" tension_protocol="" conductor_section="" dash-size="2" vertirotatetext="270" cable="" formula="" horizrotatetext="0" text_color="#000000" type="multi" condsize="1" bicolor="false" horizontal-alignment="AlignBottom"/>
+        <inputs>
+            <input y="70" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400;&quot;> RANGIERUNG&lt;/span>&lt;br />(Marshalling)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="320"/>
+            <input y="70" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>STEUERUNG/&lt;br />KOPPLEBENE&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="630"/>
+            <input y="70" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;> Ex KABINE&lt;br />(IS cabinet)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="470"/>
+            <input y="70" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>                 DCS&lt;br />(Distributed control system)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="750"/>
+            <input y="70" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400;&quot;>          &lt;/span>UV&lt;br />(Junction Box)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="200"/>
+            <input y="50" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Feld (Field)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="130"/>
+            <input y="40.9357" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="324.844"/>
+            <input y="30" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Keine Ex-ZONE (None hazardous area)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="700"/>
+            <input y="50" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>SRI (Control room)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="920"/>
+            <input y="30" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Ex-ZONENPLAN (Hazardous area)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="200"/>
+            <input y="50" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>SLI (Instrument technical room)&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="560"/>
+            <input y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>VKEI&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="190"/>
+            <input y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>6&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="230"/>
+            <input y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>A&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="250"/>
+            <input y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>14&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="270"/>
+            <input y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X1i6A&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="310"/>
+            <input y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>X2i3A&lt;/p>&lt;/body>&lt;/html>" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="370"/>
+        </inputs>
+        <shapes>
+            <shape x2="1040" type="Rectangle" y2="50" rx="0" closed="0" z="0" y1="30" is_movable="1" x1="30" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="910" type="Line" y2="660" closed="0" z="0" y1="50" is_movable="1" x1="910">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="30" type="Rectangle" y2="30" rx="0" closed="0" z="0" y1="30" is_movable="1" x1="30" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="300" type="Rectangle" y2="70" rx="0" closed="0" z="0" y1="50" is_movable="1" x1="30" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="300" type="Line" y2="660" closed="0" z="0" y1="50" is_movable="1" x1="300">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="1040" type="Rectangle" y2="110" rx="0" closed="0" z="0" y1="70" is_movable="1" x1="30" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="190" type="Line" y2="660" closed="0" z="0" y1="70" is_movable="1" x1="190">
+                <pen style="DashLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="540" type="Rectangle" y2="50" rx="0" closed="0" z="0" y1="30" is_movable="1" x1="30" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="910" type="Rectangle" y2="70" rx="0" closed="0" z="0" y1="50" is_movable="1" x1="300" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="1040" type="Rectangle" y2="70" rx="0" closed="0" z="0" y1="50" is_movable="1" x1="910" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="420" type="Rectangle" y2="130" rx="0" closed="0" z="0" y1="110" is_movable="1" x1="190" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="250" type="Rectangle" y2="130" rx="0" closed="0" z="0" y1="110" is_movable="1" x1="230" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="360" type="Line" y2="660" closed="0" z="0" y1="130" is_movable="1" x1="360">
+                <pen style="DashLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="360" type="Rectangle" y2="130" rx="0" closed="0" z="0" y1="110" is_movable="1" x1="360" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="270" type="Rectangle" y2="130" rx="0" closed="0" z="0" y1="110" is_movable="1" x1="250" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="750" type="Line" y2="660" closed="0" z="0" y1="70" is_movable="1" x1="750">
+                <pen style="DashLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="590" type="Line" y2="660" closed="0" z="0" y1="70" is_movable="1" x1="590">
+                <pen style="DashLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="230" type="Rectangle" y2="130" rx="0" closed="0" z="0" y1="110" is_movable="1" x1="190" ry="0">
+                <pen style="SolidLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x2="420" type="Line" y2="660" closed="0" z="0" y1="70" is_movable="1" x1="420">
+                <pen style="DashLine" color="#000000" widthF="1"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+        </shapes>
     </diagram>
     <collection>
         <category name="import">
