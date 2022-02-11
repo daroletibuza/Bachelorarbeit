@@ -1,0 +1,16 @@
+<definition width="40" link_type="simple" type="element" hotspot_x="24" version="0.80" height="60" hotspot_y="24">
+    <uuid uuid="{6c14b000-9f0e-4cd2-9e94-3b0556e6a59d}"/>
+    <names>
+        <name lang="de">Klemme</name>
+    </names>
+    <elementInformations/>
+    <informations></informations>
+    <description>
+        <ellipse width="13" y="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" height="40" x="-9.49194"/>
+        <line x2="-3" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" y2="30" antialias="false" length2="1.5" y1="20" x1="-3" end1="none" length1="1.5"/>
+        <line x2="-13" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" y2="30" antialias="false" length2="1.5" y1="30" x1="-3" end1="none" length1="1.5"/>
+        <terminal y="0" uuid="{264a248f-802b-4c50-a382-147b8456d48a}" x="-14" name="" orientation="w"/>
+        <terminal y="0" uuid="{9395141a-9448-4048-97bb-0fdfe0c326c1}" x="8" name="" orientation="e"/>
+        <terminal y="30" uuid="{6dfea286-73cb-4946-b705-30df3eeff63a}" x="-18" name="" orientation="w"/>
+    </description>
+</definition>
