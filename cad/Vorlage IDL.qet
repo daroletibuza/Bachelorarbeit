@@ -1,0 +1,159 @@
+<project version="0.80" title="Vorlage IDL">
+    <titleblocktemplates>
+        <titleblocktemplate name="Instrumentation Loop Diagram">
+            <information/>
+            <logos/>
+            <grid cols="t7%;t7%;t35%;t20%;t10%;t7%;t7%;t7%;" rows="25;25;">
+                <field row="0" name="Datum" hadjust="true" align="left" col="0" displaylabel="false" valign="center">
+                    <value>
+                        <translation lang="de">Datum</translation>
+                    </value>
+                    <label>
+                        <translation lang="hr">Autor</translation>
+                        <translation lang="da">Forfatter</translation>
+                        <translation lang="pl">Autor</translation>
+                        <translation lang="it">Autore</translation>
+                        <translation lang="ro">Autor</translation>
+                        <translation lang="ar">المؤلف</translation>
+                        <translation lang="pt">Autor</translation>
+                        <translation lang="cs">Autor</translation>
+                        <translation lang="es">Autor</translation>
+                        <translation lang="de">Datum</translation>
+                        <translation lang="en">Author</translation>
+                        <translation lang="ca">Autor</translation>
+                        <translation lang="fr">Auteur</translation>
+                        <translation lang="el">Σχεδίαση</translation>
+                        <translation lang="ru">Автор</translation>
+                    </label>
+                </field>
+                <field row="0" name="Datum" hadjust="true" align="center" col="1" displaylabel="false" valign="center">
+                    <value>
+                        <translation lang="de">%date</translation>
+                    </value>
+                    <label>
+                        <translation lang="hr">Naslov</translation>
+                        <translation lang="da">Titel</translation>
+                        <translation lang="pl">Tytuł</translation>
+                        <translation lang="it">Titolo</translation>
+                        <translation lang="ro">Titlu</translation>
+                        <translation lang="ar">عنوان</translation>
+                        <translation lang="pt">Título</translation>
+                        <translation lang="cs">Název</translation>
+                        <translation lang="es">Título</translation>
+                        <translation lang="de">Datum</translation>
+                        <translation lang="en">Title</translation>
+                        <translation lang="ca">Títol</translation>
+                        <translation lang="fr">Titre</translation>
+                        <translation lang="ru">Название</translation>
+                    </label>
+                </field>
+                <field row="0" fontsize="9" name="Benennung" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+                    <value>
+                        <translation lang="de">Instrument Loop</translation>
+                    </value>
+                    <label>
+                        <translation lang="de">Benennung</translation>
+                    </label>
+                </field>
+                <field row="0" fontsize="9" name="Leuna" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+                    <value>
+                        <translation lang="de">Leuna</translation>
+                    </value>
+                    <label/>
+                </field>
+                <field row="0" fontsize="9" name="Zeichnungsnummer" hadjust="true" align="center" col="4" displaylabel="true" valign="center">
+                    <value/>
+                    <label>
+                        <translation lang="de">Zg.-Nr.</translation>
+                    </label>
+                </field>
+                <field row="0" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="true" valign="center">
+                    <value/>
+                    <label>
+                        <translation lang="de">Blatt</translation>
+                    </label>
+                </field>
+                <field row="0" fontsize="9" name="Format" hadjust="true" align="center" col="6" displaylabel="true" valign="center">
+                    <value/>
+                    <label/>
+                </field>
+                <field row="1" fontsize="9" name="Autor" align="center" col="0" displaylabel="true" valign="center">
+                    <value>
+                        <translation lang="de">%author</translation>
+                    </value>
+                    <label>
+                        <translation lang="de">Autor</translation>
+                    </label>
+                </field>
+                <field row="1" fontsize="9" name="Titel" hadjust="true" align="left" col="2" displaylabel="true" valign="center">
+                    <value>
+                        <translation lang="de">%title</translation>
+                    </value>
+                    <label>
+                        <translation lang="de">Titel</translation>
+                    </label>
+                </field>
+                <field row="1" fontsize="9" name="Latex Plant Germany" hadjust="true" align="left" col="3" displaylabel="true" valign="center">
+                    <value>
+                        <translation lang="de">Latex Plant Germany</translation>
+                    </value>
+                    <label/>
+                </field>
+                <field row="1" fontsize="9" name="Blatt" hadjust="true" align="center" col="5" displaylabel="false" valign="center">
+                    <value>
+                        <translation lang="de">%page</translation>
+                    </value>
+                    <label/>
+                </field>
+            </grid>
+        </titleblocktemplate>
+    </titleblocktemplates>
+    <properties>
+        <property name="saveddate-eu" show="1">11-02-2022</property>
+        <property name="savedfilepath" show="1">C:/Users/Studium/Desktop/Studium/Bachelorarbeit/cad/Vorlage IDL.qet</property>
+        <property name="saveddate-us" show="1">2022-02-11</property>
+        <property name="saveddate" show="1">11.02.2022</property>
+        <property name="savedtime" show="1">14:43</property>
+        <property name="savedfilename" show="1">Vorlage IDL</property>
+    </properties>
+    <newdiagrams>
+        <border cols="17" rowsize="80" rows="8" displayrows="true" colsize="60" displaycols="true"/>
+        <inset plant="" version="" title="" author="" indexrev="" auto_page_num="" locmach="" folio="%id/%total" filename="" date="null" displayAt="bottom"/>
+        <conductors cable="" tension_protocol="" conductor_section="" horizontal-alignment="AlignBottom" vertical-alignment="AlignRight" displaytext="1" conductor_color="" color2="#000000" vertirotatetext="270" onetextperfolio="0" bus="" condsize="1" dash-size="1" bicolor="false" type="multi" numsize="7" formula="" text_color="#000000" function="" num="_" horizrotatetext="0"/>
+        <report label="%f-%l%c"/>
+        <xrefs>
+            <xref showpowerctc="true" offset="0" slave_label="(%f-%l%c)" type="protection" master_label="%f-%l%c" delayprefix="" displayhas="cross" powerprefix="" snapto="label" switchprefix="" xrefpos=""/>
+            <xref showpowerctc="true" offset="0" slave_label="(%f-%l%c)" type="commutator" master_label="%f-%l%c" delayprefix="" displayhas="cross" powerprefix="" snapto="label" switchprefix="" xrefpos=""/>
+            <xref showpowerctc="true" offset="0" slave_label="(%f-%l%c)" type="coil" master_label="%f-%l%c" delayprefix="" displayhas="cross" powerprefix="" snapto="label" switchprefix="" xrefpos=""/>
+        </xrefs>
+        <conductors_autonums current_autonum="" freeze_new_conductors="false"/>
+        <folio_autonums/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
+    </newdiagrams>
+    <diagram displayrows="true" indexrev="" folio="%id/%total" displayAt="bottom" rows="8" titleblocktemplate="Instrumentation Loop Diagram" rowsize="80" locmach="" date="null" colsize="60" plant="" author="" version="0.80c+87c957a06d79751d3" auto_page_num="" displaycols="true" titleblocktemplateCollection="embedded" freezeNewElement="false" freezeNewConductor="false" order="1" cols="17" height="660" title="" filename="">
+        <defaultconductor vertical-alignment="AlignRight" cable="" tension_protocol="" horizontal-alignment="AlignBottom" conductor_section="" displaytext="1" conductor_color="" color2="#000000" vertirotatetext="270" onetextperfolio="0" bus="" condsize="1" dash-size="1" bicolor="false" type="multi" numsize="7" formula="" text_color="#000000" function="" num="_" horizrotatetext="0"/>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="hr">Uvezeni elementi</name>
+                <name lang="da">Importerede elementer</name>
+                <name lang="nl">Elementen geïmporteerd</name>
+                <name lang="pl">Elementy importowane</name>
+                <name lang="it">Elementi importati</name>
+                <name lang="ro">Elemente importate</name>
+                <name lang="pt">elementos importados</name>
+                <name lang="tr">İthal öğeler</name>
+                <name lang="es">Elementos importados</name>
+                <name lang="cs">Zavedené prvky</name>
+                <name lang="en">Imported elements</name>
+                <name lang="de">Importierte elemente</name>
+                <name lang="ca">Elements importats</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="sl">Uvoženi elementi</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="ru">Импортированные элементы</name>
+            </names>
+        </category>
+    </collection>
+</project>
