@@ -1,5 +1,5 @@
 <definition hotspot_y="40" version="0.80" height="70" type="element" link_type="simple" width="160" hotspot_x="38">
-    <uuid uuid="{65ce7842-9ea8-4d02-891d-407695f5ac6f}"/>
+    <uuid uuid="{3e68a2a8-d4a8-47d6-8168-7c8d97f2c633}"/>
     <names>
         <name lang="de">pls_board</name>
     </names>
@@ -25,28 +25,28 @@
         <text rotation="0" y="-12" color="#000000" text="1" x="-18" font="Sans Serif,6,-1,5,50,0,0,0,0,0"/>
         <text rotation="0" y="-2" color="#000000" text="2" x="-18" font="Sans Serif,6,-1,5,50,0,0,0,0,0"/>
         <text rotation="0" y="8" color="#000000" text="3" x="-18" font="Sans Serif,6,-1,5,50,0,0,0,0,0"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-10" x1="-30" y2="-10" x2="-20" end2="none"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="0" x1="-30" y2="0" x2="-20" end2="none"/>
         <dynamic_text rotation="0" y="-14" uuid="{b354aa81-2a00-4866-ab1e-c3ef121c14f8}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="0" z="18" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
             <text>MTL4541</text>
         </dynamic_text>
-        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-10" x1="-30" y2="-10" x2="-20" end2="none"/>
-        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="0" x1="-30" y2="0" x2="-20" end2="none"/>
-        <dynamic_text rotation="90" y="-35" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="110" z="21" text_width="-1" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" frame="false">
-            <text>LBug: FP4382</text>
-        </dynamic_text>
-        <dynamic_text rotation="90" y="-35" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="120" z="21" text_width="-1" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" frame="false">
-            <text>S3.2 (PLC03)</text>
-        </dynamic_text>
-        <dynamic_text rotation="90" y="-35" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="100" z="21" text_width="-1" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" frame="false">
-            <text>Rack: A103</text>
-        </dynamic_text>
-        <dynamic_text rotation="90" y="-35" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="90" z="21" text_width="-1" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" frame="false">
-            <text>Pos: 10</text>
-        </dynamic_text>
-        <dynamic_text rotation="90" y="-35" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="80" z="21" text_width="-1" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" frame="false">
+        <dynamic_text rotation="90" y="-37" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="80" z="21" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
             <text>Kanal: 02</text>
         </dynamic_text>
-        <dynamic_text rotation="90" y="-35" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="70" z="21" text_width="-1" font="Sans Serif,6,-1,5,0,0,0,0,0,0,normal" frame="false">
+        <dynamic_text rotation="90" y="-36" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="70" z="21" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
             <text>4-20mA - A1</text>
+        </dynamic_text>
+        <dynamic_text rotation="90" y="-37" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="120" z="21" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
+            <text>S3.2 (PLC03)</text>
+        </dynamic_text>
+        <dynamic_text rotation="90" y="-37" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="100" z="21" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
+            <text>Rack: A103</text>
+        </dynamic_text>
+        <dynamic_text rotation="90" y="-37" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="110" z="21" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
+            <text>LBug: FP4382</text>
+        </dynamic_text>
+        <dynamic_text rotation="90" y="-37" uuid="{e1c7cefe-1cab-4bd6-9650-c15ad78bc526}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="90" z="21" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
+            <text>Pos: 10</text>
         </dynamic_text>
         <terminal y="-10" uuid="{e61e810a-4876-4d7f-a20d-ce8b90406c7d}" name="" x="-30" orientation="w"/>
         <terminal y="0" uuid="{7c160bd1-fd23-4de3-8421-5f2839967379}" name="" x="-30" orientation="w"/>

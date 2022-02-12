@@ -1,5 +1,5 @@
-<definition hotspot_y="16" version="0.80" height="130" type="element" link_type="simple" width="30" hotspot_x="14">
-    <uuid uuid="{2ab8cad3-8cab-4f93-b1f2-955d738da47e}"/>
+<definition hotspot_y="18" version="0.80" height="140" type="element" link_type="simple" width="30" hotspot_x="14">
+    <uuid uuid="{cbcf4b8e-2be6-42b9-8515-287de465231e}"/>
     <names>
         <name lang="de">boards</name>
     </names>
@@ -12,18 +12,18 @@
         <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-10" x1="0" y2="0" x2="0" end2="none"/>
         <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="0" x1="-10" y2="0" x2="10" end2="none"/>
         <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-10" x1="-10" y2="-10" x2="10" end2="none"/>
-        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="50" antialias="false" y="60" width="20" rx="0" x="-10" ry="0"/>
-        <dynamic_text rotation="90" y="62" uuid="{1c510c99-891c-412f-922b-355b52f554c6}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="14" z="7" text_width="-1" font="Sans Serif,5,-1,5,0,0,0,0,0,0,normal" frame="false">
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="55" antialias="false" y="60" width="21" rx="0" x="-10" ry="0"/>
+        <dynamic_text rotation="90" y="60" uuid="{1c510c99-891c-412f-922b-355b52f554c6}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="15" z="7" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
             <text>FIAS614321</text>
             <info_name>machine_manufacturer_reference</info_name>
         </dynamic_text>
-        <dynamic_text rotation="90" y="76" uuid="{1c510c99-891c-412f-922b-355b52f554c6}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="4" z="7" text_width="-1" font="Sans Serif,5,-1,5,0,0,0,0,0,0,normal" frame="false">
+        <dynamic_text rotation="90" y="60" uuid="{1c510c99-891c-412f-922b-355b52f554c6}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="5" z="7" text_width="-1" font="Sans Serif,7,-1,5,0,0,0,0,0,0,normal" frame="false">
             <text>2X1</text>
             <info_name>machine_manufacturer_reference</info_name>
         </dynamic_text>
-        <terminal y="0" uuid="{a3bf43d4-3f5a-4579-9d20-62622ccb502d}" name="" x="10" orientation="e"/>
-        <terminal y="-10" uuid="{16bc6152-d068-488f-9e53-3cfb6437b33f}" name="" x="-10" orientation="w"/>
         <terminal y="0" uuid="{f028cff9-18de-49c5-98d7-f66026fa5476}" name="" x="-10" orientation="w"/>
+        <terminal y="-10" uuid="{16bc6152-d068-488f-9e53-3cfb6437b33f}" name="" x="-10" orientation="w"/>
         <terminal y="-10" uuid="{a9a0bba4-6742-4165-a9e0-c4b7be0cce0a}" name="" x="10" orientation="e"/>
+        <terminal y="0" uuid="{a3bf43d4-3f5a-4579-9d20-62622ccb502d}" name="" x="10" orientation="e"/>
     </description>
 </definition>

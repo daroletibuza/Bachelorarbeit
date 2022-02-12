@@ -1,0 +1,29 @@
+<definition hotspot_y="52" version="0.80" height="110" type="element" link_type="simple" width="90" hotspot_x="39">
+    <uuid uuid="{a3232908-1445-4860-83b7-ed21334555a7}"/>
+    <names>
+        <name lang="de">Frequenzumrichter</name>
+    </names>
+    <elementInformations/>
+    <informations></informations>
+    <description>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="10" antialias="false" y="20" width="10" rx="0" x="5" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="10" antialias="false" y="-10" width="10" rx="0" x="-15" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="10" antialias="false" y="5" width="10" rx="0" x="5" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="10" antialias="false" y="20" width="10" rx="0" x="-15" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="10" antialias="false" y="5" width="10" rx="0" x="-15" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="105" antialias="false" y="-50" width="60" rx="0" x="-35" ry="0"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-40" x1="35" y2="-40" x2="45" end2="none"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-30" x1="35" y2="-30" x2="45" end2="none"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="50" x1="35" y2="50" x2="45" end2="none"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="105" antialias="false" y="-50" width="10" rx="0" x="-35" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="105" antialias="false" y="-50" width="10" rx="0" x="25" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="15" antialias="false" y="-35" width="40" rx="0" x="-20" ry="0"/>
+        <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="10" antialias="false" y="-10" width="10" rx="0" x="5" ry="0"/>
+        <dynamic_text rotation="0" y="-70" uuid="{162024e8-2633-47c0-a9c9-7965c1345b7b}" text_from="UserText" Halignment="AlignLeft" Valignment="AlignTop" x="-35" z="14" text_width="-1" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" frame="false">
+            <text>FIAS 61321</text>
+        </dynamic_text>
+        <terminal y="-40" uuid="{55130318-44cd-43b2-a37c-ab7b5fd65b99}" name="" x="45" orientation="e"/>
+        <terminal y="-30" uuid="{824171e9-597e-4d7d-a746-8c46ee12695c}" name="" x="45" orientation="e"/>
+        <terminal y="50" uuid="{2744af50-2e09-4412-817f-e441bf6416c8}" name="" x="45" orientation="e"/>
+    </description>
+</definition>
