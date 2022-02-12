@@ -1,0 +1,12 @@
+<definition hotspot_y="10" version="0.80" height="20" type="element" link_type="simple" width="30" hotspot_x="12">
+    <uuid uuid="{69dab1dc-06be-495a-aa4f-09a647660bb2}"/>
+    <names>
+        <name lang="de">nc</name>
+    </names>
+    <elementInformations/>
+    <informations></informations>
+    <description>
+        <text rotation="0" y="3" color="#000000" text="NC" x="-6" font="Sans Serif,6,-1,5,50,0,0,0,0,0"/>
+        <terminal y="0" uuid="{40fff510-e4ef-4ea4-94b1-cdb0f3fd9c50}" name="" x="10" orientation="e"/>
+    </description>
+</definition>

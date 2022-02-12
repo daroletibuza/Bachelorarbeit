@@ -1,16 +1,30 @@
-<definition width="40" link_type="simple" type="element" hotspot_x="24" version="0.80" height="60" hotspot_y="24">
-    <uuid uuid="{6c14b000-9f0e-4cd2-9e94-3b0556e6a59d}"/>
+<definition hotspot_y="24" version="0.80" height="40" type="element" link_type="simple" width="20" hotspot_x="9">
+    <uuid uuid="{96d3b405-f990-4829-9945-c8b1a36012dd}"/>
     <names>
         <name lang="de">Klemme</name>
     </names>
-    <elementInformations/>
+    <elementInformations>
+        <elementInformation name="unity" show="1"></elementInformation>
+        <elementInformation name="quantity" show="1"></elementInformation>
+        <elementInformation name="supplier" show="1"></elementInformation>
+        <elementInformation name="plant" show="1"></elementInformation>
+        <elementInformation name="manufacturer_reference" show="1"></elementInformation>
+        <elementInformation name="label" show="1"></elementInformation>
+        <elementInformation name="machine_manufacturer_reference" show="1"></elementInformation>
+        <elementInformation name="description" show="1">Klemme</elementInformation>
+        <elementInformation name="comment" show="1"></elementInformation>
+        <elementInformation name="designation" show="1"></elementInformation>
+        <elementInformation name="manufacturer" show="1"></elementInformation>
+    </elementInformations>
     <informations></informations>
     <description>
-        <ellipse width="13" y="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" height="40" x="-9.49194"/>
-        <line x2="-3" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" y2="30" antialias="false" length2="1.5" y1="20" x1="-3" end1="none" length1="1.5"/>
-        <line x2="-13" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" y2="30" antialias="false" length2="1.5" y1="30" x1="-3" end1="none" length1="1.5"/>
-        <terminal y="0" uuid="{264a248f-802b-4c50-a382-147b8456d48a}" x="-14" name="" orientation="w"/>
-        <terminal y="0" uuid="{9395141a-9448-4048-97bb-0fdfe0c326c1}" x="8" name="" orientation="e"/>
-        <terminal y="30" uuid="{6dfea286-73cb-4946-b705-30df3eeff63a}" x="-18" name="" orientation="w"/>
+        <ellipse style="line-style:normal;line-weight:normal;filling:none;color:black" height="30" antialias="false" y="-20" width="8.01612" x="-4"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="-10" x1="-5" y2="-10" x2="5" end2="none"/>
+        <line style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" length2="1.5" end1="none" antialias="false" y1="0" x1="-5" y2="0" x2="5" end2="none"/>
+        <terminal y="0" uuid="{727ce49b-f65d-41e6-9671-78b2b022331d}" name="" x="5" orientation="e"/>
+        <terminal y="-10" uuid="{264a248f-802b-4c50-a382-147b8456d48a}" name="" x="5" orientation="e"/>
+        <terminal y="0" uuid="{86ca511f-c8e2-458e-a43f-6b172fc091ed}" name="" x="-5" orientation="w"/>
+        <terminal y="10" uuid="{6dfea286-73cb-4946-b705-30df3eeff63a}" name="" x="0" orientation="s"/>
+        <terminal y="-10" uuid="{9395141a-9448-4048-97bb-0fdfe0c326c1}" name="" x="-5" orientation="w"/>
     </description>
 </definition>
