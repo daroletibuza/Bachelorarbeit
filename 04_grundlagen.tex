@@ -305,13 +305,14 @@ Nach der Bestimmung der Reynoldszahl lässt sich nun mit Hilfe des \linebreak \t
 
 \begin{equation}
 	\label{eq:hagen}
-	\Delta p  = \frac{8*\eta*L*\dot{V}}{r^4*\pi}
+	\Delta p  = \frac{8*\eta*L*\dot{V}}{r^4*\pi} = \frac{128*\eta*L*\dot{V}}{d^4*\pi} 
 \end{equation}
 \begin{parameter}
 	\Delta p	& Druckverlust \\
 	\eta 		& dynamische Viskosität des Fluids\\
 	\dot{V}		& Volumenstrom des Fluids\\
 	r			& innerer Radius der Rohrleitung\\
+	d			& innerer Durchmesser der Rohrleitung\\
 	L 			& Rohrleitungslänge\\
 \end{parameter}
 
@@ -454,18 +455,56 @@ Um den Dosierstrom ohne Rohrleitungseinbauten zu bestimmen, ist es möglich ein 
 %\subsection{Stand der Technik zur Dosierung hochviskoser Verdickungsmittel}
 
 
-\subsection{Zeichnerische Planung und Rohrleitungsplanung}
+\subsection{Zeichnerische Umsetzung und Rohrleitungsplanung}
 Die technische Planung ist an dieser Stelle als Begriff gewählt worden, da damit ein fachübergreifender Bereich für die Konzeption von Umsetzungsideen umfasst wird. So beinhaltet die Umsetzung einer Dosieranlage nicht nur die Auswahl der Komponenten um das Verfahren umzusetzen, sondern auch die zeichnerische Dokumentation des Verfahrens, sowie Überlegungen der Rohrleitungsauswahl und der zu verarbeitenden Signal sind von entscheidender Bedeutung. 
 
 \subsubsection{Darstellung der Chemieanlage}
 Das Fließbilder stellen als zeichnerische Darstellung die chemische Anlage oder Anlagenbestandteilen dar und sollen übersichtlich und einprägsam den Aufbau der Anlage oder eines Verfahrens aufzeigen können. In der Zeichnung werden demnach Stoff- und Energieströme, Apparate, Armaturen und Maschinen zusammengefasst um möglichst schnell und effizient einen Überblick zu bekommen. Da je nach betrachteten Aspekt der Anlage verschiedene Anforderung an eine solche Anlagendarstellung gestellt werden, existieren deshalb die Formen Grundfließbild, Verfahrensfließbild und Rohrleitungs- und Instrumentationsfließbild (R\&I-Fließschema). Sie unterscheiden sich neben der Nutzung verschiedener grafischer Symbole und Fließlinie vor allem in Detailgrad der Anlagenbeschreibung. Dabei stellt das Grundfließbild lediglich das reine Verfahren mit Stoff- und Energieströmen dar, während im R\&I-Fließschema jegliche Anlagenkomponenten wie Pumpen, Ventile und Behälter aufgeführt und benannt sind. In den Normen DIN 2800-3 (2014) und DIN EN ISO 10628-1 (2013) sind die verschiedenen Fließschemata genormt. Die dafür zu verwendenden Symbole, Kennungen und Fließlinienformatierungen sind ergänzend in den Normen DIN EN ISO 10628-2 (2013) und DIN 28000-3 und DIN 28000-4 (2014) beschrieben. \cite{Ignatowitz.2015}
+
+\missingfigure{R\&I Verfahrensfließbild Grundfließbild}
 
 \subsubsection{EMSR-Stellenplan}
 %Instrumentation Loop diagramm
 \todo[inline]{Keine Ahnung selber was ausdenken ?}
 
 \subsubsection{Rohrleitungsplanung}
-Ist die Planung für die Förderung eines Fluids in Form von R\&I-Fließbildern beendet kann mit der Auswahl der Komponenten begonnen werden. Festzulegen sind hierfür beispielsweise die Förderpumpe, Armaturen und Behälter sowie die verbindenden Rohrleitungen. Wichtig ist hierbei, dass eine ständige Überprüfung der Kompatibilität der Komponenten erfolgt, um Parameter wie Förderdrücke, und Strömungsgeschwindigkeiten sorgfältig zu bestimmen. Die Rohrleitungsplanung steht demnach im direkten Zusammenhang mit der Pumpen
+Die Rohrplanung umfasst im wesentlichen das Festlegen von Charakteristiken von Rohrleitungen, wie Anschlüsse, die Rohrlänge, Nennweiten, Nenndrücke oder auch die Wahl des Werkstoffes und Bestimmung der Rohrleitungsklasse. Diese werden durch die nötigen Betriebsparameter bestimmt und stehen im engen Zusammenhang mit vorhandenen Rohrleitungsstrukturen, sowie der Förderpumpe. \linebreak
+Beginnend mit dem Durchmesser hat dieser laut Gleichung \eqref{eq:hagen} einen maßgeblichen Einfluss auf den auftretenden Druckverlust in der Rohrleitung. Durch die vierte Potenz des Durchmesser hat dessen Verdopplung einen 16-mal niedrigeren Druckverlust zur Folge. Das bedeutet ebenfalls, dass die Wahl der Rohrnennweite entscheidenden Einfluss auf die Betriebsbedingungen hat. Trifft man die Annahme, dass der Förderdruck durch die Pumpe begrenzt und von einer laminaren Strömung ausgegangen wird, ergibt sich für die Bestimmung des mindestens erforderlichen Rohrdurchmessers die Gleichung \eqref{eq:durchmesser} nach dem Gesetz von \textsc{Hagen-Poiseuille}.
+
+\begin{equation}
+	\label{eq:durchmesser}
+	d = \sqrt[4]{\frac{128*\eta*L*\dot{V}}{\Delta p * \pi}}
+\end{equation}
+\begin{parameter}
+		d		& innerer Durchmesser der Rohrleitung \\
+		L		& Länge der Rohrleitung\\
+	\dot{V}		& Volumenstrom\\
+	\Delta p	& Druckverlust\\
+	\eta 		& dynamische Viskosität\\
+\end{parameter}
+
+Eine alternative Herangehensweise aus der Literatur trifft die Annahme der Strömungsgeschwindigkeit für das zu fördernde Fluid. Typische Strömungsgeschwindigkeiten für Wasser werden mit 0,3 bis \SI{3}{\meter \per \second} und für viskose Flüssigkeiten mit 0,3 bis \SI{2}{\meter \per \second} angegeben. Der erforderliche Rohrdurchmesser berechnet sich dann nach Gleichung \eqref{eq:durchmesser_alternative}. Durch die Annahme der Strömungsgeschwindigkeit werden Viskosität und Druckverlust in dieser Berechnung nicht einbezogen und es würden sich ähnliche Rohrleitungsdurchmesser für verschieden viskose Flüssigkeiten ergeben.\cite{Bierwerth.2019}
+
+\begin{equation}
+	\label{eq:durchmesser_alternative}
+	d = 2*\sqrt{\frac{\dot{V}}{\pi*v}}
+\end{equation}
+\begin{parameter}
+	d			& innerer Durchmesser der Rohrleitung \\
+	\dot{V}		& Volumenstrom\\
+	v			& Strömungsgeschwindigkeit\\
+\end{parameter}
+
+Ist der erforderliche Rohrleitungsdurchmesser bestimmt, kann aus einer Reihe von bevorzugten DN-Stufen nach DIN EN ISO 6708 gewählt werden. Die Nennweite $DN$ beschreibt dabei jedoch nicht den exakten Innendurchmesser der Rohrleitung, sondern ist das kennzeichnende Merkmal zueinander passender Teile von Rohrleitungssystemen. Für die Auslegung wird die nächsthöhere Nennweite zum berechneten Durchmesser gewählt (vgl. Tabelle \ref{tab:rohrleitungen}).\cite{Ignatowitz.2015} 
+
+Der Grund für die Abweichung von Nennweite und Rohrinnendurchmesser liegt in den unterschiedlichen Wandstärken von Rohrleitungen bei verschiedenen Nenndrücken. Der Nenndruck $PN$ gibt als weitere Kenngröße für Rohrleitungen die Druckbelastbarkeit eines Rohrleitungssystem mit Rohrleitungsbestandteilen gleicher Nennweiten und gleicher Druckbelastbarkeit an. Übersetzt heißt das, dass der angebene Nenndruck dem maximal zulässigem Betriebsdruck der Rohrleitung bei \SI{20}{\celsius} entspricht. Erhöht sich die Betriebstemperatur verringert sich auch der maximal zulässige Betriebsdruck, trotz gleichem Nenndruck.\linebreak
+Je nach maximalen Betriebsdruck und Temperatur ergibt sich also der auszuwählende Nenndruck. Ist die Nennweite ebenfalls festgelegt, kann nun anhand von Tabellen bestimmt werden, welche Wandstärken und Rohrmaße für den jeweiligen Rohrleitungsbestandteil vorliegen. Damit wird auch klar, dass sich die Rohrinnendurchmesser trotz gleicher Nennweiten bei unterschiedlichen Druckstufen unterscheiden können, da die Wandstärken mit steigender Druckstufe erhöhen. Der Außendurchmesser bleibt hingegen konstant (vgl. Tab. \ref{tab:rohrleitungen}). \cite{Ignatowitz.2015}
+
+\missingfigure{Tabelle Rohrleitung}
+
+
+
+%Ist die Planung für die Förderung eines Fluids in Form von R\&I-Fließbildern beendet kann mit der Auswahl der Komponenten begonnen werden. Festzulegen sind hierfür beispielsweise die Förderpumpe, Armaturen und Behälter sowie die verbindenden Rohrleitungen. Wichtig ist hierbei, dass eine ständige Überprüfung der Kompatibilität der Komponenten erfolgt, um Parameter wie Förderdrücke, und Strömungsgeschwindigkeiten sorgfältig zu bestimmen. Die Rohrleitungsplanung steht demnach im direkten Zusammenhang mit der Pumpen
 
 
 %\subsection{Normen und Standards}
