@@ -459,13 +459,20 @@ Um den Dosierstrom ohne Rohrleitungseinbauten zu bestimmen, ist es möglich ein 
 Die technische Planung ist an dieser Stelle als Begriff gewählt worden, da damit ein fachübergreifender Bereich für die Konzeption von Umsetzungsideen umfasst wird. So beinhaltet die Umsetzung einer Dosieranlage nicht nur die Auswahl der Komponenten um das Verfahren umzusetzen, sondern auch die zeichnerische Dokumentation des Verfahrens, sowie Überlegungen der Rohrleitungsauswahl und der zu verarbeitenden Signal sind von entscheidender Bedeutung. 
 
 \subsubsection{Darstellung der Chemieanlage}
-Das Fließbilder stellen als zeichnerische Darstellung die chemische Anlage oder Anlagenbestandteilen dar und sollen übersichtlich und einprägsam den Aufbau der Anlage oder eines Verfahrens aufzeigen können. In der Zeichnung werden demnach Stoff- und Energieströme, Apparate, Armaturen und Maschinen zusammengefasst um möglichst schnell und effizient einen Überblick zu bekommen. Da je nach betrachteten Aspekt der Anlage verschiedene Anforderung an eine solche Anlagendarstellung gestellt werden, existieren deshalb die Formen Grundfließbild, Verfahrensfließbild und Rohrleitungs- und Instrumentationsfließbild (R\&I-Fließschema). Sie unterscheiden sich neben der Nutzung verschiedener grafischer Symbole und Fließlinie vor allem in Detailgrad der Anlagenbeschreibung. Dabei stellt das Grundfließbild lediglich das reine Verfahren mit Stoff- und Energieströmen dar, während im R\&I-Fließschema jegliche Anlagenkomponenten wie Pumpen, Ventile und Behälter aufgeführt und benannt sind. In den Normen DIN 2800-3 (2014) und DIN EN ISO 10628-1 (2013) sind die verschiedenen Fließschemata genormt. Die dafür zu verwendenden Symbole, Kennungen und Fließlinienformatierungen sind ergänzend in den Normen DIN EN ISO 10628-2 (2013) und DIN 28000-3 und DIN 28000-4 (2014) beschrieben. \cite{Ignatowitz.2015}
+Fließbilder stellen als zeichnerische Darstellung die chemische Anlage oder Anlagenbestandteilen dar und sollen übersichtlich und einprägsam den Aufbau der Anlage oder eines Verfahrens aufzeigen können. In der Zeichnung werden demnach Stoff- und Energieströme, Apparate, Armaturen und Maschinen zusammengefasst um möglichst schnell und effizient einen Überblick zu bekommen. Da je nach betrachteten Aspekt der Anlage verschiedene Anforderung an eine solche Anlagendarstellung gestellt werden, existieren deshalb die Formen Grundfließbild, Verfahrensfließbild und Rohrleitungs- und Instrumentationsfließbild (R\&I-Fließschema). Sie unterscheiden sich neben der Nutzung verschiedener grafischer Symbole und Fließlinie vor allem in Detailgrad der Anlagenbeschreibung. Dabei stellt das Grundfließbild lediglich das reine Verfahren mit Stoff- und Energieströmen dar, während im R\&I-Fließschema jegliche Anlagenkomponenten wie Pumpen, Ventile und Behälter aufgeführt und benannt sind. In den Normen DIN 2800-3 (2014) und DIN EN ISO 10628-1 (2013) sind die verschiedenen Fließschemata genormt. Die dafür zu verwendenden Symbole, Kennungen und Fließlinienformatierungen sind ergänzend in den Normen DIN EN ISO 10628-2 (2013) und DIN 28000-3 und DIN 28000-4 (2014) beschrieben. Beispielhaft ist in Abbildung \ref{fig:fließbilder} ein R \& I - Fließbild dargestellt. \cite{Ignatowitz.2015}
 
-\missingfigure{R\&I Verfahrensfließbild Grundfließbild}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{img/fließbilder}
+	\caption{Vereinfachtes R\& I - Fließbild}
+	\label{fig:fließbilder}
+\end{figure}
+\FloatBarrier
+%Ende
 
 \subsubsection{EMSR-Stellenplan}
 %Instrumentation Loop diagramm
-\todo[inline]{Keine Ahnung selber was ausdenken ?}
+\todo[inline]{Literatur und Zeichnung}
 
 \subsubsection{Rohrleitungsplanung}
 Die Rohrplanung umfasst im wesentlichen das Festlegen von Charakteristiken von Rohrleitungen, wie Anschlüsse, die Rohrlänge, Nennweiten, Nenndrücke oder auch die Wahl des Werkstoffes und Bestimmung der Rohrleitungsklasse. Diese werden durch die nötigen Betriebsparameter bestimmt und stehen im engen Zusammenhang mit vorhandenen Rohrleitungsstrukturen, sowie der Förderpumpe. \linebreak
@@ -499,7 +506,7 @@ Ist der erforderliche Rohrleitungsdurchmesser bestimmt, kann aus einer Reihe von
 
 Als weiter Kenngröße für Rohrleitungen ist der Nenndruck $PN$ zu bestimmen, welcher für Rohrleitungen den maximalen Betriebsdruck eines Rohrleitungssystems mit Rohrleitungsbestandteilen gleicher Nennweiten und gleicher Druckbelastbarkeit bei einer Betriebstemperatur von \SI{20}{\celsius} angibt. Erhöht sich die Betriebstemperatur verringert sich auch der maximal zulässige Betriebsdruck, trotz gleichem Nenndruck.\linebreak
 Aus dem realen maximalen Betriebsdruck und der Betriebstemperatur wird dann ähnlich wie bei der Nennweite der Nenndruck der Leitung gewählt. Ist die Nennweite ebenfalls festgelegt, kann nun anhand von Tabellen bestimmt werden, welche Wandstärken und Rohrmaße für den jeweiligen Rohrleitungsbestandteil vorliegen. Je nach Druckstufe und Nennweite können sich sich auf diese Weise verschiedene Wandstärken der Rohre und somit verschiedene Rohrinnendurchmesser trotz gleicher Nennweite ergeben. In den üblichen Druckstufen bis PN16, sowie üblichen Nennweiten bis DN150 bleiben diese Werte jedoch konstant und unterscheiden sich lediglich bei höheren Nenndrücken und Nennweiten. Der Außendurchmesser der Rohrleitung bleibt hingegen in jedem Fall konstant. (vgl.\,Tab.\,\ref{tab:rohrleitungen}). \cite{Ignatowitz.2015}
-
+\vspace*{-2.5mm}
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
@@ -536,12 +543,16 @@ Aus dem realen maximalen Betriebsdruck und der Betriebstemperatur wird dann ähn
 	}
 \end{table}%
 \FloatBarrier
-\vspace*{-10mm}
-{\footnotesize $d_a \dots$ Außendurchmesser, $s\dots$ Wandstärke, $d_i \dots$ Innendurchmesser} 
+\vspace*{-2.5mm}
+{\footnotesize $d_a \dots$ Außendurchmesser, $s\dots$ Wandstärke, $d_i \dots$ Innendurchmesser}\\
+\vspace*{-2.5mm}
 
+Um die Rohrleitung nun in Auftrag geben zu können ist sind neben der Rohrleitungslänge und Form, die Angabe der zu nutzenden Rohrverbindung und die Werkstoffwahl nötig. Die in der Chemie am meisten verwendete lösbare Verbindung ist die Flanschverbindung. Sie besteht aus je zwei Flanschen, einer Dichtung, sowie den dazu passenden Schrauben, Muttern und Unterlegscheiben. In Ausführung als Vorschweißflansch und mit der richtigen Werkstoffauswahl ist diese lösbare Rohrverbindung für viele übliche Drücke und Temperaturen einsetzbar.  Neben Flanschen gibt es auch weitere lösbare Rohr- und Schlauchverbindungen, wie beispielsweise die \textsc{Kamlock}-Kopplung. Sie wird als Schnellverschluss hauptsächlich für Entleerungsschläuche bei niedrigen Drücken und Umgebungstemperaturen genutzt. Soll sind jedoch auch weitere Verbindungen wie Schweiß-, Schraub- oder Muffenverbindungen möglich, welche je nach Anwendungsbereich gewisse Vorteile gegenüber den genannten Möglichkeiten darstellen können.\cite{Ignatowitz.2015}\linebreak
+Für die Wahl des Rohrwerkstoffes sind zunächst die korrosiven Eigenschaften des zu fördernden Stoffes nötig. Sind diese bestimmt ist der Rohrwerkstoff so zu wählen, dass der Prozessstoff den Rohrwerkstoff nicht korrodiert.
 
+\todo[inline]{Nachfragen: Wie soll bei der Werkstoffauswahl vorgegangen werden ?}
 
-%Ist die Planung für die Förderung eines Fluids in Form von R\&I-Fließbildern beendet kann mit der Auswahl der Komponenten begonnen werden. Festzulegen sind hierfür beispielsweise die Förderpumpe, Armaturen und Behälter sowie die verbindenden Rohrleitungen. Wichtig ist hierbei, dass eine ständige Überprüfung der Kompatibilität der Komponenten erfolgt, um Parameter wie Förderdrücke, und Strömungsgeschwindigkeiten sorgfältig zu bestimmen. Die Rohrleitungsplanung steht demnach im direkten Zusammenhang mit der Pumpen
+\todo[inline]{Nachfragen: Rohrleitungsklassen einbauen (PAS und Gefahrenpotential) ?}
 
 
 %\subsection{Normen und Standards}
