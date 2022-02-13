@@ -483,7 +483,7 @@ Beginnend mit dem Durchmesser hat dieser laut Gleichung \eqref{eq:hagen} einen m
 	\eta 		& dynamische Viskosität\\
 \end{parameter}
 
-Eine alternative Herangehensweise aus der Literatur trifft die Annahme der Strömungsgeschwindigkeit für das zu fördernde Fluid. Typische Strömungsgeschwindigkeiten für Wasser werden mit 0,3 bis \SI{3}{\meter \per \second} und für viskose Flüssigkeiten mit 0,3 bis \SI{2}{\meter \per \second} angegeben. Der erforderliche Rohrdurchmesser berechnet sich dann nach Gleichung \eqref{eq:durchmesser_alternative}. Durch die Annahme der Strömungsgeschwindigkeit werden Viskosität und Druckverlust in dieser Berechnung nicht einbezogen und es würden sich ähnliche Rohrleitungsdurchmesser für verschieden viskose Flüssigkeiten ergeben.\cite{Bierwerth.2019}
+Eine alternative Herangehensweise aus der Literatur trifft die Annahme der Strömungsgeschwindigkeit für das zu fördernde Fluid. Typische Strömungsgeschwindigkeiten für Wasser werden mit 0,3 bis \SI{3}{\meter \per \second} und für viskose Flüssigkeiten mit 0,3 bis \SI{2}{\meter \per \second} angegeben. Der erforderliche Rohrdurchmesser berechnet sich dann nach Gleichung\,\eqref{eq:durchmesser_alternative}. Durch die Annahme der Strömungsgeschwindigkeit werden Viskosität und Druckverlust in dieser Berechnung nicht einbezogen und es würden sich ähnliche Rohrleitungsdurchmesser für verschieden viskose Flüssigkeiten ergeben.\cite{Bierwerth.2019}
 
 \begin{equation}
 	\label{eq:durchmesser_alternative}
@@ -497,10 +497,47 @@ Eine alternative Herangehensweise aus der Literatur trifft die Annahme der Strö
 
 Ist der erforderliche Rohrleitungsdurchmesser bestimmt, kann aus einer Reihe von bevorzugten DN-Stufen nach DIN EN ISO 6708 gewählt werden. Die Nennweite $DN$ beschreibt dabei jedoch nicht den exakten Innendurchmesser der Rohrleitung, sondern ist das kennzeichnende Merkmal zueinander passender Teile von Rohrleitungssystemen. Für die Auslegung wird die nächsthöhere Nennweite zum berechneten Durchmesser gewählt (vgl. Tabelle \ref{tab:rohrleitungen}).\cite{Ignatowitz.2015} 
 
-Der Grund für die Abweichung von Nennweite und Rohrinnendurchmesser liegt in den unterschiedlichen Wandstärken von Rohrleitungen bei verschiedenen Nenndrücken. Der Nenndruck $PN$ gibt als weitere Kenngröße für Rohrleitungen die Druckbelastbarkeit eines Rohrleitungssystem mit Rohrleitungsbestandteilen gleicher Nennweiten und gleicher Druckbelastbarkeit an. Übersetzt heißt das, dass der angebene Nenndruck dem maximal zulässigem Betriebsdruck der Rohrleitung bei \SI{20}{\celsius} entspricht. Erhöht sich die Betriebstemperatur verringert sich auch der maximal zulässige Betriebsdruck, trotz gleichem Nenndruck.\linebreak
-Je nach maximalen Betriebsdruck und Temperatur ergibt sich also der auszuwählende Nenndruck. Ist die Nennweite ebenfalls festgelegt, kann nun anhand von Tabellen bestimmt werden, welche Wandstärken und Rohrmaße für den jeweiligen Rohrleitungsbestandteil vorliegen. Damit wird auch klar, dass sich die Rohrinnendurchmesser trotz gleicher Nennweiten bei unterschiedlichen Druckstufen unterscheiden können, da die Wandstärken mit steigender Druckstufe erhöhen. Der Außendurchmesser bleibt hingegen konstant (vgl. Tab. \ref{tab:rohrleitungen}). \cite{Ignatowitz.2015}
+Als weiter Kenngröße für Rohrleitungen ist der Nenndruck $PN$ zu bestimmen, welcher für Rohrleitungen den maximalen Betriebsdruck eines Rohrleitungssystems mit Rohrleitungsbestandteilen gleicher Nennweiten und gleicher Druckbelastbarkeit bei einer Betriebstemperatur von \SI{20}{\celsius} angibt. Erhöht sich die Betriebstemperatur verringert sich auch der maximal zulässige Betriebsdruck, trotz gleichem Nenndruck.\linebreak
+Aus dem realen maximalen Betriebsdruck und der Betriebstemperatur wird dann ähnlich wie bei der Nennweite der Nenndruck der Leitung gewählt. Ist die Nennweite ebenfalls festgelegt, kann nun anhand von Tabellen bestimmt werden, welche Wandstärken und Rohrmaße für den jeweiligen Rohrleitungsbestandteil vorliegen. Je nach Druckstufe und Nennweite können sich sich auf diese Weise verschiedene Wandstärken der Rohre und somit verschiedene Rohrinnendurchmesser trotz gleicher Nennweite ergeben. In den üblichen Druckstufen bis PN16, sowie üblichen Nennweiten bis DN150 bleiben diese Werte jedoch konstant und unterscheiden sich lediglich bei höheren Nenndrücken und Nennweiten. Der Außendurchmesser der Rohrleitung bleibt hingegen in jedem Fall konstant. (vgl.\,Tab.\,\ref{tab:rohrleitungen}). \cite{Ignatowitz.2015}
 
-\missingfigure{Tabelle Rohrleitung}
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\caption{Maße für Stahlrohre in Millimetern aus unlegierten Stählen in Abhängigkeit von Nennweite und Nenndruck (Richtwerte), erstellt nach \cite{Ignatowitz.2015}}
+	\label{tab:rohrleitungen}
+	\resizebox{\textwidth}{!}{
+		\begin{tabulary}{1.3\textwidth}{C|C|C|C|C|C|C|C|C|C|C|C|C|C}
+			\hline
+			\textbf{Maß} &\textbf{PN} &  \textbf{DN10}& \textbf{DN15}& \textbf{DN20}& \textbf{DN25}& \textbf{DN32}& \textbf{DN40}& \textbf{DN50}& \textbf{DN65}& \textbf{DN80}& \textbf{DN100}& \textbf{DN200}& \textbf{DN250}\\
+			\hline
+			 \multirow{5}{*}{$d_a$}& 2,5&\multirow{5}{*}{17,2}&\multirow{5}{*}{21,3}&\multirow{5}{*}{26,9}&\multirow{5}{*}{33,7}&\multirow{5}{*}{42,4}&\multirow{5}{*}{48,3}&\multirow{5}{*}{60,3}&\multirow{5}{*}{76,1}&\multirow{5}{*}{88,9}&\multirow{5}{*}{114,3}&\multirow{5}{*}{219,3}&\multirow{5}{*}{273,0}\\
+			& 6&&&&&&&&&&&&\\
+			& 10&&&&&&&&&&&&\\
+			&16&&&&&&&&&&&&\\
+			&25&&&&&&&&&&&&\\
+			\hline
+			 \multirow{5}{*}{$s$}&2,5&\multirow{5}{*}{1,8}&\multirow{5}{*}{2,0}&\multirow{5}{*}{2,3}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,9}&\multirow{5}{*}{2,9}&\multirow{5}{*}{3,2}&\multirow{5}{*}{3,6}&\multirow{4}{*}{5,9}&\multirow{4}{*}{6,3}\\
+			&6 &&&&&&&&&&&&\\
+			& 10&&&&&&&&&&&&\\
+			&16&&&&&&&&&&&&\\
+			\cline{2-2}
+			\cline{13-14}
+			&25&&&&&&&&&&&6,3&7,1\\
+			\hline 
+			\multirow{5}{*}{$d_i$}&2,5&\multirow{5}{*}{13,6}&\multirow{5}{*}{17,3}&\multirow{5}{*}{22,3}&\multirow{5}{*}{28,5}&\multirow{5}{*}{37,2}&\multirow{5}{*}{43,1}&\multirow{5}{*}{54,5}&\multirow{5}{*}{70,3}&\multirow{5}{*}{82,5}&\multirow{5}{*}{107,1}&\multirow{4}{*}{207,3}&\multirow{4}{*}{260,4}\\
+			& 6&&&&&&&&&&&&\\
+			& 10&&&&&&&&&&&&\\
+			&16&&&&&&&&&&&&\\
+			\cline{2-2}
+			\cline{13-14}
+			&25&&&&&&&&&&&206,5&258,8\\
+			\hline   
+	\end{tabulary}
+	}
+\end{table}%
+\FloatBarrier
+\vspace*{-10mm}
+{\footnotesize $d_a \dots$ Außendurchmesser, $s\dots$ Wandstärke, $d_i \dots$ Innendurchmesser} 
 
 
 
