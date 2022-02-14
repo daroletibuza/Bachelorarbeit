@@ -120,7 +120,7 @@ Aufgrund der hohen Explosionsgefährdung sind deshalb in den Zonen 0 und 1 nur G
 %	\item das an und in der Anlage arbeitende Personal hat sich regelmäßigen Sicherheitsunterweisungen zu unterziehen
 %\end{itemize}
 
-\subsection{Definition und Gliederung zu Verdickungsmitteln}
+\subsection{Verdickungsmittel}
 
 In der Farben- und Putzindustrie werden Verdickungsmittel als rheologische Additive bezeichnet. Sie erhöhen die Viskosität von Flüssigkeiten und ändern somit ihre rheologischen Eigenschaften, welche die Auftragungs-, Fließ- und Verlaufseigenschaften von Farben und Putzen bestimmen. Verdickungsmittel kommen jedoch auch in der Lebensmittelchemie oder Pharmazie zum Einsatz. Je nach dem welche Anforderungen an das Verdickermittel gestellt werden, unterscheiden sich diese in ihrer Zusammensetzung (siehe Abb. \ref{fig:verdicker_einteilung}). \cite{Brock.2009}
 
@@ -456,23 +456,7 @@ Um den Dosierstrom ohne Rohrleitungseinbauten zu bestimmen, ist es möglich ein 
 
 
 \subsection{Zeichnerische Umsetzung und Rohrleitungsplanung}
-Die technische Planung ist an dieser Stelle als Begriff gewählt worden, da damit ein fachübergreifender Bereich für die Konzeption von Umsetzungsideen umfasst wird. So beinhaltet die Umsetzung einer Dosieranlage nicht nur die Auswahl der Komponenten um das Verfahren umzusetzen, sondern auch die zeichnerische Dokumentation des Verfahrens, sowie Überlegungen der Rohrleitungsauswahl und der zu verarbeitenden Signal sind von entscheidender Bedeutung. 
-
-\subsubsection{Darstellung der Chemieanlage}
-Fließbilder stellen als zeichnerische Darstellung die chemische Anlage oder Anlagenbestandteilen dar und sollen übersichtlich und einprägsam den Aufbau der Anlage oder eines Verfahrens aufzeigen können. In der Zeichnung werden demnach Stoff- und Energieströme, Apparate, Armaturen und Maschinen zusammengefasst um möglichst schnell und effizient einen Überblick zu bekommen. Da je nach betrachteten Aspekt der Anlage verschiedene Anforderung an eine solche Anlagendarstellung gestellt werden, existieren deshalb die Formen Grundfließbild, Verfahrensfließbild und Rohrleitungs- und Instrumentationsfließbild (R\&I-Fließschema). Sie unterscheiden sich neben der Nutzung verschiedener grafischer Symbole und Fließlinie vor allem in Detailgrad der Anlagenbeschreibung. Dabei stellt das Grundfließbild lediglich das reine Verfahren mit Stoff- und Energieströmen dar, während im R\&I-Fließschema jegliche Anlagenkomponenten wie Pumpen, Ventile und Behälter aufgeführt und benannt sind. In den Normen DIN 2800-3 (2014) und DIN EN ISO 10628-1 (2013) sind die verschiedenen Fließschemata genormt. Die dafür zu verwendenden Symbole, Kennungen und Fließlinienformatierungen sind ergänzend in den Normen DIN EN ISO 10628-2 (2013) und DIN 28000-3 und DIN 28000-4 (2014) beschrieben. Beispielhaft ist in Abbildung \ref{fig:fließbilder} ein R \& I - Fließbild dargestellt. \cite{Ignatowitz.2015}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1.0\textwidth]{img/fließbilder}
-	\caption{Vereinfachtes R\& I - Fließbild}
-	\label{fig:fließbilder}
-\end{figure}
-\FloatBarrier
-%Ende
-
-\subsubsection{EMSR-Stellenplan}
-%Instrumentation Loop diagramm
-\todo[inline]{Literatur und Zeichnung}
+Diese Abschnitt beinhaltet die rohrleitungstechnische und zeichnerische Umsetzung einer Anlage oder eines Anlagenteils. In Form einer groben Rohrleitungsplanung, sowie der Erstellung eines R\&I Fließbildes und eines EMSR-Stellplanes soll die Grundlage für die Ausführung und Dokumentation einer Anlagenerweiterung ermöglicht werden.
 
 \subsubsection{Rohrleitungsplanung}
 Die Rohrplanung umfasst im wesentlichen das Festlegen von Charakteristiken von Rohrleitungen, wie Anschlüsse, die Rohrlänge, Nennweiten, Nenndrücke oder auch die Wahl des Werkstoffes und Bestimmung der Rohrleitungsklasse. Diese werden durch die nötigen Betriebsparameter bestimmt und stehen im engen Zusammenhang mit vorhandenen Rohrleitungsstrukturen, sowie der Förderpumpe. \linebreak
@@ -483,8 +467,8 @@ Beginnend mit dem Durchmesser hat dieser laut Gleichung \eqref{eq:hagen} einen m
 	d = \sqrt[4]{\frac{128*\eta*L*\dot{V}}{\Delta p * \pi}}
 \end{equation}
 \begin{parameter}
-		d		& innerer Durchmesser der Rohrleitung \\
-		L		& Länge der Rohrleitung\\
+	d		& innerer Durchmesser der Rohrleitung \\
+	L		& Länge der Rohrleitung\\
 	\dot{V}		& Volumenstrom\\
 	\Delta p	& Druckverlust\\
 	\eta 		& dynamische Viskosität\\
@@ -517,13 +501,13 @@ Aus dem realen maximalen Betriebsdruck und der Betriebstemperatur wird dann ähn
 			\hline
 			\textbf{Maß} &\textbf{PN} &  \textbf{DN10}& \textbf{DN15}& \textbf{DN20}& \textbf{DN25}& \textbf{DN32}& \textbf{DN40}& \textbf{DN50}& \textbf{DN65}& \textbf{DN80}& \textbf{DN100}& \textbf{DN200}& \textbf{DN250}\\
 			\hline
-			 \multirow{5}{*}{$d_a$}& 2,5&\multirow{5}{*}{17,2}&\multirow{5}{*}{21,3}&\multirow{5}{*}{26,9}&\multirow{5}{*}{33,7}&\multirow{5}{*}{42,4}&\multirow{5}{*}{48,3}&\multirow{5}{*}{60,3}&\multirow{5}{*}{76,1}&\multirow{5}{*}{88,9}&\multirow{5}{*}{114,3}&\multirow{5}{*}{219,3}&\multirow{5}{*}{273,0}\\
+			\multirow{5}{*}{$d_a$}& 2,5&\multirow{5}{*}{17,2}&\multirow{5}{*}{21,3}&\multirow{5}{*}{26,9}&\multirow{5}{*}{33,7}&\multirow{5}{*}{42,4}&\multirow{5}{*}{48,3}&\multirow{5}{*}{60,3}&\multirow{5}{*}{76,1}&\multirow{5}{*}{88,9}&\multirow{5}{*}{114,3}&\multirow{5}{*}{219,3}&\multirow{5}{*}{273,0}\\
 			& 6&&&&&&&&&&&&\\
 			& 10&&&&&&&&&&&&\\
 			&16&&&&&&&&&&&&\\
 			&25&&&&&&&&&&&&\\
 			\hline
-			 \multirow{5}{*}{$s$}&2,5&\multirow{5}{*}{1,8}&\multirow{5}{*}{2,0}&\multirow{5}{*}{2,3}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,9}&\multirow{5}{*}{2,9}&\multirow{5}{*}{3,2}&\multirow{5}{*}{3,6}&\multirow{4}{*}{5,9}&\multirow{4}{*}{6,3}\\
+			\multirow{5}{*}{$s$}&2,5&\multirow{5}{*}{1,8}&\multirow{5}{*}{2,0}&\multirow{5}{*}{2,3}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,6}&\multirow{5}{*}{2,9}&\multirow{5}{*}{2,9}&\multirow{5}{*}{3,2}&\multirow{5}{*}{3,6}&\multirow{4}{*}{5,9}&\multirow{4}{*}{6,3}\\
 			&6 &&&&&&&&&&&&\\
 			& 10&&&&&&&&&&&&\\
 			&16&&&&&&&&&&&&\\
@@ -539,7 +523,7 @@ Aus dem realen maximalen Betriebsdruck und der Betriebstemperatur wird dann ähn
 			\cline{13-14}
 			&25&&&&&&&&&&&206,5&258,8\\
 			\hline   
-	\end{tabulary}
+		\end{tabulary}
 	}
 \end{table}%
 \FloatBarrier
@@ -548,12 +532,70 @@ Aus dem realen maximalen Betriebsdruck und der Betriebstemperatur wird dann ähn
 \vspace*{-2.5mm}
 
 Um die Rohrleitung nun in Auftrag geben zu können ist sind neben der Rohrleitungslänge und Form, die Angabe der zu nutzenden Rohrverbindung und die Werkstoffwahl nötig. Die in der Chemie am meisten verwendete lösbare Verbindung ist die Flanschverbindung. Sie besteht aus je zwei Flanschen, einer Dichtung, sowie den dazu passenden Schrauben, Muttern und Unterlegscheiben. In Ausführung als Vorschweißflansch und mit der richtigen Werkstoffauswahl ist diese lösbare Rohrverbindung für viele übliche Drücke und Temperaturen einsetzbar.  Neben Flanschen gibt es auch weitere lösbare Rohr- und Schlauchverbindungen, wie beispielsweise die \textsc{Kamlock}-Kopplung. Sie wird als Schnellverschluss hauptsächlich für Entleerungsschläuche bei niedrigen Drücken und Umgebungstemperaturen genutzt. Soll sind jedoch auch weitere Verbindungen wie Schweiß-, Schraub- oder Muffenverbindungen möglich, welche je nach Anwendungsbereich gewisse Vorteile gegenüber den genannten Möglichkeiten darstellen können.\cite{Ignatowitz.2015}\linebreak
-Für die Wahl des Rohrwerkstoffes sind zunächst die korrosiven Eigenschaften des zu fördernden Stoffes nötig. Sind diese bestimmt ist der Rohrwerkstoff so zu wählen, dass der Prozessstoff den Rohrwerkstoff nicht korrodiert.
+Für die Wahl des Rohrwerkstoffes sind zunächst die korrosiven Eigenschaften des zu fördernden Stoffes nötig. Sind diese bestimmt ist der Rohrwerkstoff so zu wählen, dass der Prozessstoff den Rohrwerkstoff nicht korrodiert. Für hohe Reinheitsanforderungen werden deshalb in Rohrleitungen oft nicht rostende Stähle verwendet. \linebreak 
+Bei der \textsc{Alberdingk Boley Leuna GmbH} verbaute Rohrleitungen für Chemikalien bestehen typischer Weise aus V2A-Stahl mit Glattflansch in der Form B1 und sind mit \textsc{Novaflon} 200 abgedichtet. Für korrosivere Medien kommt aber zum Teil auch V4A-Stahl zum Einsatz.
 
-\todo[inline]{Nachfragen: Wie soll bei der Werkstoffauswahl vorgegangen werden ?}
+Um die bestimmte Rohrleitung in der Anlage nun spezifizieren zu können, gibt es verschiedene Möglichkeiten. Die Rohrleitungsspezifikation der \textsc{Alberdingk Boley Leuna GmbH} nutzt dafür eine abgewandelte Form der Rohrklassen nach PAS\,1057. Der Rohrleitungsname setzt sich dabei aus dem in Tabelle \ref{tab:rohrspezi} aufgeführten Namenssystem zusammen.
 
-\todo[inline]{Nachfragen: Rohrleitungsklassen einbauen (PAS und Gefahrenpotential) ?}
+% Table generated by Excel2LaTeX from sheet 'Daten'
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\caption{Rohrleitungsspezifikation der \textsc{Alberdingk Boley Leuna GmbH}}
+	\label{tab:rohrspezi}
+	\resizebox{\textwidth}{!}{
+		\begin{tabulary}{1.75\textwidth}{C|C|C|C|C|C|C|C|C|C|C|C|C|C|C|C}
+			\cline{2-11}
+			\cline{12-15}
+			&\multicolumn{9}{c}{\textbf{Rohrklasse}}&&\multicolumn{3}{c}{\textbf{Medium}}&&\\
+			\hline
+			&\textbf{Typ}&-&\textbf{Material}&-&\textbf{DN}&-&\textbf{PN}&-&\textbf{Isolierung}&-&\textbf{Medium}&-&\textbf{Aggregatzustand}&-&\textbf{Nummer}\\
+			\hline
+			\multirow{6}{*}{\textbf{Parameter}}&&&2A&&&&&&&&&&&&\\
+			&RO&&4A&&&&&&IA&&&&F&&Nummernkreis\\
+			&&&ST&&Nennweite&&Druckstufe&&IG&&frei&&G&& und\\
+			&RU&&PP&&&&&&I0&&&&P&&Zählnummer\\
+			&&&PE&&&&&&&&&&&&\\
+			&&&GF&&&&&&&&&&&&\\
+			\hline
+			\textbf{Rohrname}&R0&-&2A&-&50&-&16&-&IA&-&STY&-&F&-&110.01\\
+			\hline
+	\end{tabulary}
+}
+\end{table}%
+\FloatBarrier
+\vspace*{-2.5mm}
+{\footnotesize R0 \dots Rohrleitung überirdisch, RU \dots Rohrleitung unterirdisch}\\
+{\footnotesize 2A \dots V2A, 4A \dots V4A, ST \dots Stahl, PP \dots Polypropylen, PE \dots Polyethylen, GF \dots Glasfaser}\\
+{\footnotesize IA \dots Isolierung Außenbereich, IG \dots Isolierung Generell, I0 \dots keine Isolierung}\\
+{\footnotesize F \dots Flüssig, G \dots Gasförmig, P \dots Fest}
 
+\subsubsection{Darstellung der Chemieanlage}
+Fließbilder stellen  eine zeichnerische Darstellung der chemischen Anlage oder Anlagenbestandteilen dar und sollen übersichtlich und einprägsam den Aufbau der Anlage oder eines Verfahrens aufzeigen können. In der Zeichnung werden demnach Stoff- und Energieströme, Apparate, Armaturen und Maschinen zusammengefasst um möglichst schnell und effizient einen Überblick zu bekommen. Da je nach betrachteten Aspekt der Anlage verschiedene Anforderung an eine solche Anlagendarstellung gestellt werden, existieren deshalb die Formen Grundfließbild, Verfahrensfließbild und Rohrleitungs- und Instrumentationsfließbild (R\&I-Fließschema). Sie unterscheiden sich neben der Nutzung verschiedener grafischer Symbole und Fließlinie vor allem in Detailgrad der Anlagenbeschreibung. Dabei stellt das Grundfließbild lediglich das reine Verfahren mit Stoff- und Energieströmen dar, während im R\&I-Fließschema jegliche Anlagenkomponenten wie Pumpen, Ventile und Behälter aufgeführt und benannt sind. In den Normen DIN 2800-3 (2014) und DIN EN ISO 10628-1 (2013) sind die verschiedenen Fließschemata genormt. Die dafür zu verwendenden Symbole, Kennungen und Fließlinienformatierungen sind ergänzend in den Normen DIN EN ISO 10628-2 (2013) und DIN 28000-3 und DIN 28000-4 (2014) beschrieben. Beispielhaft ist in Abbildung \ref{fig:fließbilder} ein R \& I - Fließbild dargestellt. \cite{Ignatowitz.2015}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{img/fließbilder}
+	\caption{Vereinfachtes R\& I - Fließbild}
+	\label{fig:fließbilder}
+\end{figure}
+\FloatBarrier
+%Ende
+
+\subsubsection{EMSR-Stellenplan}
+%Instrumentation Loop diagramm
+EMSR-Stellenpläne, auch Instrumentation Loop Diagrams genannt, sind die detaillierteste Darstellungsform für Regel- und Steuerungssysteme und enthalten demnach jegliche Informationen, die in einem R\&I Fließbild weggelassen werden. Für alle im R\&I dargestellten prozessleittechnischen Stellen (PLT-Stellen) sind solche Stromlaufpläne zu erarbeiten und sollen den Signalweg der Instrumentierung verdeutlichen. Ein solcher EMSR-Stellenplan soll desweiteren helfen die PLT-Stelle in Betrieb zu nehmen und im Betrieb die Störungssuche erleichtern. \linebreak
+Der Stellplan ist dabei in verschiedene Sektionen unterteilt, um die Informationen aus dem Feld bis hin zum Prozessleitsystem nachvollziehen zu können. Die Benennung dieser Einteilungen kann sich je nach Einrichtung unterscheiden, jedoch zeigt jede Sektion einen Teil des Regelkreises und die Instrumente, die in ihm enthalten sind.\linebreak
+Unter der Bezeichnung \textit{Feld} sind die im Feld installierten Instrumente, sowie die dazugehörigen Verteilerboxen dargestellt. Die Verteilerboxen haben dabei die Funktion als Verbindungspunkte für die Signalleitungen und werden normalerweise nicht im R\&I Fließbild dargestellt. Danach folgt in der nächsten Sektion der \textit{Instrument technical room}. In diesem Abschnitt kommen die Stammkabel der Verteilerboxen aus dem Feld auf der A-Seite des Rangierschrankes zusammen und werden passend zur B-Seite des Schranks rangiert. Ein weiteres Stammkabel verbindet nun die Rangierseite B und die Ex-Kabine. In dieser Ex-Kabine münden die 4 bis \SI{20}{\milli \ampere} Messsginale dann auf Intrinsically Safety Termination Assembly Boards (ISTA Boards), um eine Potentialtrennung für den Ex-Bereich sicher zu stellen. Ausgehend davon sind diese Boards dann über Bus-Kabel auf ein entsprechendes Field Bus Module (FBM) im Distributed control system (DCS) verknüpft, die das Messsignal in eine Binärstruktur übersetzen und dann im Prozessleitsystem weiterverarbeiten lassen. Beispielhaft ist ein solches Instrumentation loop diagram für einen Duruchflussmesser in in Abbildung \ref{fig:ild} dargestellt. Es sei jedoch erwähnt, dass sich solche Pläne je nach Institution und Anwendung in ihren Bezeichnungen und ihrer Komplexität stark unterscheiden können.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{cad/vorlage_idl.pdf}
+	\caption{Beispiel eines EMSR-Stellenplans}
+	\label{fig:idl}
+\end{figure}
+\FloatBarrier
+%Ende
 
 %\subsection{Normen und Standards}
 %
