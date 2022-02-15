@@ -238,6 +238,33 @@ Schlussendlich gilt für die Einteilung der Fluide nach Gleichung \eqref{eq: new
 %\paragraph*{Messmethoden zur Viskositätsbestimmung}
 Zur Bestimmung der Viskosität müssen für ein \textsc{Newtonsches} Fluid laut Gleichung\,\eqref{eq: newton} die Schergeschwindigkeit $D$ und die Schubspannung $\tau$ bestimmt werden. Eine Möglichkeit hierfür ist die Nutzung eines sogenannten Rotationsviskosimeters. Allgemein beschreiben Rotationsviskosimeter einen Viskosimetertypen, bei dem die zu messende Flüssigkeit zwischen spezifisch geformten Körpern gebracht wird, von denen einer rotiert. Dabei tritt eine Scherung der Flüssigkeit auf und das aufgewendete Drehmoment am Viskosimeter wird gemessen. Neben Rotationsviskosimetern sind auch weitere Viskosimetertypen wie Kappilarviskoskosimeter und Fallkörperviskosimeter bekannt. Diese unterscheiden sich neben dem Aufbau gegenüber dem Rotationsviskosimeter beispielsweise auch darin, dass sie im Regelfall die Viskosität von \textsc{Nichtnewtonschen} Fluiden nicht ausreichend untersucht werden kann. \cite{ROMPPRedaktion.2008}
 
+\paragraph{Ermittlung der Viskosität nach DIN EN ISO 2555}
+Eine Möglichkeit die dynamische Viskosität einer Dispersion zu bestimmen, ist die Messung mit einem Rotationsviskosimeter nach DIN EN ISO 2555. Da in dieser Norm hauptsächlich ein Rotationsviskosimeter mit Einzelzylinder beschrieben ist, wird an dieser Stelle auf die DIN ISO 3219 verwiesen. In dieser Norm werden zusätzlich Rotationsviskosimeter mit koaxialem Zylinder und Kegel-Platte-Viskosimeter näher beschrieben. \cite{DINDeutschesInstitutfurNormunge.V..Februar2013, DINDeutschesInstitutfurNormunge.V..September2018} \linebreak
+Das bei \textsc{Alberdingk Boley Leuna GmbH} verwendete Verfahren zur Viskositätsbestimmung ist angelehnt an die DIN EN ISO 2555 unter Nutzung eines digitalen \textsc{Brookfield}-Rotationsviskosimeters, benannt nach dem Hersteller \textsc{AMETEK$^\text{\textregistered}$\,Brookfield}. Diese Viskosimeter haben den Vorteil preisgünstig zu sein und erlauben ein Messen der Viskosität direkt im Probengefäß. Da jedoch durch das direkte Eintauchen in ein theoretisch beliebiges Probengefäß nur eingeschränkte Übertragbarkeiten und Reproduzierbarkeiten möglich sind, können diese Geräte hauptsächlich für Vergleichsmessungen genutzt werden.  Der Hersteller gibt hierfür an ein \SI{600}{\milli \liter} Becherglas als Probengefäß zu nutzen, jedoch wird in der DIN\,EN\,ISO\,2555 darauf hingewiesen, dass die Becherglasgröße freigewählt werden darf. Für den Vergleich von Messungen rät die Norm dennoch jeweils die gleiche Größe des Becherglases zu nutzen. \cite{ROMPPRedaktion.2008, brookfield_31.01.2022, DINDeutschesInstitutfurNormunge.V..September2018}
+
+%\begin{wrapfigure}{R}{0.33\textwidth}
+%	\centering
+%	\includegraphics[width=0.25\textwidth]{img/viskosimeter}
+%	\caption{Viskositätsmessung mit digitalem \textsc{Brookfield}-\linebreak Rotationsviskosimeter}
+%	\label{fig: viskosimeter}
+%\end{wrapfigure}
+%\FloatBarrier
+%%Ende
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.25\textwidth]{img/viskosimeter}
+	\caption{Viskositätsmessung mit digitalem \textsc{Brookfield}-Rotationsviskosimeter}
+	\label{fig: viskosimeter}
+\end{figure}
+\FloatBarrier
+%Ende
+
+Die Messung mittels digitalem \textsc{Brookfield}-Viskosimeter ist vergleichsweise einfach. Benötigt werden hierfür das Viskosimeter in einer Halterung, ein Becherglas, ein Temperaturmessgerät und eine herstellerspezifische Spindel. Soll die Viskosität bei bestimmten Temperaturen, abweichend der Labortemperatur bestimmt werden, ist zusätzlich ein thermostatisches Flüssigkeitsbad nötig (vgl. Abb. \ref{fig: viskosimeter}). Die Messung lässt sich nach dem Aufbau über das Bedienfeld starten in dem Spindel und Drehzahl eingegeben werden. Sobald die Messung startet beginnt sich die Spindel zu drehen.\\
+Das Messprinzip eines solchen \textsc{Brookfield}-Viskosimeters basiert auf der Messung der Winkelabweichung, auch Torsion genannt, zwischen der im Viskosimeter verbauten Welle und einer zweiten darunter angeordneten Spindel-Welle mit fest definierten geometrischen Körper. Beide Wellen drehen sich dabei mit der selben Drehzahl  und sind über eine Federeinheit verbunden. Bei Digital-Viskosimetern wird der Messwert der sich dann durch die Winkelabweichung ergibt direkt über ein Display angezeigt.\linebreak
+Entscheidend für die Messung der Viskosität ist bei dieser Messmethode die Auswahl des bereits erwähnten Becherglases, sowie der Spindel und der Drehzahl. Spindel und Drehzahl werden dabei unter Einbezug des Viskositätbereiches der Probe nach der gewünschten Präzision und dem Geschwindigkeitgefälle ausgewählt. \cite{DINDeutschesInstitutfurNormunge.V..September2018} 
+Durch Tabellen des Herstellers, welche sowohl Spindel als auch Viskositätsbereich in Abhängigkeit von Drehzahl und Gerätekonstanten berechnen lassen, werden diese Entscheidungen vereinfacht. \cite{brookfield_31.01.2022}
+
 \paragraph*{Bestimmung der Strömungsform} Nachdem die Viskosität bestimmt ist, lässt sich nun der Dosierstrom des Verdickermittels entsprechend seiner Strömungseigenschaften beschreiben. Hier für wird die sogenannte \textsc{Reynoldszahl} bestimmt. Sie ist eine dimensionslose Kennzahl und beschreibt das Verhältnis zwischen Trägheitskräften zu Reibungskräften in strömenden Flüssigkeiten und ist für durchströmte Rohrleitungen unter Gleichung\,\eqref{eq: reynolds} definiert. \cite{Foth.2014}
 
 \begin{equation}
@@ -596,6 +623,22 @@ Unter der Bezeichnung \textit{Feld} sind die im Feld installierten Instrumente, 
 \end{figure}
 \FloatBarrier
 %Ende
+
+\subsection{Allgemein heuristisches Entscheidungsverfahren}
+Da sich diese Bachelorarbeit mit der Findung einer Lösung für eine Problemstellung beschäftigt, wird sich in diesem Abschnitt kurz der Lehre der Heuristik zugewandt. Allgemein beschäftigt sich diese Wissenschaft mit Verfahren um Probleme zu lösen. Im Vordergrund stehen hierbei methodische Anleitungen, Anweisungen und Denkalgorithmen zu schaffen, welche zur Gewinnung neuer Erkenntnisse führen. \cite{Duden.10.02.2022} \linebreak Eine Kategorie dieser Verfahren sind allgemein heuristische Entscheidungsverfahren. Das Wort "`allgemein"' bedeutet in diesem Fall, dass die Methodik des Entscheidungsverfahrens nicht für ein spezielles Entscheidungsproblem konzipiert ist, sondern durchaus für verschiedenste Entscheidungsprobleme nutzbar ist. 
+Möglichkeiten, die sich aus der Anwendung eines allgemein heuristischen Verfahrens ergeben sind, dass sie:
+\begin{itemize}
+	\item zur Lösung beliebiger Entscheidungsprobleme geeignet sind,
+	\item die Zielorientierung erhöht wird und damit Fehlentscheidungen vermieden werden und
+	\item die Trennung von Faktenwissen und persönlicher Bewertung die Entscheidungsqualität erhöht.
+\end{itemize}
+Jedoch ergeben sich mit diesen Möglichkeiten auch Grenzen wie zum Beispiel, dass:
+\begin{itemize}
+	\item allgemein heuristische Entscheidungsverfahren weniger effektiv und effizient sind als ein existierendes spezielles Entscheidungsverfahren,
+	\item die Vermeidung von Fehlentscheidungen nicht garantiert werden kann und
+	\item mangelndes Fachwissen dadurch nicht kompensiert wird.
+\end{itemize}
+Solche Entscheidungsverfahren sind beispielsweise durch die Autoren \textsc{Rudolf Grüning} und \textsc{Richard Kühn}, \textsc{Rolf Bronner} oder \textsc{Egbert Kahle} in der Literatur beschrieben.
 
 %\subsection{Normen und Standards}
 %
