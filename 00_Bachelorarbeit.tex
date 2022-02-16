@@ -164,6 +164,17 @@ hidelinks %Entfernt Rahmen von Links
 	{\end{tabular}\par\vspace{\belowdisplayskip}
 }
 
+%Ex-Symbol
+\newcommand*\exsymbol{\includegraphics[scale=0.014]{EX-Logo.png}}
+
+%Tabellenfußnote
+\newcommand{\tablefootnote}[1]{
+	\vspace*{-2.5mm}
+	{\footnotesize #1}\\
+}
+
+
+
 
 \urlstyle{same}
 
@@ -186,9 +197,6 @@ hidelinks %Entfernt Rahmen von Links
 
 %Fußnote mit Klammer
 \renewcommand*{\thefootnote}{(\arabic{footnote})}
-
-%Ex-Symbol
-\newcommand*\exsymbol{\includegraphics[scale=0.014]{EX-Logo.png}}
 
 % ============= Dokumentbeginn =============
 \begin{document}
