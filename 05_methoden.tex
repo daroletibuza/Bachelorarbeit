@@ -5,6 +5,9 @@
 %Auswahl, Einschränkungen und Begründungen
 %Erhebungs-, Mess- und Auswertungsverfahren
 %Womit und wie haben Sie untersucht ?
+
+In diesem Abschnitt werden die genutzten Methoden zur Untersuchung einer Umsetzung für die Verdickungsmitteldosierung dargelegt. Er beinhaltet das allgemein heuristische Entscheidungsverfahren \textsc{Grüning} und \textsc{Kühn}, experimentelle Untersuchungen, Recherche zur Dosierung hochviskoser Medien, sowie die Vorgehensweise zur Risikoanalyse eines Prozesses mit Hilfe des HAZOP-Verfahrens und einer Risikomatrix nach \textsc{Nohl}.
+
 \subsection{Entscheidungsverfahren nach \textsc{Grüning} und \textsc{Kühn}}
 
 Im allgemein heuristischen Entscheidungsverfahren nach \textsc{Grüning} und \textsc{Kühn} beschreiben die Autoren auf welcher Grundlage die Entwicklung ihres Verfahrens beruht. Diese umfasst unter anderem heuristische Prinzipien, Entscheidungsmaximen, Erfahrungen der Autoren als Berater für komplexe Entscheidungssituationen, Erfahrung aus der Entwicklung spezieller heuristischer Entscheidungsverfahren, sowie existierenden allgemein heuristischen Entscheidungsverfahren von anderen Autoren. Mehr dazu, sowie die Beschreibung der Arten von Entscheidungsproblemen findet sich in der Literatur \cite{Grunig.2013}. Das Verfahren von \textsc{Grüning} und \textsc{Kühn} umfasst dabei sieben Schritte, welche über Schrittsequenzen miteinander verknüpft werden (siehe\,Abbildung\,\ref{fig:ahev}).  
@@ -29,7 +32,7 @@ Die folgenden Schritte 3 bis 7 werden mit jedem Teilproblem einzeln durchgeführ
 \vspace*{-2.5mm}
 \paragraph{Schritt 4: Festlegung von Entscheidungskriterien} Sind die Lösungsvarianten bestimmt, gilt es sich als nächstes die Entscheidungskriterien festzulegen anhand derer die Varianten evaluiert werden sollen. Die Beschreibung dieser Kriterien besticht dabei durch konkret definierte Maßstäbe anhand derer eine Einschätzung erfolgen kann.
 \vspace*{-2.5mm}
-\paragraph{Schritt 5: Festlegung von Umfeldszenarien} Dieser optionale Schritt des Entscheidungsprozesses fordert den Aktor der Entscheidung dazu auf, falls nötig, verschiedene Szenarien des Umfeldes zu beschreiben und Eintrittswahrscheinlichkeiten dafür zu definieren. In der Risiko- und Gefahrenanalysen nach dem HAZOP-Verfahren findet eine solche Beurteilung des Umfeldes beispielsweise statt. \todo{Münch nachfragen ob diese Riskotabelle nur für HAZOP galt}
+\paragraph{Schritt 5: Festlegung von Umfeldszenarien} Dieser optionale Schritt des Entscheidungsprozesses fordert den Aktor der Entscheidung dazu auf, falls nötig, verschiedene Szenarien des Umfeldes zu beschreiben und Eintrittswahrscheinlichkeiten dafür zu definieren. Beispielsweise findet eine solche Beurteilung des Umfeldes in der Risiko- und Gefahrenanalysen nach dem HAZOP-Verfahren unter zusätzlicher Nutzung einer Risikomatrix Anwendung.
 \vspace*{-2.5mm}
 \paragraph{Schritt 6: Ermittlung der Konsequenzen der Varianten:} Die zuvor überlegten Entscheidungskriterien und die optionalen Umweltszenarios werden mit den erarbeiteten Lösungsvorschlägen in einer Entscheidungsmatrix zusammengefasst und die sich daraus ergebenen Konsequenzwerte eingetragen. Die Konsequenzwerte werden hierbei durch eingehende Recherchen und dem Wissen und der Erfahrung des Aktors bestimmt und können daher auch einer gewissen Subjektivität unterliegen.
 \vspace*{-2.5mm}
@@ -172,7 +175,7 @@ Die Risikoanalyse nutzt als systematisches Auswerteverfahren verfügbare Informa
 Laut der Störfallverordnung (12. BImSchV) wird von Anlagenbetreibern neben dem Sicherheitsbericht auch die Darlegung eines Konzeptes zu Verhinderung von Störfällen verlangt. Für die systematische Ermittlung der Gefahren durch Störfälle bei bestimmungsgemäßen und nicht bestimmungsgemäßen Betrieb werden qualitative Methoden und Verfahren wie zum Beispiel das PAAG-Verfahren (HAZOP-Verfahren) zur Hilfe genommen. Zudem sind Risiken für die betrachteten Störfälle durch (semi-)quantitative Verfahren wie beispielsweise LOPA oder einer Risiko-Matrix nach Anhang II und III der Störfallverordnung zu bestimmen. \cite{Neumann.2010c}
 
 
-\subsubsection{Risikomatrix}
+\subsubsection{Risikomatrix nach \textsc{Nohl}}
 Als ein Instrument der Risikoanalyse stellt die Risikomatrix eine heruntergebrochene Auftragung der Schadensschwere $S$ über der Schadenshäufigkeit $H$ in Form einer Tabelle dar. Dabei wird die Häufigkeit eines Schadens in verschiedene Stufen von "`Sehr unwahrscheinlich"' bis "`Sicher"' und die Auswirkungen nach Schweregrad von "`keine Auswirkung"' bis "`katastrophale Auswirkung"' eingeteilt. Die Auswirkungen unterscheiden sich zudem in die Kategorien "`Personen"', "`Umwelt"' und "`Sachwerte oder Produktion"'. Die Dimension einer solchen Matrix reicht von 4x4 bis 6x6. Durch eine solche Matrix lassen sich Risiken besser darstellen und bewerten und ermöglichen leichteres Festlegen von Maßnahmen hinsichtlich Dringlichkeit und Umfang. Im Bereich des Arbeitsschutzes wird häufig die Risikomatrix nach \textsc{Nohl} verwendet. \cite{Neumann.2010b}\linebreak
 Die bei der \textsc{Alberdingk Boley Leuna GmbH} verwendete Risikomatrix ist ebenfalls eine nach \textsc{Nohl} entlehnte Risikomatrix und in Abbildung \ref{fig:risikomatrix} dargestellt. 
 
@@ -186,43 +189,50 @@ Die bei der \textsc{Alberdingk Boley Leuna GmbH} verwendete Risikomatrix ist ebe
 %Ende
 
 
-\subsubsection{HAZOP-Verfahren}
-Eine weit verbreitete, strukturierte Methode der Gefahrenanalyse ist das in der IEC 61882:2016 bzw. der DIN EN 61882:2017 beschriebene HAZOP-Verfahren \mbox{(Hazard And Operability)} zu deutsch PAAG-Verfahren (Prognose, Auffinden der Ursachen, Abschätzung der Auswirkungen und Gegenmaßnahmen). Das Verfahren eignet sich für die qualitative Gefahrenuntersuchung von Prozessanlagen mit dem Ziel mögliche Gefahren oder Abweichungen der angedachten Funktionalität des Systems festzustellen.  Durch schrittweises Prüfen einzelner Prozessparameter (vgl.\,Tabelle\,\ref{tab:parameter}) und Nutzung von Leitwörtern zur Beschreibung der Abweichung (vgl.\,Tabelle\,\ref{tab:leitworter}) wird somit die Betriebsfähigkeit des Prozesses bewertet und anschließend Gegenmaßnahmen erarbeitet. \cite{Hauptmanns.2020, UlfSchubert.2020, KenPatterson.2017} \linebreak 
+\subsubsection{HAZOP-Verfahren kombiniert mit Risikomatrix}
+Eine weit verbreitete, strukturierte Methode der Gefahrenanalyse ist das in der IEC 61882:2016 bzw. der DIN EN 61882:2017 beschriebene HAZOP-Verfahren \mbox{(Hazard And Operability)} zu deutsch PAAG-Verfahren (Prognose, Auffinden der Ursachen, Abschätzung der Auswirkungen und Gegenmaßnahmen). Das Verfahren eignet sich für die qualitative Gefahrenuntersuchung von Prozessanlagen mit dem Ziel mögliche Gefahren oder Abweichungen der angedachten Funktionalität des Systems festzustellen.  Durch schrittweises Prüfen einzelner Prozessparameter und Nutzung von Leitwörtern zur Beschreibung der Abweichung (vgl.\,Tabelle\,\ref{tab:leitworter}) wird somit die Betriebsfähigkeit des Prozesses bewertet und anschließend Gegenmaßnahmen erarbeitet. \cite{Hauptmanns.2020, UlfSchubert.2020, KenPatterson.2017} \linebreak 
 In der folgenden Übersicht in Abbildung \ref{fig:hazop} ist ein grundlegendes Vorgehen für eine solche Analyse erfasst.
 
-% Table generated by Excel2LaTeX from sheet 'Daten'
-\begin{table}[h!]
-	\renewcommand*{\arraystretch}{1.2}
-	\centering
-	\caption{Typische Parameter für Prozesse nach \cite{KenPatterson.2017}}
-	\label{tab:parameter}
-	%\resizebox{\textwidth}{!}{
-		\begin{tabulary}{1.0\textwidth}{C|CCC}
-			\hline
-			\multicolumn{1}{l|}{\textbf{Grundparameter}} & \multicolumn{3}{l}{\textbf{Genutzt wenn nötig}}\\
-			\hline
-			Durchfluss   & Mischen & Rühren & Transferieren\\
-			Füllstand  & Viskosität & Zugabe & Separierung \\
-			Temperatur  &Zeit & Phase & Geschwindigkeit\\
-			Druck & Partikelgröße & Messung & Steuerung \\
-			Zusammensetzung & pH-Wert & Sequenz & Signal \\
-			Reaktion &Start/Stop & Wartung & Service\\					
-			\hline
-		\end{tabulary}
-		%}
-\end{table}%
-\FloatBarrier
+%% Table generated by Excel2LaTeX from sheet 'Daten'
+%\begin{table}[h!]
+%	\renewcommand*{\arraystretch}{1.2}
+%	\centering
+%	\caption{Typische Parameter für Prozesse nach \cite{KenPatterson.2017}}
+%	\label{tab:parameter}
+%	\resizebox{0.6\textwidth}{!}{
+%		\begin{tabulary}{\textwidth}{C|CCC}
+%			\hline
+%			\multicolumn{1}{l|}{\textbf{Grundparameter}} & \multicolumn{3}{l}{\textbf{Genutzt wenn nötig}}\\
+%			\hline
+%			Durchfluss   & Mischen & Rühren & Transferieren\\
+%			Füllstand  & Viskosität & Zugabe & Separierung \\
+%			Temperatur  &Zeit & Phase & Geschwindigkeit\\
+%			Druck & Partikelgröße & Messung & Steuerung \\
+%			Zusammensetzung & pH-Wert & Sequenz & Signal \\
+%			Reaktion &Start/Stop & Wartung & Service\\					
+%			\hline
+%		\end{tabulary}
+%		}
+%\end{table}%
+%\FloatBarrier
 
 % Table generated by Excel2LaTeX from sheet 'Daten'
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
-	\caption{Typische Leitwörter für Abweichungen von Parametern nach \cite{KenPatterson.2017}}
+	\caption{Parameter und Leitwörter für die Beschreibung von Abweichungen \cite{KenPatterson.2017}}
 	\label{tab:leitworter}
 	\resizebox{\textwidth}{!}{
 		\begin{tabulary}{1.2\textwidth}{L|L}
 			\hline
-			\textbf{Leitwort}&\textbf{Bedeutung}\\
+			\multicolumn{2}{l}{\textbf{Grundparameter}}\\
+			\multicolumn{2}{l}{Durchfluss, Füllstand, Temperatur, Druck, Zusammensetzung, Reaktion}\\
+			\hline
+			\multicolumn{2}{l}{\textbf{weitere mögliche Parameter}}\\
+			\multicolumn{2}{l}{Mischen, Rühren, Transferieren, Viskosität, Zugabe, Trennung, Zeit, Phase, Geschwindigkeit,}\\
+			\multicolumn{2}{l}{Partikelgröße, Messung, Steuerung, pH-Wert, Sequenz, Signal, Start/Stop, Service, Wartung}\\
+			\hline
+			\textbf{Leitwörter}&\textbf{Bedeutung der Leitwörter}\\
 			\hline
 			Nein (nicht, nichts) 				& Konstruktionsabsicht wird nicht erzielt\\
 			Mehr (hoch, mehr von) 				& quantitative Erhöhung des Parameters\\
@@ -252,14 +262,59 @@ In der folgenden Übersicht in Abbildung \ref{fig:hazop} ist ein grundlegendes V
 
 Im Regelfall wird dieses Verfahren mit einem interdisziplinärem Team durchgeführt und auf Basis deren Erfahrungen die möglichen Gefahren, Änderungen und Maßnahmen erarbeitet. In dieser Arbeit wird sich jedoch in verkürzter Form dennoch mit einer solchen Analyse beschäftigt. Umgesetzt wird das Ganze in Form einer Tabelle, ähnlich wie sie in Abbildung \ref{fig:hazop_tabelle} dargestellt ist.
 
-\todo[inline]{Tabelle einfügen ?}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{img/hazoptabelle}
+	\caption{Ausschnitt einer HAZOP-Tabelle eines Behälters mit Bewertung durch eine Risikomatrix nach \textsc{Nohl}}
+	\label{fig:hazop_tabelle}
+\end{figure}
+\FloatBarrier
+%Ende
 
+Die in Abbildung \ref{fig:hazop_tabelle} enthält neben der HAZOP-Analyse die Bewertung der Folgen und der Maßnahmen durch eine Riskomatrix nach \textsc{Nohl}. Hierfür wird zunächst in der Spalte \textit{Matrix} festgelegt ob die Abweichung ein Risiko für die Sicherheit von Personen (\textit{S - Safety}) oder für die Umwelt (\textit{E - Environment}) darstellt. In der Spalte \textit{S} für \textit{severity} wird dann aus der Matrix die Schwere der Abweichung und in der folgenden Spalte die nicht reduzierte Eintrittswahrscheinlichkeit (\textit{UL - unmitigated likelihood}) eingetragen. Aus dem Produkt beider Werte ergibt sich in der Risikomatrix ein Zahlenwert, der die \textit{unmitigated risk}, das nicht reduzierte Risiko darstellt und in die Spalte \textit{UR} eingetragen wird. Je nach sich ergebenden Risiko kann anhand der einer Skala (vgl. Abbildung \ref{fig:risikomatrix}) die Risikostufe ermittelt und farblich kenntlich gemacht werden.\linebreak
+Um nun das Risiko der mit dem HAZOP-Verfahren bestimmten Abweichung zu senken, kann die Schwere der eintretenden Abweichung nicht angepasst werden. Jedoch kann durch das Einführen von Schutzmaßnahmen die Wahrscheinlichkeit des Eintretens der Abweichung gesenkt werden. Pro Maßnahmen können hierfür Creditpoints (CP) vergeben werden, welche den Wert der reduzierten Eintrittswahrscheinlichkeit (\textit{ML - mitigated likelihood}) senken lassen. Eine Maßnahme kann dabei nie mehr als einen CP wert sein. Im Beispiel in Abbildung \ref{fig:hazop_tabelle} wird dies durch vier Maßnahmen umgesetzt und ergeben somit eine reduzierte Eintrittswahrscheinlichkeit \textit{ML} mit dem Wert "`0"'. Das sich daraus ergebende reduzierte Risiko (\textit{MR - mitigated risk}) beläuft sich daraus folgend ebenfalls auf den Wert "`0"' und es besteht laut Skala nur noch ein geringfügiges Risiko.
 
+%% Table generated by Excel2LaTeX from sheet 'Daten'
+%\begin{table}[h!]
+%	\renewcommand*{\arraystretch}{1.2}
+%	\centering
+%	\caption{HAZOP-Tabelle}
+%	\label{tab:hazop_tabelle}
+%	%\resizebox{0.25\textwidth}{!}{
+%		\begin{tabulary}{1.0\textwidth}{C|C|C|C}
+%			\hline
+%			\textbf{Item} & \textbf{Abweichung} & \textbf{Ursachen}&\textbf{Folgen}\\
+%			\hline
+%			Nr.&Leitwort + Parameter	& Freitext & Freitext \\
+%			\hline		
+%	\end{tabulary}
+%%}
+%\end{table}%
+%\FloatBarrier
+%
+%Erweitern lässt sich diese Tabelle mit ermittelten Parametern einer Risikomatrix. 
+%
+%% Table generated by Excel2LaTeX from sheet 'Daten'
+%\begin{table}[h!]
+%	\renewcommand*{\arraystretch}{1.2}
+%	\centering
+%	\caption{Risiko-Tabelle}
+%	\label{tab:risiko_tabelle}
+%	\resizebox{\textwidth}{!}{
+%		\begin{tabulary}{2.0\textwidth}{C|C|C|C|C|C|C|C|C}
+%			\hline
+%			\textbf{Item} & \textbf{Matrix}&\textbf{S}&\textbf{UL}&\textbf{UR}&\textbf{Schutzmaßnahmen}&\textbf{ML}&\textbf{MR}&\textbf{Aktionen}\\
+%			\hline
+%			Nr.& S/E &Severity&unmitigated Liklihood&unmitigated Risk&Aufzählung&mitigated Liklihood&mitigated Risk&Freitext\\
+%			\hline		
+%	\end{tabulary}}
+%\end{table}%
+%\FloatBarrier
+%
+%\todo[inline]{Tabelle einfügen ?}
 
-
-
-
-\subsection{Computerunterstützes Zeichnen mit AutoCAD und QElectroTech}
+%
+%\subsection{Computerunterstützes Zeichnen mit AutoCAD und QElectroTech}
 
 
 
