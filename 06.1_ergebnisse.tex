@@ -9,8 +9,8 @@ In diesen Abschnitt werden die Ergebnisse zur Verdickungsmitteldosierung dargest
 Im ersten Schritt wurde der Ist-Zustand der Dosierung erfasst, sowie die Gegebenheiten im Werk analysiert. Danach erfolgte das Zusammentragen der Anforderungen an eine halbautomatisch umgesetzte Dosierung.
  
 \subsubsection{Ist-Zustand: Produktionsweise und aktuelles Dosierverfahren}
-Das herzustellende Produkt für das eine halbautomatische Verdickerdosierung umgesetzt werden soll nennt sich \textit{AC 548}. Es ist eine Acrylat-Copolymer Dispersion und kann für Bautenfarben, Lacke, wärmeaktivierbare Klebstoffe und Putze verwendet werden. Internen Aussagen zufolge wird es hauptsächlich für Buntsteinputze genutzt. \todo{Quellenangabe} Produziert wird \textit{AC 548}, wie alle Produkte der \textsc{Alberdingk Boley Leuna GmbH}, im Batch-Betrieb à \SI{14}{\tonne} und wird vorzugsweise in Kampagnen geplant.\linebreak
-Derzeit wird für dieses Produkt das Verdickungsmittel Rheobyk-H 3300 VF der \textsc{Byk-Chemie GmbH} eingesetzt, welches jedoch im Laufe des Jahres 2022 durch Einstellen der Produktion mit dem Verdickungsmittel TAFIGEL PUR 85 der \textsc{Münzing Chemie GmbH} substituiert werden soll. Die aktuelle Dosierung beläuft sich dabei auf die Nutzung eines \SI{0}{\liter}-Kunststofffasses als Dosierbehälter. Hierfür werden zunächst \SI{22}{\kilo \gram} des Verdickungsmittels in einem "`Transportfass"' im Chemikalienlager abgewogen und dann am entsprechenden Einstelltank bereit gestellt. Für den Start der Dosierung wird das "`Dosierfass"', welches mit einem Dosierloch an der Fassunterseite versehen ist, in das Fallschutzgitter des Mannlochs gehängt und der Inhalt des Transportfasses in das Dosierfass gekippt. Dargestellt ist diese Art der Dosierung in Abbildung \ref{fig:aktuelle_dosierung}.
+Das herzustellende Produkt für das eine halbautomatische Verdickerdosierung umgesetzt werden soll nennt sich \textit{AC 548}. Es ist eine Acrylat-Copolymer Dispersion und kann als Betonschutz, Fassadenfarben, wärmeaktivierbare Klebstoffe, Putze und Buntsteinputze verwendet werden. Produziert wird \textit{AC 548} im Batch-Betrieb à \SI{14}{\tonne} und die Planung erfolgt vorzugsweise in Kampagnen. \cite{ALBO.22.02.2022} \linebreak
+Derzeit wird für dieses Produkt das Verdickungsmittel Rheobyk-H 3300 VF der \textsc{Byk-Chemie GmbH} eingesetzt, welches jedoch im Laufe des Jahres 2022 durch Einstellen der Produktion mit dem Verdickungsmittel TAFIGEL PUR 85 der \textsc{Münzing Chemie GmbH} substituiert werden soll. Die aktuelle Dosierung beläuft sich dabei auf die Nutzung eines \SI{0}{\liter}-Kunststofffasses als Dosierbehälter. Hierfür werden zunächst \SI{22}{\kilo \gram} des Verdickungsmittels in einem "`Transportfass"' im Chemikalienlager abgewogen und dann am entsprechenden Einstelltank bereit gestellt. Für den Start der Dosierung wird das "`Dosierfass"', welches mit einem Dosierloch an der Fassunterseite versehen ist, in das Fallschutzgitter des Mannlochs gehängt und der Inhalt des Transportfasses in das Dosierfass gekippt. Schematisch dargestellt ist diese Dosierung in Abbildung \ref{fig:aktuelle_dosierung}.
 
 \begin{figure}[h!]
 	\centering
@@ -21,10 +21,19 @@ Derzeit wird für dieses Produkt das Verdickungsmittel Rheobyk-H 3300 VF der \te
 \FloatBarrier
 %Ende
 
-Vorteile dieses Dosierverfahrens sind die einfache und kostengünstige Umsetzung. Nachteilig ist jedoch, dass man neben dem "`Dosierloch"' und dem Fass selbst keine Einstellparameter vorhanden sind und der Dosierstrom weder messtechnisch erfasst noch im Prozessleitsystem (PLS) einsehbar ist. Zudem kann die Umsetzung für die Dosierung nur bedingt hygienisch erfolgen.
+Vorteile dieses Dosierverfahrens sind die einfache und kostengünstige Umsetzung. Dem entgegen steht jedoch, dass neben dem "`Dosierloch"' und dem Fass selbst keine Einstellparameter vorhanden sind und der Dosierstrom weder messtechnisch erfasst noch im Prozessleitsystem (PLS) einsehbar ist. Zudem kann die Umsetzung für die Dosierung nur bedingt hygienisch erfolgen wie unter anderem in Abbildung \ref{fig:dosierfass} zu erkennen ist.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/dosierfass}
+	\caption{Fotografien des Dosier- und des Transportfasses}
+	\label{fig:dosierfass}
+\end{figure}
+\FloatBarrier
+%Ende
 
 \subsubsection{Soll-Zustand: Anforderung an die Dosierung}
-Die Anforderungen an eine automatisierte Dosierung gliedern sich in mehrere Interessensgruppen auf. Beginnend mit der \textit{Technik}, sollen unter diesem Begriff jegliche Anforderungen der Prozess- und Sicherheitstechnik beschrieben sein. Beispielsweise fallen darunter die Dosierrate, die Dosiergenauigkeit, Ex-Schutz der beachtet werden muss und Weiteres. Die zweite Gruppierung beschreibt die Anforderungen der \textit{Produktion}, sprich die Interessen der auszuführenden Chemiefacharbeiter in der Anlage. Eine Forderung stellt dabei die einfache Bedienbarkeit dar. Zuletzt soll jedoch auch die \textit{Wartung} entsprechend leichtgängig und der Verschleiß des Dosiersystems gering sein. Alle Forderungen der verschiedenen Perspektiven sind in Tabelle \ref{tab:anforderungen} zusammenfasst und wurden durch erfragen des Personals und durch vorgegebenen Prozessparametern ermittelt.
+Die Anforderungen an eine automatisierte Dosierung gliedern sich in mehrere Interessensgruppen auf. Beginnend mit der \textit{Technik}, sollen unter diesem Begriff jegliche Anforderungen der Prozess- und Sicherheitstechnik beschrieben sein. Beispielsweise fallen darunter die Dosierrate, die Dosiergenauigkeit und der zu beachtende Ex-Schutz. Die zweite Gruppierung beschreibt die Anforderungen der \textit{Produktion}, sprich die Interessen der auszuführenden Chemiefacharbeiter in der Anlage. Eine Forderung stellt dabei die einfache Bedienbarkeit dar. Zuletzt soll jedoch auch die \textit{Wartung} entsprechend leichtgängig und der Verschleiß des Dosiersystems gering sein. Die Forderungen aus den verschiedenen Perspektiven sind in Tabelle \ref{tab:anforderungen} zusammenfasst und wurden durch erfragen des Personals ermittelt und durch vorgegebenen Prozessparametern festgelegt.
 
 % Table generated by Excel2LaTeX from sheet 'Daten'
 \begin{table}[h!]
@@ -45,12 +54,13 @@ Die Anforderungen an eine automatisierte Dosierung gliedern sich in mehrere Inte
 			Prozessleitsystem: &im PLS einsehbar&&\\
 			Adaptierbarkeit:& für weitere Tanks adaptierbar &&\\
 			Aufstellungsort: &siehe Abbildung \ref{fig:aufstellungsort}&&\\
+			Einleitung: &siehe Abbildung \ref{fig:flansch}&&\\
 			\hline
 	\end{tabulary}}
 \end{table}%
 \FloatBarrier
 
-Da weder die geforderte Dosiergenauigkeit erfasst noch der Dosierstrom in der aktuellen Dosierung gemessen wird, ist der Unterschied zwischen Ist- und Soll-Anforderung an die Dosierung bereits erfüllt und das Problem somit als solches verifiziert. Außerdem setzt die derzeitige Dosierung eine gewisse Fließfähigkeit durch das Verdickungsmittel Rheobyk-H 3300 VF voraus, welche das TAFIGEL PUR 85 möglicherweise nicht erfüllt.
+Da weder die geforderte Dosiergenauigkeit erfasst, noch der Dosierstrom in der aktuellen Dosierung gemessen wird, ist eine signifikante Differenz zwischen Ist- und Soll-Anforderung an die Dosierung aus Perspektive der Technik erfüllt und das Dosierproblem somit als solches verifiziert. Die Perspektive der Produktion unterstützt diese Verifikation, da Anforderungen aufgrund der benötigten Vorbereitungszeit und der Sauberkeit der Dosierprozesses derzeit nicht erfüllt werden. Aus Sicht der Wartung besteht kein Handlungsbedarf.
 
 \begin{figure}[h!]
 	\begin{minipage}[b]{0.475\textwidth}
@@ -63,7 +73,7 @@ Da weder die geforderte Dosiergenauigkeit erfasst noch der Dosierstrom in der ak
 	\begin{minipage}[b]{0.475\textwidth}
 		\centering
 		\includegraphics[height=4.25cm]{img/flansch}
-		\caption{Flansch für Dosierstrom}
+		\caption{Flansch für eingehenden Dosierstrom}
 		\label{fig:flansch}
 	\end{minipage}
 \end{figure}
@@ -85,20 +95,132 @@ Da weder die geforderte Dosiergenauigkeit erfasst noch der Dosierstrom in der ak
 %PLS
 %Prozesssicherheit
 
-\subsubsection{Eigenschaften des Verdickungsmittels}
-In der geplanten Dosierung soll auf das Verdickungsmittel TAFIGEL PUR 85 der \mbox{\textsc{Münzing Chemie Gmbh}} zurückgegriffen werden. Laut Hersteller handelt es sich hierbei um einen assoziativen Polyurethan-Verdicker, welcher durch Gerüstbildung zwischen Verdickermolekülen, Bindemittel und Pigmentpartikeln die gewünschte Viskosität hervorruft und stabilisiert. Diese Beschreibung deckt sich mit den vorangegangenen Beschreibung der Assoziativverdicker.\cite{MunzingChemieGmbH.2014}\\
---> Datenblätter
+\subsubsection{Ergebnisse der experimentellen Untersuchungen}
+In der zu planenden Dosierung soll auf das Verdickungsmittel TAFIGEL PUR 85 der \mbox{\textsc{Münzing Chemie Gmbh}} zurückgegriffen werden. Laut Hersteller handelt es sich hierbei um einen assoziativen Polyurethan-Verdicker, welcher durch Gerüstbildung zwischen Verdickermolekülen, Bindemittel und Pigmentpartikeln die gewünschte Viskosität hervorruft und stabilisiert. Diese Beschreibung deckt sich mit der unter Abschnitt \ref{sec:grundlagen} formulierten Beschreibung der Assoziativverdicker. \cite{MunzingChemieGmbH.2014}
+%--> Datenblätter
+Die Ergebnisse der Viskositätsmessungen gliedern sich nach der Durchführung in Abschnitt \ref{sec:durchführung} in die Verifizierung der angegebenen Viskosität, der Untersuchung der Temperaturabhängigkeit, der Untersuchung der Verdünnungsabhängigkeit und in Pumpversuche.
+Beginnend mit der Verifizierung der angegeben Viskosität sind in Abbildung \ref{dia:visko} die gemessenen Viskositäten des TAFIGEL PUR 85 und des Rheobyk-H 3300 VF dargestellt. 
 
-\subsubsection{Viskositätsmessungen}
---> nach DIN
---> beide Verdickungsmittel
+%START DIAGRAMM
+
+\begin{figure}[h]
+	\begin{center}
+		%\resizebox{\textwidth}{!}{
+		\begin{tikzpicture}
+			\begin{axis}[
+				grid=both,
+				grid style={line width=.1pt, draw=gray!10},
+				major grid style={line width=.2pt,draw=gray!50},
+				width= 0.95 \textwidth,
+				height=0.5\textwidth,
+				symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+				axis y line = left,
+				axis x line = bottom,
+				xtick=data,
+				ytick={0,5,...,65},
+				ymax = 65,
+				ymin=0,
+				ylabel=dynamische Viskosität in \si{\pascal \second},
+				legend style={at={(0.475,1.05)},anchor=west},
+				legend cell align={left}]
+				%Tafigel
+				\addplot[color=black,mark=*, only marks] coordinates {
+					(Messreihe 1, 49.080)
+					(Messreihe 2, 50.760)
+					(Messreihe 3, 52.000)
+					(Messreihe 4, 53.000)
+					(Messreihe 5, 51.600)
+					(\shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas}, 50.87)
+				};
+				\addplot[color=black,dashed] coordinates {
+				(Messreihe 1, 51.21)
+				(\shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas}, 51.21)
+				};
+				%Rheobyk
+				\addplot[color=black,mark=o, only marks] coordinates {
+					(Messreihe 1, 24.000)
+					(Messreihe 2, 24.800)
+					(Messreihe 3, 22.880)
+					(Messreihe 4, 23.890)
+					(Messreihe 5, 24.200)
+					(\shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas}, 23.32)
+				};
+				\addplot[color=black,dotted] coordinates {
+					(Messreihe 1, 23.85)
+					(\shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas}, 23.85)
+				};
+			\legend{Viskosität - TAFIGEL PUR 85, Mittelwert (\SI{51}{\pascal \second}), Viskosität - Rheobyk-H 3300 VF, Mittelwert (\SI{24}{\pascal \second}) };
+			\end{axis}
+		\end{tikzpicture}
+		%}
+		\caption{Dynamische Viskositäten der Verdickungsmittel TAFIGEL PUR 85 und Rheobyk-H 3300 VF}
+		\label{dia:visko}
+	\end{center}
+\end{figure} 
+
+\FloatBarrier 
+%ENDE
+
+Die sich aus den Messwerten ergebenden Mittelwerte ergeben eine Viskosität für TAFIGEL PUR 85 mit \SI{51}{\pascal \second} und für Rheobyk-H 3300 VF \SI{24}{\pascal \second}. Zum Vergleich sei an dieser Stelle die Viskosität von Wasser mit \SI{0,001}{\pascal \second} angegeben. Zu erkennen ist, dass die Messwerte Abweichungen vom Mittelwert aufzeigen. Statistisch ergeben sich daraus relativen Standardabweichungen für die Messwerte des TAFIGEL PUR\,85 mit \SI{2,4}{\percent} und für das Rheobyk-H 3300 VF mit \SI{2,6}{\percent}. Die Messungen im \SI{50}{\milli \liter}, statt im \SI{600}{\milli \liter} Becherglas zeigten keine maßgeblichen Unterscheide.
+%--> nach DIN
+%--> beide Verdickungsmittel
+Eine weitere Untersuchung beschäftigte sich mit der Temperaturabhängigkeit des Verdickungsmittels. Dafür wurde zum einen der Verlauf der Dichte in Abhängigkeit von der Temperatur für das TAFIGEL PUR 85 bei der \textsc{Münzing Chemie GmbH} angefragt. Die erhaltenen Daten sind in Abbildung \ref{dia:dichte} zu sehen.
+
+%START DIAGRAMM
+
+\begin{figure}[h]
+	\begin{center}
+		%\resizebox{\textwidth}{!}{
+			\begin{tikzpicture}
+				\begin{axis}[
+					grid=both,
+					grid style={line width=.1pt, draw=gray!10},
+					major grid style={line width=.2pt,draw=gray!50},
+					width= 0.95 \textwidth,
+					height=0.33\textwidth,
+					%symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+					axis y line = left,
+					axis x line = bottom,
+					xtick={0,5,...,50},
+					ytick={950,975,...,1050},
+					xmax=50,
+					ymax = 1050,
+					ymin=950,
+					xmin=0,
+					ylabel=Dichte in \si{\kilo \gram \per \kmeter},
+					xlabel = Temperatur in \si{\celsius},
+					legend style={at={(1.0,0.95)},anchor=east},
+					legend cell align={left},
+					ylabel style={yshift=0.4cm},]
+					%Tafigel
+					\addplot[color=black,mark=*, only marks] coordinates {
+						(10, 1034)
+						(20, 1010)
+						(30, 1008)
+						(40, 1001)
+					};				
+					\legend{Dichte - TAFIGEL PUR 85};
+				\end{axis}
+			\end{tikzpicture}
+			%}
+		\caption{Dichte des TAFIGEL PUR 85 in Abhängigkeit von der Temperatur}
+		\label{dia:dichte}
+	\end{center}
+\end{figure} 
+
+\FloatBarrier 
+%ENDE
+
+Zu erkennen ist, dass sich die Dichte im Bereich zwischen 10 und \SI{40}{\celsius} mit steigender Temperatur verringert. Der Verlauf der Daten lässt nicht eindeutig auf einen linearen Zusammenhang der Messdaten schließen, jedoch ist erkennbar, dass ein signifikanter Unterschied in der Dichte für 10 und für \SI{40}{\celsius} besteht. Im Bereich zwischen 20 und \SI{30}{\celsius} bleibt die Dichte hingegen konstant. Aus den Daten wurde ermittelt, dass zwischen den Messungen eine relative Standardabweichung von \SI{1,4}{\percent} vorliegt.
+
+
+
 
 \subsubsection{Verdünnungsverhalten}
---> Eigenregie
+%--> Eigenregie
 
 \subsubsection{Erwärmungsverhalten}
-
---> beim Hersteller angefragt
+%--> beim Hersteller angefragt
 
 \subsubsection{Pumpversuche}
 
