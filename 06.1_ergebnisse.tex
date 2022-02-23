@@ -359,7 +359,7 @@ Durch dieses Diagramm zeigt sich, dass sich beide Verdickungsmittel in ihrem Ver
 %\subsubsection{Erwärmungsverhalten}
 %%--> beim Hersteller angefragt
 %
-Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit der Dosierung mit einer Pumpe in Betracht gezogen. Durch die hohe Viskosität und den Anforderungen an Sauberkeit und Wartung, sollte zunächst die Pumpbarkeit des TAFIGEL PUR 85 mit einer Schlauchpumpe überprüft werden. Die Ergebnisse der Massenströme bei verschiedenen Drehzahlen ist im Diagramm unter Abbildung \ref{dia:pumpe} gezeigt.
+Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit der Dosierung mit einer Pumpe in Betracht gezogen. Durch die hohe Viskosität und den Anforderungen an Sauberkeit und Wartung, sollte zunächst die Pumpbarkeit des TAFIGEL PUR 85 mit einer Schlauchpumpe überprüft werden. Die Ergebnisse der Massenströme bei verschiedenen Drehzahlen ist im Diagramm unter Abbildung \ref{dia:pumpe} gezeigt. Zum Vergleich ist ebenfalls Pumpenkennlinie bei der Förderung Wasser mit \SI{20}{\celsius} dargestellt. Diese bestimmte sich aus der vom Hersteller angegebenen Kennlinie für den Volumenstrom in \cite{PonndorfGeratetechnikGmbH.2020}.
 
 \begin{figure}[h]
 	\begin{center}
@@ -403,15 +403,15 @@ Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit de
 				axis y line = right,
 				hide x axis,
 				xtick={0,10,...,100},
-				ytick={0,100,...,2000},
-				ymax=1000,
+				ytick={0,75,...,375},
+				ymax=375,
 				ymin=0,
 				xmin=0,
 				ylabel= Massenstrom (Wasser) in \si{\kilo \gram \per \hour},
 				xlabel = Drehzahl in \si{rpm},
-				legend style={at={(1.0,0.9)},anchor=east},
+				legend style={at={(0.05,0.85)},anchor=west},
 				legend cell align={left},
-				ylabel style={yshift=-0.4cm},
+				ylabel style={yshift=-0.2cm},
 				]	
 				\addlegendimage{/pgfplots/refstyle=tafigel}\addlegendentry{Massenstrom - TAFIGEL PUR 85}
 				%Wasser
