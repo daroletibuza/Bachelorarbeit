@@ -161,7 +161,7 @@ Beginnend mit der Verifizierung der angegeben Viskosität sind in Abbildung \ref
 \FloatBarrier 
 %ENDE
 
-Die sich aus den Messwerten ergebenden Mittelwerte ergeben eine Viskosität für TAFIGEL PUR 85 mit \SI{51}{\pascal \second} und für Rheobyk-H 3300 VF \SI{24}{\pascal \second}. Zum Vergleich sei an dieser Stelle die Viskosität von Wasser mit \SI{0,001}{\pascal \second} angegeben. Zu erkennen ist, dass die Messwerte Abweichungen vom Mittelwert aufzeigen. Statistisch ergeben sich daraus relativen Standardabweichungen für die Messwerte des TAFIGEL PUR\,85 mit \SI{2,4}{\percent} und für das Rheobyk-H 3300 VF mit \SI{2,6}{\percent}. Die Messungen im \SI{50}{\milli \liter}, statt im \SI{600}{\milli \liter} Becherglas zeigten keine maßgeblichen Unterscheide.
+Die sich aus den Messwerten ergebenden Mittelwerte ergeben eine Viskosität für TAFIGEL PUR 85 mit \SI{51}{\pascal \second} und für Rheobyk-H 3300 VF \SI{24}{\pascal \second}. Zum Vergleich: Die Viskosität des TAFIGEL PUR 85 ist im Sicherheitsdatenblatt mit rund \SI{35}{\pascal \second}  angegeben. Auf Nachfrage beim Hersteller ist diese Schwankung produktionsbedingt und beeinträchtigt die Wirksamkeit des Verdickungsmittels nicht. \cite{MunzingChemieGmbH.2020} Ebenfalls zu erkennen ist, dass die Messwerte Abweichungen vom Mittelwert aufzeigen. Statistisch ergeben sich daraus relativen Standardabweichungen für die Messwerte des TAFIGEL PUR\,85 mit \SI{2,4}{\percent} und für das Rheobyk-H 3300 VF mit \SI{2,6}{\percent}. Die Messungen im \SI{50}{\milli \liter}, statt im \SI{600}{\milli \liter} Becherglas zeigten keine maßgeblichen Unterscheide.\linebreak
 %--> nach DIN
 %--> beide Verdickungsmittel
 Eine weitere Untersuchung beschäftigte sich mit der Temperaturabhängigkeit des Verdickungsmittels. Dafür wurde zum einen der Verlauf der Dichte in Abhängigkeit von der Temperatur für das TAFIGEL PUR 85 bei der \textsc{Münzing Chemie GmbH} angefragt. Die erhaltenen Daten sind in Abbildung \ref{dia:dichte} zu sehen.
@@ -211,25 +211,168 @@ Eine weitere Untersuchung beschäftigte sich mit der Temperaturabhängigkeit des
 \FloatBarrier 
 %ENDE
 
-Zu erkennen ist, dass sich die Dichte im Bereich zwischen 10 und \SI{40}{\celsius} mit steigender Temperatur verringert. Der Verlauf der Daten lässt nicht eindeutig auf einen linearen Zusammenhang der Messdaten schließen, jedoch ist erkennbar, dass ein signifikanter Unterschied in der Dichte für 10 und für \SI{40}{\celsius} besteht. Im Bereich zwischen 20 und \SI{30}{\celsius} bleibt die Dichte hingegen konstant. Aus den Daten wurde ermittelt, dass zwischen den Messungen eine relative Standardabweichung von \SI{1,4}{\percent} vorliegt.
+Zu erkennen ist, dass sich die Dichte im Bereich zwischen 10 und \SI{40}{\celsius} mit steigender Temperatur verringert. Der Verlauf und der Umfang der Daten lässt nicht eindeutig auf einen linearen Zusammenhang zwischen Dichte und Temperatur schließen, jedoch ist erkennbar, dass ein signifikanter Unterschied in der Dichte für 10 und für \SI{40}{\celsius} besteht. Im Bereich zwischen 20 und \SI{30}{\celsius} bleibt die Dichte hingegen konstant. Aus den Daten wurde ermittelt, dass zwischen den Messungen eine relative Standardabweichung von \SI{1,4}{\percent} vorliegt.\linebreak
+Neben dem Erfragen des Zusammenhangs zwischen Dichte und Temperatur ist auch die Abhängigkeit der Viskosität von der Temperatur untersucht worden. Der Grund hierfür liegt in der zuvor bestimmten Viskosität des Verdickungsmittels bei rund \SI{50}{\pascal \second}. Da im Regelfall bei der \textsc{Alberdingk Boley Leuna GmbH} keine so hohen Viskositäten gefördert werden, bot sich die Überlegung an die Viskosität durch Wärmezufuhr zu reduzieren. Das Ergebnis der dafür genutzten Versuchsreihe ist in Abbildung \ref{dia:temp} zu finden. Darin lässt sich erkennen, dass der Zusammenhang zwischen Viskosität und Dichte in diesem Temperaturbereich eine Linearität mit einem Bestimmtheitsmaß von \SI{99,6}{\percent} aufweist. Mit steigender Temperatur sinkt dabei die Viskosität. Der negative Anstieg lässt zudem darauf deuten, dass bei einer Temperaturerhöhung um \SI{5}{\kelvin} eine Verringerung der Viskosität um \SI{10}{\pascal \second} stattfindet.
+
+%START DIAGRAMM
+
+\begin{figure}[h]
+	\begin{center}
+		%\resizebox{\textwidth}{!}{
+			\begin{tikzpicture}
+				\begin{axis}[
+					grid=both,
+					grid style={line width=.1pt, draw=gray!10},
+					major grid style={line width=.2pt,draw=gray!50},
+					width= 0.95 \textwidth,
+					height=0.4\textwidth,
+					%symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+					axis y line = left,
+					axis x line = bottom,
+					xtick={0,5,...,50},
+					ytick={0,5,...,65},
+					xmax=50,
+					ymax = 65,
+					ymin=0,
+					xmin=0,
+					ylabel=dynamische Viskosität in \si{\pascal \second},
+					xlabel = Temperatur in \si{\celsius},
+					legend style={at={(1.,1.125)},anchor=east},
+					legend cell align={left},
+					%ylabel style={yshift=0.4cm},
+					]
+					%Tafigel
+					\addplot[color=black,mark=*, only marks] coordinates {
+						(21, 50.1)
+						(25, 39.5)
+						(30, 30.2)
+						(35, 19.2)
+						(39, 12.6)
+					};
+				
+				\addplot [domain = 0:50, dashed] {-2.07*x+92.26};
+							
+					\legend{Viskosität - TAFIGEL PUR 85,$\eta(\vartheta) = -\SI{2,07}{\pascal \second \per \celsius}*\vartheta+\SI{92,26}{\pascal\second} \, | \, R^2 = \SI{99,6}{\percent}$};
+				\end{axis}
+			\end{tikzpicture}
+			%}
+		\caption{Dynamische Viskosität des TAFIGEL PUR 85 in Abhängigkeit von der Temperatur}
+		\label{dia:temp}
+	\end{center}
+\end{figure} 
+\FloatBarrier 
+%ENDE
+Zusätzlich wurde neben dem Aspekt der Erwärmung des Verdickungsmittels wurde auch der Effekt der Verdünnung auf die Viskosität untersucht. Es wird erwartet, dass mit sinkender Konzentration an Verdickungsmittel die Viskosität des Verdickungsmittels ebenfalls sinkt. In Abbildung \ref{dia:verdunnung} sind die Messergebnisse der Viskositäten beider Verdickungsmittel TAFIGEL PUR 85 und Rheobyk-H 3300 VF dargestellt. In separaten x-Achsen sind der Anteil an Verdickungsmittel und der Anteil an reiner Aktivsubstanz der Verdickungsmittels aufgetragen.
+
+%START DIAGRAMM
+
+\begin{figure}[h]
+	\begin{center}
+		%\resizebox{\textwidth}{!}{
+			\begin{tikzpicture}
+				\begin{axis}[
+					grid=both,
+					grid style={line width=.1pt, draw=gray!10},
+					major grid style={line width=.2pt,draw=gray!50},
+					width= 0.95 \textwidth,
+					height=0.4\textwidth,
+					%symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+					axis y line = left,
+					axis x line = bottom,
+					xtick={0,10,...,100},
+					ytick={0,5,...,65},
+					xmax=100,
+					ymax = 65,
+					ymin=0,
+					xmin=0,
+					ylabel=dynamische Viskosität in \si{\pascal \second},
+					xlabel = Verdickermassenanteil in \si{\mpercent},
+					legend style={at={(0.025,0.8)},anchor=west},
+					legend cell align={left},
+					%ylabel style={yshift=0.4cm},
+					]
+					%Tafigel
+					\addplot[color=black,mark=*, only marks] coordinates {
+						(20, .230)
+						(30, .800)
+						(40, 1.700)
+						(50, 4.500)
+						(60, 6.650)
+						(71, 13.650)
+						(79, 21.240)
+						(84, 25.650)
+						(100, 49.300)
+					};
+				%Rheobyk
+				\addplot[color=black,mark=o, only marks] coordinates {
+					(10, 0.300)
+					(20, 2.400)
+					(30, 3.870)
+					(41, 5.400)
+					(48, 6.600)
+					(57, 6.600)
+					(81, 5.000)
+					(100, 4.700)
+	
+				};
+					\legend{Viskosität - TAFIGEL PUR 85, Viskosität - Rheobyk-H 3300 VF};
+				\end{axis}
+			\begin{axis}[
+				width= 0.95 \textwidth,
+				height=0.4\textwidth,
+				%symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+				hide y axis,
+				axis x line = top,
+				xtick={0,2.5,...,25},
+				xmax=25,
+				xmin=0,
+				xlabel = Aktivsubstanz in \si{\mpercent},
+				legend style={at={(1.,1.125)},anchor=east},
+				legend cell align={left},
+				]
+				%Tafigel
+				\addplot[draw=none, forget plot] coordinates {
+					(5, .230)
+					(7.5, .800)
+					(10, 1.700)
+					(12.5, 4.500)
+					(15, 6.650)
+					(17.7, 13.650)
+					(19.9, 21.240)
+					(20.9, 25.650)
+					(25, 49.300)
+				};
+			\end{axis}
+			\end{tikzpicture}
+			%}
+		\caption{Dynamische Viskositäten der Verdickungsmittel  TAFIGEL PUR 85 und Rheobyk-H 3300 VF in Abhängigkeit vom Massenanteil des Verdickungsmittels bzw. dem Anteil an Aktivsubstanz}
+		\label{dia:verdunnung}
+	\end{center}
+\end{figure} 
+\FloatBarrier 
+%ENDE
+Durch dieses Diagramm zeigt sich, dass sich beide Verdickungsmittel in ihrem Verdünnungsverhalten deutlich unterscheiden. Während das Rheobyk-H 3300 VF ab \SI{40}{\mpercent} eine vergleichsweise stabile Viskosität in Abhängigkeit von der Verdünnung aufzeigt, lässt sich für das TAFIGEL PUR 85 eine starke Abhängigkeit zwischen Viskosität und Verdickermassenanteil festzustellen. Auffallend ist zudem, dass die Viskosität des Rheobyk-H 3300 VF im Bereich zwischen 50 und \SI{60}{\mpercent} höher ist als mit einem Verdickeranteil von \SI{100}{\mpercent}.
+%
+%\subsubsection{Verdünnungsverhalten}
+%%--> Eigenregie
+%
+%\subsubsection{Erwärmungsverhalten}
+%%--> beim Hersteller angefragt
+%
+Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit der Dosierung mit einer Pumpe in Betracht gezogen. Durch die hohen Viskosität und den Anforderungen an Sauberkeit und Wartung, sollte zunächst die Pumpbarkeit des TAFIGEL PUR 85 mit einer Schlauchpumpe überprüft werden. Die Ergebnisse der Massenströme bei verschiedenen Drehzahlen ist im Diagramm unter Abbildung \ref{dia:pumpe} gezeigt.
 
 
 
-
-\subsubsection{Verdünnungsverhalten}
-%--> Eigenregie
-
-\subsubsection{Erwärmungsverhalten}
-%--> beim Hersteller angefragt
-
-\subsubsection{Pumpversuche}
+\subsubsection*{Pumpversuche}
 
 erster Volumenstrom erst nach einer Stunde zu erkennen 
 
 
 \todo[inline]{Entscheidungsprobleme werden aufgrund des Umfangs und der schweren Nachvollziehbarkeit nicht dargestellt}
 
-\subsection{Problem: Entscheidung für ein Verfahren}
+\subsection{Entscheidungsprobleme}
+\label{subsec:entscheidungsprobleme}
+\subsubsection{Entscheidung für ein Verfahren}
 %Verdünnen
 %spülen
 %erwrämen
@@ -238,14 +381,14 @@ erster Volumenstrom erst nach einer Stunde zu erkennen
 %kombinationen
 %aktuelles Verfahren
 
-\subsection{Problem: Entscheidung für Gebindetyp}
+\subsubsection{Entscheidung für Gebindetyp}
 %Preis nachfrage
 %\subsubsection{Angebotsanfrage}
 %\subsubsection{Entscheidungsverfahren}
 
-\subsection{Problem: Direkte Zugabe mit Pumpe oder Dosierbehälter}
+\subsubsection{Entscheidung für Pumpendosierung oder Dosierbehälter}
 
-\subsection{Problem: Auswahl des Pumpentyps}
+\subsubsection{Auswahl des Pumpentyps}
 %\subsubsection{Literaturarbeit}
 %Bücher gelesen für Auswahlhilfe
 %\subsubsection{Fachgespräche und Angebotsanfrage}
@@ -254,17 +397,17 @@ erster Volumenstrom erst nach einer Stunde zu erkennen
 %\subsection{Auswahl des Pumpentyps, sowie des Leitungsdurchmessers}
 %Gespräche geführt und Leitung hat sich nach möglichen Drücken in der Anlage und Pumpentyp, sowie Berechnungen gerichtet gerichtet
 
-\subsection{Problem: Messverfahren}
+\subsubsection{Auswahl des Messverfahrens}
 
 \subsection{Technische Planung für Verdickungsmitteldosierung}
 \subsubsection{Verfahrensfließbild der Verdickerdosierung}
 \subsubsection{R\&I- Fließbild der Verdickerdosierung}
-\subsubsection{Theoretische Rohrleitungsplanung der Verdickerdosierung}
+\subsubsection{Rohrleitungsplanung der Verdickerdosierung}
 %vertretbarer Druckverlust
 %Rohrdurchmesser und Nenndruck
 %--> Rohrleitungsklassifizierung
 
-\subsubsection{Signalverarbeitungsplanung der Verdickerdosierung}
+\subsubsection{EMSR-Plan der Messtechnik für die Dosierung}
 
 \subsection{Gefährdungsbeurteilung der geplanten Verdickungsmitteldosierung}
 
