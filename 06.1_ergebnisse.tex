@@ -6,6 +6,7 @@
 In diesen Abschnitt werden die Ergebnisse zur Verdickungsmitteldosierung dargestellt. Nach Verifizierung des Problems und dessen Beschreibung erfolgen die Ergebnisse der Untersuchungsmethoden, sowie Entscheidungsverfahren für die Verfahrensplanung und schlussendlich die technische Umsetzung einer Dosiervariante mit einer Gefährdungsbeurteilung.
 
 \subsection{Verifizierung und Analyse des Dosierproblems}
+\label{sec:verifizierung}
 Im ersten Schritt wurde der Ist-Zustand der Dosierung erfasst, sowie die Gegebenheiten im Werk analysiert. Danach erfolgte das Zusammentragen der Anforderungen an eine halbautomatisch umgesetzte Dosierung.
  
 \subsubsection{Ist-Zustand: Produktionsweise und aktuelles Dosierverfahren}
@@ -63,14 +64,14 @@ Die Anforderungen an eine automatisierte Dosierung gliedern sich in mehrere Inte
 Da weder die geforderte Dosiergenauigkeit erfasst, noch der Dosierstrom in der aktuellen Dosierung gemessen wird, ist eine signifikante Differenz zwischen Ist- und Soll-Anforderung an die Dosierung aus Perspektive der Technik erfüllt und das Dosierproblem somit als solches verifiziert. Die Perspektive der Produktion unterstützt diese Verifikation, da Anforderungen aufgrund der benötigten Vorbereitungszeit und der Sauberkeit der Dosierprozesses derzeit nicht erfüllt werden. Aus Sicht der Wartung besteht kein Handlungsbedarf.
 
 \begin{figure}[h!]
-	\begin{minipage}[b]{0.475\textwidth}
+	\begin{minipage}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[height=4.25cm]{img/aufstellungsort}
-		\caption{Aufstellungsort für Dosierung}
+		\caption{Ort für Dosierung}
 		\label{fig:aufstellungsort}
 	\end{minipage}
 	%\hspace*{0.05\textwidth}
-	\begin{minipage}[b]{0.475\textwidth}
+	\begin{minipage}[b]{0.55\textwidth}
 		\centering
 		\includegraphics[height=4.25cm]{img/flansch}
 		\caption{Flansch für eingehenden Dosierstrom}
@@ -96,6 +97,7 @@ Da weder die geforderte Dosiergenauigkeit erfasst, noch der Dosierstrom in der a
 %Prozesssicherheit
 
 \subsubsection{Ergebnisse der experimentellen Untersuchungen}
+\label{sec:analyse}
 In der zu planenden Dosierung soll auf das Verdickungsmittel TAFIGEL PUR 85 der \mbox{\textsc{Münzing Chemie Gmbh}} zurückgegriffen werden. Laut Hersteller handelt es sich hierbei um einen assoziativen Polyurethan-Verdicker, welcher durch Gerüstbildung zwischen Verdickermolekülen, Bindemittel und Pigmentpartikeln die gewünschte Viskosität hervorruft und stabilisiert. Diese Beschreibung deckt sich mit der unter Abschnitt \ref{sec:grundlagen} formulierten Beschreibung der Assoziativverdicker. \cite{MunzingChemieGmbH.2014}
 %--> Datenblätter
 Die Ergebnisse der Viskositätsmessungen gliedern sich nach der Durchführung in Abschnitt \ref{sec:durchführung} in die Verifizierung der angegebenen Viskosität, der Untersuchung der Temperaturabhängigkeit, der Untersuchung der Verdünnungsabhängigkeit und in Pumpversuche.
@@ -149,7 +151,7 @@ Beginnend mit der Verifizierung der angegeben Viskosität sind in Abbildung \ref
 					(Messreihe 1, 23.85)
 					(\shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas}, 23.85)
 				};
-			\legend{Viskosität - TAFIGEL PUR 85, Mittelwert (\SI{51}{\pascal \second}), Viskosität - Rheobyk-H 3300 VF, Mittelwert (\SI{24}{\pascal \second}) };
+			\legend{TAFIGEL PUR 85, Mittelwert (\SI{51}{\pascal \second}), Rheobyk-H 3300 VF, Mittelwert (\SI{24}{\pascal \second}) };
 			\end{axis}
 		\end{tikzpicture}
 		%}
@@ -161,7 +163,7 @@ Beginnend mit der Verifizierung der angegeben Viskosität sind in Abbildung \ref
 \FloatBarrier 
 %ENDE
 
-Die sich aus den Messwerten ergebenden Mittelwerte ergeben eine Viskosität für TAFIGEL PUR 85 mit \SI{51}{\pascal \second} und für Rheobyk-H 3300 VF \SI{24}{\pascal \second}. Zum Vergleich: Die Viskosität des TAFIGEL PUR 85 ist im Sicherheitsdatenblatt mit rund \SI{35}{\pascal \second}  angegeben. Auf Nachfrage beim Hersteller ist diese Schwankung produktionsbedingt und beeinträchtigt die Wirksamkeit des Verdickungsmittels nicht. \cite{MunzingChemieGmbH.2020} Ebenfalls zu erkennen ist, dass die Messwerte Abweichungen vom Mittelwert aufzeigen. Statistisch ergeben sich daraus relativen Standardabweichungen für die Messwerte des TAFIGEL PUR\,85 mit \SI{2,4}{\percent} und für das Rheobyk-H 3300 VF mit \SI{2,6}{\percent}. Die Messungen im \SI{50}{\milli \liter}, statt im \SI{600}{\milli \liter} Becherglas zeigten keine maßgeblichen Unterscheide.\linebreak
+Die sich aus den Messwerten ergebenden Mittelwerte ergeben eine Viskosität für TAFIGEL PUR 85 mit \SI{51}{\pascal \second} und für Rheobyk-H 3300 VF \SI{24}{\pascal \second}. Zum Vergleich: Die Viskosität des TAFIGEL PUR 85 ist im Sicherheitsdatenblatt unter  \cite{MunzingChemieGmbH.2020} mit rund \SI{35}{\pascal \second}  angegeben. Auf Nachfrage beim Hersteller ist diese Schwankung produktionsbedingt und beeinträchtigt die Wirksamkeit des Verdickungsmittels nicht. Ebenfalls zu erkennen ist, dass die Messwerte Abweichungen vom Mittelwert aufzeigen. Statistisch ergeben sich daraus relativen Standardabweichungen für die Messwerte des TAFIGEL PUR\,85 mit \SI{2,4}{\percent} und für das Rheobyk-H 3300 VF mit \SI{2,6}{\percent}. Die Messungen im \SI{50}{\milli \liter}, statt im \SI{600}{\milli \liter} Becherglas zeigten keine maßgeblichen Unterscheide.\linebreak
 %--> nach DIN
 %--> beide Verdickungsmittel
 Eine weitere Untersuchung beschäftigte sich mit der Temperaturabhängigkeit des Verdickungsmittels. Dafür wurde zum einen der Verlauf der Dichte in Abhängigkeit von der Temperatur für das TAFIGEL PUR 85 bei der \textsc{Münzing Chemie GmbH} angefragt. Die erhaltenen Daten sind in Abbildung \ref{dia:dichte} zu sehen.
@@ -199,7 +201,7 @@ Eine weitere Untersuchung beschäftigte sich mit der Temperaturabhängigkeit des
 						(30, 1008)
 						(40, 1001)
 					};				
-					\legend{Dichte - TAFIGEL PUR 85};
+					\legend{TAFIGEL PUR 85};
 				\end{axis}
 			\end{tikzpicture}
 			%}
@@ -252,7 +254,7 @@ Neben dem Erfragen des Zusammenhangs zwischen Dichte und Temperatur ist auch die
 				
 				\addplot [domain = 0:50, dashed] {-2.07*x+92.26};
 							
-					\legend{Viskosität - TAFIGEL PUR 85,$\eta(\vartheta) = -\SI{2,07}{\pascal \second \per \celsius}*\vartheta+\SI{92,26}{\pascal\second} \, | \, R^2 = \SI{99,6}{\percent}$};
+					\legend{TAFIGEL PUR 85,$\eta(\vartheta) = -\SI{2,07}{\pascal \second \per \celsius}*\vartheta+\SI{92,26}{\pascal\second} \, | \, R^2 = \SI{99,6}{\percent}$};
 				\end{axis}
 			\end{tikzpicture}
 			%}
@@ -315,7 +317,7 @@ Zusätzlich wurde neben dem Aspekt der Erwärmung des Verdickungsmittels wurde a
 					(100, 4.700)
 	
 				};
-					\legend{Viskosität - TAFIGEL PUR 85, Viskosität - Rheobyk-H 3300 VF};
+					\legend{TAFIGEL PUR 85, Rheobyk-H 3300 VF};
 				\end{axis}
 			\begin{axis}[
 				width= 0.95 \textwidth,
@@ -351,7 +353,7 @@ Zusätzlich wurde neben dem Aspekt der Erwärmung des Verdickungsmittels wurde a
 \end{figure} 
 \FloatBarrier 
 %ENDE
-Durch dieses Diagramm zeigt sich, dass sich beide Verdickungsmittel in ihrem Verdünnungsverhalten deutlich unterscheiden. Während das Rheobyk-H 3300 VF ab \SI{40}{\mpercent} eine vergleichsweise stabile Viskosität in Abhängigkeit von der Verdünnung aufzeigt, lässt sich für das TAFIGEL PUR 85 eine starke Abhängigkeit zwischen Viskosität und Verdickermassenanteil festzustellen. Auffallend ist zudem, dass die Viskosität des Rheobyk-H 3300 VF im Bereich zwischen 50 und \SI{60}{\mpercent} höher ist als mit einem Verdickeranteil von \SI{100}{\mpercent}.
+Durch dieses Diagramm zeigt sich, dass sich beide Verdickungsmittel in ihrem Verdünnungsverhalten deutlich unterscheiden. Während das Rheobyk-H 3300 VF ab \SI{40}{\mpercent} eine vergleichsweise stabile Viskosität in Abhängigkeit von der Verdünnung aufzeigt, lässt sich für das TAFIGEL PUR 85 eine starke Abhängigkeit zwischen Viskosität und Verdickermassenanteil festzustellen. Auffallend ist zudem, dass die Viskosität des Rheobyk-H 3300 VF im Bereich zwischen 50 und \SI{60}{\mpercent} höher ist als mit einem Verdickeranteil von \SI{100}{\mpercent}.\linebreak
 %
 %\subsubsection{Verdünnungsverhalten}
 %%--> Eigenregie
@@ -359,7 +361,10 @@ Durch dieses Diagramm zeigt sich, dass sich beide Verdickungsmittel in ihrem Ver
 %\subsubsection{Erwärmungsverhalten}
 %%--> beim Hersteller angefragt
 %
-Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit der Dosierung mit einer Pumpe in Betracht gezogen. Durch die hohe Viskosität und den Anforderungen an Sauberkeit und Wartung, sollte zunächst die Pumpbarkeit des TAFIGEL PUR 85 mit einer Schlauchpumpe überprüft werden. Die Ergebnisse der Massenströme bei verschiedenen Drehzahlen ist im Diagramm unter Abbildung \ref{dia:pumpe} gezeigt. Zum Vergleich ist ebenfalls Pumpenkennlinie bei der Förderung Wasser mit \SI{20}{\celsius} dargestellt. Diese bestimmte sich aus der vom Hersteller angegebenen Kennlinie für den Volumenstrom in \cite{PonndorfGeratetechnikGmbH.2020}.
+
+\todo[inline]{Ergebnisse über das Verhalten bei offener Lagerung fehlt !!}
+
+Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit der Dosierung mit einer Pumpe in Betracht gezogen. Durch die hohe Viskosität und den Anforderungen an Sauberkeit und Wartung, sollte zunächst die Pumpbarkeit des TAFIGEL\,PUR\,85 mit einer Schlauchpumpe überprüft werden. Die Ergebnisse der Massenströme bei verschiedenen Drehzahlen ist im Diagramm unter Abbildung \ref{dia:pumpe} gezeigt. Zum Vergleich ist ebenfalls Pumpenkennlinie bei der Förderung Wasser mit einer Temperatur von \SI{20}{\celsius} und einem Druck von \SI{2}{\bar} dargestellt. Diese bestimmte sich aus der vom Hersteller angegebenen Kennlinie für den Volumenstrom in \cite{PonndorfGeratetechnikGmbH.2020}.
 
 \begin{figure}[h]
 	\begin{center}
@@ -403,20 +408,21 @@ Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit de
 				axis y line = right,
 				hide x axis,
 				xtick={0,10,...,100},
-				ytick={0,75,...,375},
-				ymax=375,
+				ytick={0,100,...,1000},
+				ymax=1000,
 				ymin=0,
 				xmin=0,
+				xmax=100,
 				ylabel= Massenstrom (Wasser) in \si{\kilo \gram \per \hour},
 				xlabel = Drehzahl in \si{rpm},
 				legend style={at={(0.05,0.85)},anchor=west},
 				legend cell align={left},
-				ylabel style={yshift=-0.2cm},
+				ylabel style={yshift=-0.3cm},
 				]	
-				\addlegendimage{/pgfplots/refstyle=tafigel}\addlegendentry{Massenstrom - TAFIGEL PUR 85}
+				\addlegendimage{/pgfplots/refstyle=tafigel}\addlegendentry{TAFIGEL PUR 85}
 				%Wasser
 				\addplot[color=black,no markers, domain=0:100] {10.14*x+0};			
-				\addlegendentry{Massenstrom - Wasser (theoretisch)};
+				\addlegendentry{Wasser (theoretisch)};
 			\end{axis}
 			\end{tikzpicture}
 			%}
@@ -428,15 +434,123 @@ Im Laufe der Überlegungen zur Umsetzung der Dosierung wurde die Möglichkeit de
 \FloatBarrier 
 %ENDE
 
-\subsubsection*{Pumpversuche}
+Im Diagramm ist zu sehen, dass der Verlauf des theoretisch geförderten Massenstrom an Wasser linear zur Drehzahl steigt. Im Vergleich dazu zeigt sich der gemessene Förderstrom des Verdickungsmittels unabhängig von der Drehzahl konstant bei ca. 5 bis \SI{6}{\kilo \gram \per \hour}. Es wäre zu erwarten gewesen, dass für das Verdickungsmittel ähnlich wie bei der Kennlinie für Wasser mit steigender Drehzahl der Massenstrom steigt. Zusätzlich dazu sind die Dimensionen der Förderströme zwischen Wasser und Verdickungsmittel komplett unterschiedlich. Dies ist unter anderem an den verschiedenen Skalen der beiden y-Achsen zu erkennen.\linebreak
+Da die getestete Pumpe zunächst nur zum Testen der Pumpfähigkeit genutzt wurde, sind weitere Auswertungen zum volumetrischen Wirkungsgrad erfolgt. Da keine Daten bezüglich dieses Fluids bei dieser Schlauchpumpe vorliegen, wird zunächst aufgrund der großen Viskositätsunterschiede zwischen Wasser und TAFIGEL PUR 85 angenommen, dass das Verdrängungsvolumen der Förderung von Wasser einem volumetrischen Wirkungsgrad von \SI{100}{\percent} entspricht. \linebreak
+Die Berechnung des volumetrischen Wirkungsgrades erfolgt gemäß Gleichung \eqref{eq:vol_wirkungsgrad}, wobei der theoretische Volumenstrom dem vom Hersteller angegebenen Volumenstrom für Wasser bei \SI{2}{\bar} entspricht. In Gleichung \eqref{gl:vol_wirkungsgrad} ist ein Beispiel für eine solche Berechnung dargestellt und die Ergebnisse sind in Tabelle \ref{tab:wirkungsgrad}  und Abbildung \ref{dia:wirkungsgrad} zusammengefasst und veranschaulicht.
 
-erster Volumenstrom erst nach einer Stunde zu erkennen 
+\begin{flalign}
+	\label{gl:vol_wirkungsgrad}
+	\eta_V &= \frac{\dot{V}}{\dot{V}_{\text{theo}}} = \frac{\dot{V}_{\text{VD}}}{\dot{V}_{\text{\ce{H2O}}}} = \frac{\dot{m}_{\text{VD}}*\rho_{\text{\ce{H2O}}}}{\dot{m}_{\text{\ce{H2O}}}*\rho_{\text{VD}}} \\[2mm]
+	\eta_V (\SI{33}{\rpm}) &= \frac{\SI{5,5}{\kg \per \hour}*\SI{1000}{\kg \per \kmeter}}{\SI{335}{\kg \per \hour}*\SI{1040}{\kg \per \kmeter}} = \underline{\SI{1,64}{\percent}}
+\end{flalign}
 
+% Table generated by Excel2LaTeX from sheet 'Daten'
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\caption{Ergebnisse der Berechnung des volumetrischen Wirkungsgrades für TAFIGEL PUR 85 in Bezug auf Wasser für eine \textsc{Ponndorf P CLassic 25}}
+	\label{tab:wirkungsgrad}
+	%\resizebox{\textwidth}{!}{
+		\begin{tabulary}{1.\textwidth}{C|CC|CC|C}
+			\hline
+			$n \left[\si{\umdrehung\per \minute}\right]$ & $\dot{m}_{\text{VD}} \left[\si{\kg\per \hour}\right]$ & $\dot{m}_{\text{\ce{H2O}}} \left[\si{\kg\per \hour}\right]$ & $\rho_{\text{VD}} \left[\si{\kg\per \kmeter}\right]$& $\rho_{\text{\ce{H2O}}} \left[\si{\kg\per \kmeter}\right]$& $\eta_V \left[\si{\percent}\right]$\\
+			\hline
+			33	&	5,5&335&\multirow{4}{*}{1040}	&\multirow{4}{*}{1000}&1,64\\
+			57	&	5,7&578&						&&0,99\\
+			73	&	5,8&740&						&&0,78\\
+			97 	&	5,8&984&						&&0,59\\
+			\hline			
+	\end{tabulary}
+%}
+\end{table}%
+\FloatBarrier
 
-\todo[inline]{Entscheidungsprobleme werden aufgrund des Umfangs und der schweren Nachvollziehbarkeit nicht dargestellt}
+\begin{figure}[h]
+	\begin{center}
+		%\resizebox{\textwidth}{!}{
+			\begin{tikzpicture}
+				\begin{axis}[
+					grid=both,
+					grid style={line width=.1pt, draw=gray!10},
+					major grid style={line width=.2pt,draw=gray!50},
+					width= 0.95 \textwidth,
+					height=0.4\textwidth,
+					%symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+					axis y line = left,
+					axis x line = bottom,
+					xtick={0,10,...,100},
+					ytick={0,1,...,10},
+					xmax=100,
+					ymax = 10,
+					ymin=0,
+					xmin=0,
+					ylabel= $\dot{m}_{\text{VD}}$ in \si{\kilo \gram \per \hour},
+					xlabel = Drehzahl in \si{rpm},
+					legend style={at={(1.0,0.9)},anchor=east},
+					legend cell align={left},
+					]
+					%Tafigel
+					\addplot[color=black,mark=*, only marks] coordinates {
+						(33, 5.53)
+						(57, 5.65)
+						(73, 5.83)
+						(97, 5.81)
+					};	\label{tafigel}
+					%					%Wasser
+					%					\addplot[color=black,no markers, domain=0:100] {10.14*x+0};			
+					%\legend{Massenstrom - TAFIGEL PUR 85};
+				\end{axis}
+				\begin{axis}[
+					width= 0.95 \textwidth,
+					height=0.4\textwidth,
+					%symbolic x coords={, Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, Messreihe 5, \shortstack[c]{\SI{50}{\milli \liter} \\ Becherglas},},
+					axis y line = right,
+					hide x axis,
+					xtick={0,10,...,100},
+					ytick={0,0.5,...,5},
+					ymax=5,
+					ymin=0,
+					xmin=0,
+					xmax=100,
+					ylabel= $\eta_V$ in \si{\percent},
+					xlabel = Drehzahl in \si{rpm},
+					legend style={at={(0.975,0.85)},anchor=east},
+					legend cell align={left},
+					%ylabel style={yshift=-0.3cm},
+					y tick label style={
+						/pgf/number format/.cd,
+						fixed,
+						fixed zerofill,
+						precision=1,
+						/tikz/.cd
+					},
+					]	
+					\addlegendimage{/pgfplots/refstyle=tafigel}\addlegendentry{Massenstrom - TAFIGEL PUR 85}
+					%Wirkungsgrad
+					\addplot[color=black,mark=o, only marks] coordinates {
+						(33,1.64)
+						(57,0.99)
+						(73,0.78)
+						(97,0.59)
+					};			
+					\addlegendentry{volumetrischer Wirkungsgrad};
+				\end{axis}
+			\end{tikzpicture}
+			%}
+		\caption{Massenstrom und Wirkungsgrad in Abhängigkeit von der Drehzahl für TAFIGEL PUR 85 mit einer \textsc{Ponndorf P Classic 25} Schlauchpumpe}
+		\label{dia:wirkungsgrad}
+	\end{center}
+\end{figure} 
+\FloatBarrier 
+%ENDE
+
+Aus der Bestimmung des volumetrischen Wirkungsgrades für verschiedene Drehzahlen lässt sich aufzeigen, dass mit steigender Drehzahl und damit steigendem Förderstrom der volumetrische Wirkungsgrad abnimmt. Da die Pumpe nicht unter \SI{33}{\rpm} einstellbar war, stehen deshalb auch keine Messwerte unterhalb dieser Drehzahl zur Verfügung. Ansonsten bewegt sich der volumetrische Wirkungsgrad für Drehzahlen zwischen 33 bis \SI{97}{\rpm} für die untersuchte Schlauchpumpe im Bereich zwischen rund 0,6 bis \SI{1.6}{\percent}.
 
 \subsection{Entscheidungsprobleme}
 \label{subsec:entscheidungsprobleme}
+
+Um nun eine Dosierung für das Verdickungsmittel TAFIGEL PUR 85 umzusetzen und den angegebenen Forderungen in Tabelle \ref{tab:anforderungen} gerecht zu werden ist eine Reihe an Entscheidungen zu treffen. Darunter zählen Teilprobleme wie der grundlegende Dosierablauf, die Auswahl des Gebindes, die Bestimmung des Messverfahrens, sowie weitere Punkte. Nachdem nun das Problem der Dosierung in den Abschnitten \ref{sec:verifizierung} und \ref{sec:analyse} verifiziert und analysiert wurde, sollen nun im folgenden Abschnitt Lösungsvarianten erarbeitet und Entscheidungen diesbezüglich getroffen werden. Das Entscheidungsverfahren nach \textsc{Grüning} und \textsc{Kühn} ist hierfür abgewandelt worden, da sich Verifizierung und Analyse nicht auf Entscheidungsprobleme bezogen haben. Dennoch erfolgt die weitere Bearbeitung der Teilprobleme der Verdickungsmitteldosierung nach den Schritten 3 bis 7 des Verfahrens (siehe Abschnitt \ref{sec:entscheidungsverfahren}). 
+
 \subsubsection{Entscheidung für ein Verfahren}
 %Verdünnen
 %spülen
