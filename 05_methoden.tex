@@ -40,20 +40,36 @@ Die folgenden Schritte 3 bis 7 werden mit jedem Teilproblem einzeln durchgeführ
 In der Literatur sind für die jeweiligen Vorgehensweisen verschiedene Methoden, sogenannte Entscheidungsmaximen beschrieben, welche die Überwindung von Mehrwertig, Unsicherheit oder Ungewissheit möglich machen. Eine Möglichkeit der Überwindung der Mehrwertigkeit und der Unsicherheit ist zum Beispiel die auf \textsc{Bernoulli} zurückgehende Maxime des Nutzenerwartungswertes.\linebreak
 Ist die Bestimmung der Varianten für die einzelnen Teilprobleme nach analytischen oder summarischen Vorgehen erfolgt, können infolgedessen die vorgeschlagenen Varianten der Teilprobleme mit einander abgestimmt werden. Bildet sich dabei keine heuristische Schleife fällt die Entscheidung über die zu realisierende Variante.
 
-\subsubsection{Nutzenwertmaxime}
-Für das analytische Vorgehen bei der Gesamtbeurteilung der Varianten kann die Nutzenwertmaxime zur Überwindung von Mehrwertigkeit genutzt werden. Sie unterscheidet sich von der Maxime des Nutzenerwartungswertes nach \textsc{Bernoulli} durch die fehlende Einbeziehung des Erwartungswertes und überwindet somit auch keine Unsicherheiten. Das muss jedoch bei sicheren Situationen der Entscheidung keinen Nachteil mit sich bringen. Die Entscheidung einer Variante mittels Nutzenwertmaxime umfasst vier Teilaufgaben: 
+%\subsubsection{Nutzenwertmaxime}
+%Für das analytische Vorgehen bei der Gesamtbeurteilung der Varianten kann die Nutzenwertmaxime zur Überwindung von Mehrwertigkeit genutzt werden. Sie unterscheidet sich von der Maxime des Nutzenerwartungswertes nach \textsc{Bernoulli} durch die fehlende Einbeziehung des Erwartungswertes und überwindet somit auch keine Unsicherheiten. Das muss jedoch bei sicheren Entscheidungssituationen keinen Nachteil mit sich bringen. Die Entscheidung einer Variante mittels Nutzenwertanalyse umfasst die folgenden vier Teilaufgaben: 
+%\vspace*{-2.5mm}
+%\paragraph{Schritt 1: Umrechnung nicht-numerischer Konsequenzwerte}	\, \\
+%Nicht-numerische Konsequenzwerte sind anhand einer definierten Skala in Zahlenwerte umzurechnen.
+%\vspace*{-2.5mm}
+%\paragraph{Schritt 2: Umrechnung der Konsequenzwerte in Nutzenwerte} \, \\ 
+%Für jedes Entscheidungskriterium  ist der hat die Summe an Nutzwerten der Variante "`1"' zu betragen. Die Nutzwerte der Varianten sind dabei so zu bestimmen, dass die Nutzenwerte zwischen $0$ und 1 liegen und das die günstigste Konsequenz den höchsten Nutzenwert besitzt.
+%\vspace*{-2.5mm}
+%\paragraph{Schritt 3: Gewichtung der Entscheidungskriterien} \, \\
+%Die Summe der Gewichtungen der Entscheidungskriterien sollte auch an dieser Stelle wieder 1 betragen, um eine Vergleichbarkeit zu gewährleisten. Die rein subjektiven Gewichte sollten hierbei die relative Bedeutung für die Zielerreichung widerspiegeln.
+%\vspace*{-7.5mm}
+%\paragraph{Schritt 4: Bestimmung der Gesamtkonsequenzen} \, \\
+%Die Nutzenwerte von jedem Entscheidungskriterium werden mit ihren Gewichten multipliziert und die gewichteten Nutzenwerte pro Entscheidungskriterium addiert. Die Variante mit dem höchsten Nutzenwert entspricht dann dem Entscheidungswert.
+
+\subsubsection{Angepasste Nutzenwertmaxime}
+Für das analytische Vorgehen bei der Gesamtbeurteilung der Varianten kann die Nutzenwertmaxime zur Überwindung von Mehrwertigkeit genutzt werden. Sie unterscheidet sich von der Maxime des Nutzenerwartungswertes nach \textsc{Bernoulli} durch die fehlende Einbeziehung des Erwartungswertes und überwindet somit auch keine Unsicherheiten. Das muss jedoch bei sicheren Entscheidungssituationen keinen Nachteil mit sich bringen. Die Entscheidung einer Variante mittels Nutzenwertanalyse nach \cite{Grunig.2013} wird in dieser Arbeit geringfügig angepasst. Die Konsequenzwerte werden dabei als "`Bewertung"' und Nutzenwerte als "`Erfüllungsstatus"' bezeichnet. Diese abgewandelte Vorgehensweise umfasst die folgenden vier Teilaufgaben: 
 \vspace*{-2.5mm}
-\paragraph{Schritt 1: Umrechnung nicht-numerischer Konsequenzwerte}	\, \\
-Nicht-numerische Konsequnzwerte sind anhand einer definierten Skala in Zahlenwerte umzurechnen.
+\paragraph{Schritt 1: Umrechnung nicht-numerischer Bewertungen}	\, \\
+Nicht-numerische Bewertungen sind anhand einer definierten Skala in Zahlenwerte umzurechnen. Die subjektive Bewertung hat so zu erfolgen, dass die günstigste Variante die höchste Bewertung erhält.
 \vspace*{-2.5mm}
-\paragraph{Schritt 2: Umrechnung der Konsequenzwerte in Nutzenwerte} \, \\ 
-Für jedes Entscheidungskriterium hat die Summe an Nutzwerten der Variante "`1"' zu betragen. Die Nutzwerte der Varianten sind dabei so zu bestimmen, dass die Nutzenwerte zwischen $0$ und 1 liegen und das die günstigste Konsequenz den höchsten Nutzenwert besitzt.
+\paragraph{Schritt 2: Umrechnung der Bewertungen in einen Erfüllungsstatus} \, \\ 
+Der maximale Skalenwert einer jeden Bewertung entspricht dem idealen Erfüllungsstatus für ein Kriterium. Für die Bestimmung des Erfüllungsstatus einer Variante für ein Kriterium wird der Quotient aus der jeweilige Bewertung und dem maximalen Skalenwert gebildet. Der Definitionsbereich des Erfüllungsstatus liegt demnach zwischen $0$ und \SI{100}{\percent}, wobei \SI{100}{\percent} der vollen Erfüllung der Anforderung entspricht.
 \vspace*{-2.5mm}
 \paragraph{Schritt 3: Gewichtung der Entscheidungskriterien} \, \\
-Die Summe der Gewichtungen der Entscheidungskriterien sollte auch an dieser Stelle wieder 1 betragen, um eine Vergleichbarkeit zu gewährleisten. Die rein subjektiven Gewichte sollten hierbei die relative Bedeutung für die Zielerreichung widerspiegeln.
+Die Summe der Gewichtungen der Entscheidungskriterien sollte \SI{100}{\percent} betragen, um eine Vergleichbarkeit der Kriterien untereinander gewährleisten zu können. Die subjektiv bestimmten Gewichtungen sollten hierbei die relative Bedeutung für die Zielerreichung widerspiegeln.
 \vspace*{-7.5mm}
 \paragraph{Schritt 4: Bestimmung der Gesamtkonsequenzen} \, \\
-Die Nutzenwerte von jedem Entscheidungskriterium werden mit ihren Gewichten multipliziert und die gewichteten Nutzenwerte pro Entscheidungskriterium addiert. Die Variante mit dem höchsten Nutzenwert entspricht dann dem Entscheidungswert.
+Der Erfüllungsstatus jeder Variante ist in Bezug auf ein Entscheidungskriterium mit der Gewichtung des Entscheidungskriterium zu multiplizieren und die Summe der gewichteten Erfüllungsstatus zu bilden. Es lässt sich nun erkennen zu welchem Anteil eine Variante den idealen Anforderungen entspricht und welche Variante diesem Idealbild am Nächsten kommt. 
+
 
 \todo[inline]{Vielleicht noch Nutzenwerttabelle zur Veranschaulichung ergänzen ?}
  

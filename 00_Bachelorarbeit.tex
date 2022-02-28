@@ -4,22 +4,23 @@
 %\documentclass[a4paper,12pt,]{scrreprt}
 
 %normal mit Bildern
-\documentclass[a4paper, 11pt, draft=false]{scrartcl}
+\documentclass[a4paper, 11pt, draft=false, twoside, ngerman]{scrartcl}
 
-\usepackage[left= 2.5cm,right = 2.5cm, bottom = 2.5cm,top = 2.5cm]{geometry}
+\usepackage[left= 3cm,right = 2cm, bottom = 3cm,top = 3cm]{geometry}
 
 % ============= Packages =============
 % Dokumentinformationen
 % Standard Packages
 \usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
 \usepackage[none]{hyphenat}
 \hyphenpenalty=5000
 \tolerance=5000
 \providecommand\phantomsection{}
 \hyphenation{Brook-field}
 \hyphenation{Winkel-ab-wei-chung}
-\hyphenation{Stro-mungs-ge-schwin-dig-keit-en}
+\usepackage{tabto}
 
 
 %Tabellen Packages
@@ -30,6 +31,7 @@
 \usepackage{tabulary}
 \usepackage{multirow}
 \usepackage{rotating} 
+\usepackage{threeparttable}
 
 %Grafik Packages
 \usepackage{graphicx}
@@ -40,6 +42,9 @@
 \usepackage{adjustbox}
 \usepackage{wrapfig}
 \usepackage{svg}
+
+
+
 
 %Diagramm Packages
 \usepackage{tikz}
@@ -177,27 +182,31 @@ hidelinks %Entfernt Rahmen von Links
 	{\footnotesize #1}\\
 }
 
-%Skalierung
-\newcommand{\skalfootnote}[1]{
-	{\footnotesize #1}\\
+%%Skalierung
+%\newcommand{\skalfootnote}[1]{
+%	{\footnotesize #1}\\
+%}
+
+\newcommand\myemptypage{
+	\thispagestyle{empty}
+	\mbox{}
+	\newpage
 }
-
-
 
 \urlstyle{same}
 
 % ============= Kopf- und Fußzeile =============
 \pagestyle{fancy}
 %
-\lhead{}
-\chead{}
-\rhead{}%\slshape }%\leftmark}
+%\lhead{}
+%\chead{}
+%\rhead{}%\slshape }%\leftmark}
+%%%
+%\lfoot{}
+%\cfoot{}
+%\rfoot[{\thepage\ of \pageref*{LastPage}}]{Seite \thepage\ von \pageref*{LastPage}}
 %%
-\lfoot{}
-\cfoot{}
-\rfoot[{\thepage\ of \pageref*{LastPage}}]{Seite \thepage\ von \pageref*{LastPage}}
-%%
-\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
 %Fußnotelinie
@@ -208,42 +217,37 @@ hidelinks %Entfernt Rahmen von Links
 
 % ============= Dokumentbeginn =============
 \begin{document}
+\fancyhf{}
+%\fancyhead[LE,RO]{Seite \thepage von \pageref*{LastPage}}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE,LO]{\leftmark}
 	
 %Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
 \pagestyle{empty}
 
-%\include{01_titel}
-
-%\include{14_danksagungen}
-
-%\include{15_zusammenfassung}
-
-% Beendet eine Seite und erzwingt auf den nachfolgenden Seiten die Ausgabe aller Gleitobjekte (z.B. Abbildungen), die bislang definiert, aber noch nicht ausgegeben wurden. Dieser Befehl fügt, falls nötig, eine leere Seite ein, sodaß die nächste Seite nach den Gleitobjekten eine ungerade Seitennummer hat. 
-%\cleardoubleoddpage
-
 % Pagestyle für Titelblatt leer
-\pagestyle{empty}
-
 %Seite zählen ab
-\setcounter{page}{0}
+\setcounter{page}{1}
 
 %Titelblatt
 \include{01_titel}
 
-% Pagestyle für Rest des Dokuments
-\pagestyle{fancy}
-\newgeometry{left= 3cm, right = 3cm, bottom = 3cm,top = 3cm}
+\setcounter{page}{1}
+
+% Beendet eine Seite und erzwingt auf den nachfolgenden Seiten die Ausgabe aller Gleitobjekte (z.B. Abbildungen), die bislang definiert, aber noch nicht ausgegeben wurden. Dieser Befehl fügt, falls nötig, eine leere Seite ein, sodaß die nächste Seite nach den Gleitobjekten eine ungerade Seitennummer hat. 
+%\cleardoubleoddpage
 
 %Inhaltsverzeichnis
 \tableofcontents
 %\listoftodos[Noch zu Erledigen]
-\thispagestyle{empty}
+
 
 %Inhalt
-
 \include{02.1_danksagung}
 \include{02.2_abstract}
 \include{02.3_erklaerung}
+
+\pagestyle{fancy}
 
 \input{03.1_einleitung}
 \input{03.2_aufgabenstellung}
